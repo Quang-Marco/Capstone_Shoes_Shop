@@ -1,29 +1,20 @@
-// Reset CSS
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+1. Link Import CSS:
+
+* <link>
+<link href="//asset/nike-fonts/nike_fonts.css" rel="stylesheet">
+* @import:
+<style>
+@import url('//asset/nike-fonts/nike_fonts.css');
+</style>
+
+2. Use stylesheet:
+
+.className {
   font-family: "Helvetica Now Text", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
 }
-
-a {
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
-}
-
-.title,
-.nav-link,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+.className {
   font-family: "Helvetica Now Text Medium", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;

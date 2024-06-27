@@ -5,3 +5,16 @@
 @import "./themes/darkThemes";
 @import "./pages/detail";
 @import "./pages/register";
+
+header {
+  nav {
+    .navbar-brand {
+    }
+    .navbar-collapse {
+      .nav-item {
+        .nav-link {
+        }
+      }
+    }
+  }
+}
