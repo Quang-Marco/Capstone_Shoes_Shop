@@ -1,0 +1,20 @@
+@import "./base/base";
+@import "./helpers/variables";
+@import "./helpers/animations";
+@import "./helpers/mixins";
+@import "./themes/darkThemes";
+@import "./pages/detail";
+@import "./pages/register";
+
+header {
+  nav {
+    .navbar-brand {
+    }
+    .navbar-collapse {
+      .nav-item {
+        .nav-link {
+        }
+      }
+    }
+  }
+}
