@@ -47,45 +47,321 @@
   </head>
 
   <body>
-    <header>
-      <div class="container">
-        <nav class="navbar navbar-expand-lg py-4">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">Shop</a>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">New & Featured</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Men</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Women</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Kids</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Brands</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Sale off</a>
-                </li>
-              </ul>
-              <form class="position-relative" role="search">
-                <input
-                  class="form-control fs-6 position-relative me-2"
-                  type="search"
-                  placeholder="Search here.."
-                  aria-label="Search"
-                />
-              </form>
+    <!-- HEADER -->
+    <header class="container">
+      <nav class="navbar navbar-expand-lg py-4">
+        <div class="container-fluid">
+          <a class="navbar-brand title" href="index.html">KICKS HAVEN</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <!-- <a class="nav-link" href="#">New & Featured</a> -->
+                <div class="dropdown">
+                  <button
+                    class="btn btn-close-white w-100"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Featured
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#">New Arrivals</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">New Releases</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Latest Shoes</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <!-- <a class="nav-link" href="#">Men</a> -->
+                <div class="dropdown">
+                  <button
+                    class="btn btn-close-white w-100"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Men
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#">All Shoes</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Lifestyle</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Running</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Gym and Training</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Football</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Basketball</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <!-- <a class="nav-link" href="#">Women</a> -->
+                <div class="dropdown">
+                  <button
+                    class="btn btn-close-white w-100"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Women
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#">All Shoes</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Lifestyle</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Running</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Gym and Training</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Football</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Basketball</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <!-- <a class="nav-link" href="#">Kids</a> -->
+                <div class="dropdown">
+                  <button
+                    class="btn btn-close-white w-100"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Kids
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#">All Shoes</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Boys</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Girls</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Lifestyle</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Running</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Football</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Basketball</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <!-- <a class="nav-link" href="#">Brands</a> -->
+                <div class="dropdown">
+                  <button
+                    class="btn btn-close-white w-100"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Brands
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#">Nike</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Adidas</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Converse</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Vans</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <!-- <a class="nav-link" href="#">Sale Off</a> -->
+                <div class="dropdown">
+                  <button
+                    class="btn btn-close-white w-100"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Sale Off
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#">All Sale</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">10%</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">20%</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">30%</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">40%</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">50%</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+            <form class="position-relative" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <i class="fa-solid fa-magnifying-glass position-absolute"></i>
+            </form>
+            <div class="user mx-4">
+              <a href="register.html"><i class="fa-regular fa-user"></i></a>
+            </div>
+            <div class="cart">
+              <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
             </div>
           </div>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </header>
+
+    <!-- NEW ARRIVALS -->
+    <section class="new_arrivals">
+      <h2 class="title py-5 text-center">NEW ARRIVALS</h2>
+      <div class="row gx-0">
+        <div class="col-4 new_arrivals_img">
+          <a href="#"> </a>
+          <img src="public/image/blue_jordan.jpg" alt="" />
+        </div>
+        <div class="col-4 new_arrivals_box">
+          <div class="box_content">
+            <h2 class="title">NIKE</h2>
+            <h2 class="title">AIR</h2>
+            <h2 class="title">JORDAN</h2>
+            <h3 class="pt-4">BESTSELLER</h3>
+          </div>
+          <div class="box_view_more">
+            <a href="#">
+              <h2 class="title">VIEW</h2>
+              <h2 class="title">MORE</h2>
+            </a>
+          </div>
+        </div>
+        <div class="col-4 new_arrivals_img">
+          <a href="#">
+            <img src="public/image/air-jordan-cho-nu-dep-3.jpg" alt="" />
+          </a>
+        </div>
+        <div class="col-4 new_arrivals_box">
+          <div class="box_content">
+            <h2 class="title">MORE</h2>
+            <h2 class="title">THAN</h2>
+            <h2 class="title">A SHOE</h2>
+            <h3 class="pt-4">NEW SESSION</h3>
+          </div>
+          <div class="box_view_more">
+            <a href="#">
+              <h2 class="title">VIEW</h2>
+              <h2 class="title">MORE</h2>
+            </a>
+          </div>
+        </div>
+        <div class="col-4 new_arrivals_img">
+          <a href="#">
+            <img src="public/image/nike-just-do-it.png" alt="" />
+          </a>
+        </div>
+        <div class="col-4 new_arrivals_box">
+          <div class="box_content">
+            <h2 class="title">ELEVATE</h2>
+            <h2 class="title">YOUR</h2>
+            <h2 class="title">GAME</h2>
+            <h3 class="pt-4">NEW ARRIVAL</h3>
+          </div>
+          <div class="box_view_more">
+            <a href="#">
+              <h2 class="title">VIEW</h2>
+              <h2 class="title">MORE</h2>
+            </a>
+          </div>
+        </div>
+        <div class="col-4 new_arrivals_img">
+          <a href="#">
+            <img
+              src="public/image/Ao-thung-va-quan-jin-truyen-thong-nhin-van-chat-2.jpg"
+              alt=""
+            />
+          </a>
+        </div>
+        <div class="col-4 new_arrivals_box">
+          <div class="box_content">
+            <h2 class="title">JUST</h2>
+            <h2 class="title">DO</h2>
+            <h2 class="title">IT</h2>
+            <h3 class="pt-4">BLACK FRIDAY</h3>
+          </div>
+          <div class="box_view_more">
+            <a href="#">
+              <h2 class="title">VIEW</h2>
+              <h2 class="title">MORE</h2>
+            </a>
+          </div>
+        </div>
+        <div class="col-4 new_arrivals_img">
+          <a href="#">
+            <img src="public/image/Co-giao-j6.jpg" alt="" />
+          </a>
+        </div>
+      </div>
+    </section>
+
     <!-- Bootstrap JavaScript Libraries -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
