@@ -7,16 +7,31 @@
   font-weight: 400;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 a {
   text-decoration: none;
+  color: black;
 }
 
 ul {
   list-style: none;
 }
 
-.title,
-.nav-link,
+.form-control:focus {
+  box-shadow: none;
+}
+
+.title {
+  font-family: "Nike Futura";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 54px;
+}
+
+.dropdown,
 h1,
 h2,
 h3,
@@ -26,4 +41,108 @@ h6 {
   font-family: "Helvetica Now Text Medium", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
+}
+
+header nav .navbar-collapse .navbar-nav .nav-item .dropdown {
+  width: 100px;
+}
+header nav .navbar-collapse .navbar-nav .nav-item .dropdown::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+  width: 0;
+  height: 3px;
+  background: #000;
+  transition: all 0.5s ease;
+}
+header nav .navbar-collapse .navbar-nav .nav-item .dropdown:hover::before {
+  width: 50%;
+}
+header nav .navbar-collapse .navbar-nav .nav-item .dropdown:hover .dropdown-menu {
+  display: block;
+}
+header nav .navbar-collapse .navbar-nav .nav-item .dropdown .dropdown-menu {
+  width: 100%;
+  transition: all 0.5s ease;
+}
+header nav .navbar-collapse .navbar-nav .nav-item .active {
+  width: 150px;
+}
+header nav .navbar-collapse form i {
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+header nav .navbar-collapse i {
+  font-size: 20px;
+}
+
+.new_arrivals .row .new_arrivals_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.new_arrivals .row .new_arrivals_box:hover .box_content {
+  height: 0;
+  overflow: hidden;
+}
+.new_arrivals .row .new_arrivals_box:hover .box_view_more {
+  height: 150px;
+}
+.new_arrivals .row .new_arrivals_box .box_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.new_arrivals .row .new_arrivals_box .box_content h3 {
+  position: relative;
+}
+.new_arrivals .row .new_arrivals_box .box_content h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 1px;
+  width: 100%;
+  background-color: #000;
+}
+.new_arrivals .row .new_arrivals_box .box_view_more {
+  text-align: center;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+.new_arrivals .row .new_arrivals_box .box_view_more:hover {
+  opacity: 0.8;
+}
+.new_arrivals .row .new_arrivals_img {
+  position: relative;
+  overflow: hidden;
+}
+.new_arrivals .row .new_arrivals_img img {
+  height: 620px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.5s ease;
+}
+.new_arrivals .row .new_arrivals_img::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: -100%;
+  background-color: rgba(255, 255, 255, 0.15);
+  transform: skewX(-20deg);
+  transition: all 0.5s ease;
+}
+.new_arrivals .row .new_arrivals_img:hover img {
+  transform: scale(1.1, 1.1);
+}
+.new_arrivals .row .new_arrivals_img:hover::after {
+  left: 150%;
 }/*# sourceMappingURL=style.css.map */

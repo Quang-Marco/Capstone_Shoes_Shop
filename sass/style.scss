@@ -11,9 +11,126 @@ header {
     .navbar-brand {
     }
     .navbar-collapse {
-      .nav-item {
-        .nav-link {
+      .navbar-nav {
+        .nav-item {
+          .dropdown {
+            width: 100px;
+            &::before {
+              content: "";
+              position: absolute;
+              bottom: 0;
+              left: 25%;
+              width: 0;
+              height: 3px;
+              background: $main-color;
+              transition: $transition;
+            }
+            &:hover::before {
+              width: 50%;
+            }
+            &:hover .dropdown-menu {
+              display: block;
+            }
+            button {
+            }
+            .dropdown-menu {
+              width: 100%;
+              transition: $transition;
+            }
+          }
+          .active {
+            width: 150px;
+          }
         }
+      }
+      form {
+        i {
+          right: 10px;
+          top: 10px;
+          cursor: pointer;
+        }
+      }
+      .user {
+      }
+      .cart {
+      }
+      i {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.new_arrivals {
+  .row {
+    .new_arrivals_box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      // transition: $transition;
+      &:hover .box_content {
+        height: 0;
+        overflow: hidden;
+      }
+      &:hover .box_view_more {
+        height: 150px;
+      }
+      .box_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h2 {
+        }
+        h3 {
+          position: relative;
+          &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 1px;
+            width: 100%;
+            background-color: $main-color;
+          }
+        }
+      }
+      .box_view_more {
+        text-align: center;
+        height: 0;
+        overflow: hidden;
+        transition: $transition;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+    .new_arrivals_img {
+      position: relative;
+      overflow: hidden;
+      img {
+        height: 620px;
+        width: 100%;
+        object-fit: cover;
+        transition: $transition;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        top: 0;
+        left: -100%;
+        background-color: rgba(255, 255, 255, 0.15);
+        transform: skewX(-20deg);
+        transition: $transition;
+      }
+      &:hover img {
+        transform: scale(1.1, 1.1);
+      }
+      &:hover::after {
+        left: 150%;
       }
     }
   }
