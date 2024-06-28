@@ -12,6 +12,8 @@ header {
     }
     .navbar-collapse {
       .navbar-nav {
+        @media screen and (max-width: 992px) {
+        }
         .nav-item {
           .dropdown {
             width: 100px;
@@ -43,20 +45,31 @@ header {
           }
         }
       }
-      form {
-        i {
-          right: 10px;
-          top: 10px;
-          cursor: pointer;
-        }
+    }
+    form {
+      @media screen and (max-width: 992px) {
+        max-width: 250px;
+      }
+      @media screen and (max-width: 768px) {
+        max-width: 130px;
+      }
+      @media screen and (max-width: 576px) {
+        display: none;
+      }
+      input.form-control {
+      }
+      i {
+        right: 10px;
+        top: 10px;
+        cursor: pointer;
       }
       .user {
       }
       .cart {
       }
-      i {
-        font-size: 20px;
-      }
+    }
+    i {
+      font-size: 22px;
     }
   }
 }
@@ -114,6 +127,15 @@ header {
         width: 100%;
         object-fit: cover;
         transition: $transition;
+        @media screen and (max-width: 992px) {
+          max-height: 600px;
+        }
+        @media screen and (max-width: 768px) {
+          max-height: 520px;
+        }
+        @media screen and (max-width: 576px) {
+          max-height: 440px;
+        }
       }
       &::after {
         content: "";
@@ -132,6 +154,25 @@ header {
       &:hover::after {
         left: 150%;
       }
+    }
+    .new_arrivals_img:last-child {
+      @media screen and (max-width: 992px) {
+        display: none;
+      }
+    }
+  }
+}
+
+.video {
+  iframe {
+    @media screen and (max-width: 992px) {
+      max-height: 500px;
+    }
+    @media screen and (max-width: 768px) {
+      max-height: 400px;
+    }
+    @media screen and (max-width: 576px) {
+      max-height: 300px;
     }
   }
 }
