@@ -90,7 +90,7 @@ header {
           max-width: 240px;
         }
         @media screen and (max-width: 452px) {
-          max-width: 110px;
+          max-width: 120px;
         }
       }
       .fa-magnifying-glass {
@@ -107,9 +107,6 @@ header {
     .navbar-icon {
       .fa-user {
         margin-right: 10px;
-        @media screen and (max-width: 576px) {
-          margin-right: 4px;
-        }
       }
       .fa-cart-shopping {
       }
