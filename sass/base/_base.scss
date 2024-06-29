@@ -30,10 +30,16 @@ ul {
   font-style: normal;
   font-weight: 400;
   font-size: 54px;
+  @media screen and (max-width: 1140px) {
+    font-size: 50px;
+  }
   @media screen and (max-width: 992px) {
     font-size: 46px;
   }
   @media screen and (max-width: 768px) {
+    font-size: 42px;
+  }
+  @media screen and (max-width: 576px) {
     font-size: 38px;
   }
 }
