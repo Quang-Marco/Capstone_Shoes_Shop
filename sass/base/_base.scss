@@ -3,12 +3,55 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Helvetica Now Text", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 ul {
   list-style: none;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+.title {
+  font-family: "Nike Futura";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 54px;
+  @media screen and (max-width: 1140px) {
+    font-size: 50px;
+  }
+  @media screen and (max-width: 992px) {
+    font-size: 46px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 42px;
+  }
+  @media screen and (max-width: 576px) {
+    font-size: 38px;
+  }
+}
+
+.dropdown,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Helvetica Now Text Medium", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
 }

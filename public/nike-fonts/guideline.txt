@@ -1,0 +1,21 @@
+1. Link Import CSS:
+
+* <link>
+<link href="//asset/nike-fonts/nike_fonts.css" rel="stylesheet">
+* @import:
+<style>
+@import url('//asset/nike-fonts/nike_fonts.css');
+</style>
+
+2. Use stylesheet:
+
+.className {
+  font-family: "Helvetica Now Text", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.className {
+  font-family: "Helvetica Now Text Medium", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}

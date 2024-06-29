@@ -1,0 +1,194 @@
+@import "./base/base";
+@import "./helpers/variables";
+@import "./helpers/animations";
+@import "./helpers/mixins";
+@import "./themes/darkThemes";
+@import "./pages/detail";
+@import "./pages/register";
+
+header {
+  nav {
+    .navbar-brand {
+    }
+    .navbar-collapse {
+      .navbar-nav {
+        .nav-item {
+          .dropdown {
+            width: 100px;
+            @media screen and (max-width: 1140px) {
+              width: 87px;
+            }
+            &::before {
+              content: "";
+              position: absolute;
+              bottom: 0;
+              left: 25%;
+              width: 0;
+              height: 3px;
+              background: $main-color;
+              transition: $transition;
+            }
+            &:hover::before {
+              width: 50%;
+            }
+            &:hover .dropdown-menu {
+              display: block;
+            }
+            button {
+            }
+            .dropdown-menu {
+              width: 100%;
+              transition: $transition;
+            }
+          }
+          .active {
+            width: 150px;
+          }
+        }
+      }
+      form {
+        @media screen and (max-width: 1140px) {
+          display: none;
+        }
+        @media screen and (max-width: 768px) {
+          max-width: 140px;
+        }
+        @media screen and (max-width: 576px) {
+          display: none;
+        }
+        input.form-control {
+        }
+      }
+    }
+    .user {
+      .fa-magnifying-glass {
+        top: 0;
+        right: 50px;
+        cursor: pointer;
+        @media screen and (max-width: 1140px) {
+          right: 40px;
+        }
+        @media screen and (max-width: 576px) {
+          right: 30px;
+        }
+        @media screen and (max-width: 384px) {
+          display: none;
+        }
+      }
+    }
+    .cart {
+    }
+    i {
+      font-size: 22px;
+    }
+  }
+}
+
+.new_arrivals {
+  .row {
+    .new_arrivals_box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      // transition: $transition;
+      &:hover .box_content {
+        height: 0;
+        overflow: hidden;
+      }
+      &:hover .box_view_more {
+        height: 160px;
+        @media screen and (max-width: 992px) {
+          height: 200px;
+        }
+      }
+      .box_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h2 {
+        }
+        h3 {
+          position: relative;
+          &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 1px;
+            width: 100%;
+            background-color: $main-color;
+          }
+        }
+      }
+      .box_view_more {
+        text-align: center;
+        height: 0;
+        overflow: hidden;
+        transition: $transition;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+    .new_arrivals_img {
+      position: relative;
+      overflow: hidden;
+      img {
+        height: 620px;
+        width: 100%;
+        object-fit: cover;
+        transition: $transition;
+        @media screen and (max-width: 992px) {
+          max-height: 600px;
+        }
+        @media screen and (max-width: 768px) {
+          max-height: 520px;
+        }
+        @media screen and (max-width: 576px) {
+          max-height: 440px;
+        }
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        top: 0;
+        left: -100%;
+        background-color: rgba(255, 255, 255, 0.15);
+        transform: skewX(-20deg);
+        transition: $transition;
+      }
+      &:hover img {
+        transform: scale(1.1, 1.1);
+      }
+      &:hover::after {
+        left: 150%;
+      }
+    }
+    .new_arrivals_img:last-child {
+      @media screen and (max-width: 992px) {
+        display: none;
+      }
+      @media screen and (max-width: 768px) {
+        display: block;
+      }
+    }
+  }
+}
+
+.video {
+  iframe {
+    @media screen and (max-width: 992px) {
+      max-height: 500px;
+    }
+    @media screen and (max-width: 768px) {
+      max-height: 400px;
+    }
+    @media screen and (max-width: 576px) {
+      max-height: 300px;
+    }
+  }
+}
