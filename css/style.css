@@ -51,7 +51,7 @@ a {
 }
 #home_services .service_item:hover {
   transform: translateY(-30px);
-  transition: 0.5s;
+  transition: 0.7s;
 }
 
 #home_footer {
