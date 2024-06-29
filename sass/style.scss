@@ -8,78 +8,113 @@
 
 header {
   nav {
+    i {
+      font-size: 22px;
+    }
     .navbar-brand {
+      img {
+        @media screen and (max-width: 1200px) {
+          height: 70px;
+          width: 70px;
+        }
+        @media screen and (max-width: 992px) {
+          height: 60px;
+          width: 60px;
+        }
+        @media screen and (max-width: 768px) {
+          height: 50px;
+          width: 50px;
+        }
+        @media screen and (max-width: 576px) {
+          height: 40px;
+          width: 40px;
+        }
+      }
+      span {
+        @media screen and (max-width: 576px) {
+          display: none;
+        }
+      }
     }
     .navbar-collapse {
+      @media screen and (max-width: 992px) {
+        order: 1;
+      }
       .navbar-nav {
         .nav-item {
           .dropdown {
-            width: 100px;
-            @media screen and (max-width: 1140px) {
-              width: 87px;
+            transition: $transition;
+            button {
+              position: relative;
+              padding: 0;
+              margin: 0 20px;
+              @media screen and (max-width: 1200px) {
+                margin: 0 12px;
+              }
+              &::before {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 0;
+                height: 3px;
+                background: $main-color;
+                transition: $transition;
+              }
+              &:hover::before {
+                width: 100%;
+              }
             }
-            &::before {
-              content: "";
-              position: absolute;
-              bottom: 0;
-              left: 25%;
-              width: 0;
-              height: 3px;
-              background: $main-color;
+            .dropdown-menu {
               transition: $transition;
-            }
-            &:hover::before {
-              width: 50%;
             }
             &:hover .dropdown-menu {
               display: block;
             }
-            button {
-            }
-            .dropdown-menu {
-              width: 100%;
-              transition: $transition;
-            }
-          }
-          .active {
-            width: 150px;
           }
         }
       }
-      form {
-        @media screen and (max-width: 1140px) {
+    }
+    form {
+      input.form-control {
+        @media screen and (max-width: 1400px) {
           display: none;
+        }
+        @media screen and (max-width: 992px) {
+          display: block;
         }
         @media screen and (max-width: 768px) {
-          max-width: 140px;
+          max-width: 130px;
         }
         @media screen and (max-width: 576px) {
-          display: none;
+          max-width: 240px;
         }
-        input.form-control {
+        @media screen and (max-width: 452px) {
+          max-width: 110px;
         }
       }
-    }
-    .user {
       .fa-magnifying-glass {
-        top: 0;
-        right: 50px;
-        cursor: pointer;
-        @media screen and (max-width: 1140px) {
-          right: 40px;
+        top: 7px;
+        right: 12px;
+        @media screen and (max-width: 1400px) {
+          top: -12px;
         }
-        @media screen and (max-width: 576px) {
-          right: 30px;
-        }
-        @media screen and (max-width: 384px) {
-          display: none;
+        @media screen and (max-width: 992px) {
+          top: 7px;
         }
       }
     }
-    .cart {
+    .navbar-icon {
+      .fa-user {
+        margin-right: 10px;
+        @media screen and (max-width: 576px) {
+          margin-right: 4px;
+        }
+      }
+      .fa-cart-shopping {
+      }
     }
-    i {
-      font-size: 22px;
+    button {
     }
   }
 }
@@ -92,16 +127,6 @@ header {
       justify-content: center;
       align-items: center;
       // transition: $transition;
-      &:hover .box_content {
-        height: 0;
-        overflow: hidden;
-      }
-      &:hover .box_view_more {
-        height: 160px;
-        @media screen and (max-width: 992px) {
-          height: 200px;
-        }
-      }
       .box_content {
         display: flex;
         flex-direction: column;
@@ -131,24 +156,39 @@ header {
           opacity: 0.8;
         }
       }
+      &:hover .box_content {
+        height: 0;
+        opacity: 0;
+        overflow: hidden;
+      }
+      &:hover .box_view_more {
+        height: 180px;
+      }
     }
     .new_arrivals_img {
       position: relative;
+      height: 620px;
       overflow: hidden;
+      @media screen and (max-width: 1200px) {
+        height: 540px;
+      }
+      @media screen and (max-width: 992px) {
+        height: 460px;
+      }
+      @media screen and (max-width: 768px) {
+        height: 360px;
+      }
+      @media screen and (max-width: 576px) {
+        height: 500px;
+      }
+      @media screen and (max-width: 392px) {
+        height: 380px;
+      }
       img {
-        height: 620px;
+        height: 100%;
         width: 100%;
         object-fit: cover;
         transition: $transition;
-        @media screen and (max-width: 992px) {
-          max-height: 600px;
-        }
-        @media screen and (max-width: 768px) {
-          max-height: 520px;
-        }
-        @media screen and (max-width: 576px) {
-          max-height: 440px;
-        }
       }
       &::after {
         content: "";
@@ -166,14 +206,6 @@ header {
       }
       &:hover::after {
         left: 150%;
-      }
-    }
-    .new_arrivals_img:last-child {
-      @media screen and (max-width: 992px) {
-        display: none;
-      }
-      @media screen and (max-width: 768px) {
-        display: block;
       }
     }
   }
