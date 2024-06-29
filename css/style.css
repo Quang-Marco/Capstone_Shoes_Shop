@@ -30,12 +30,22 @@ ul {
   font-weight: 400;
   font-size: 54px;
 }
+@media screen and (max-width: 1140px) {
+  .title {
+    font-size: 50px;
+  }
+}
 @media screen and (max-width: 992px) {
   .title {
     font-size: 46px;
   }
 }
 @media screen and (max-width: 768px) {
+  .title {
+    font-size: 42px;
+  }
+}
+@media screen and (max-width: 576px) {
   .title {
     font-size: 38px;
   }
@@ -55,6 +65,11 @@ h6 {
 
 header nav .navbar-collapse .navbar-nav .nav-item .dropdown {
   width: 100px;
+}
+@media screen and (max-width: 1140px) {
+  header nav .navbar-collapse .navbar-nav .nav-item .dropdown {
+    width: 87px;
+  }
 }
 header nav .navbar-collapse .navbar-nav .nav-item .dropdown::before {
   content: "";
@@ -79,25 +94,40 @@ header nav .navbar-collapse .navbar-nav .nav-item .dropdown .dropdown-menu {
 header nav .navbar-collapse .navbar-nav .nav-item .active {
   width: 150px;
 }
-@media screen and (max-width: 992px) {
-  header nav form {
-    max-width: 250px;
-  }
-}
-@media screen and (max-width: 768px) {
-  header nav form {
-    max-width: 130px;
-  }
-}
-@media screen and (max-width: 576px) {
-  header nav form {
+@media screen and (max-width: 1140px) {
+  header nav .navbar-collapse form {
     display: none;
   }
 }
-header nav form i {
-  right: 10px;
-  top: 10px;
+@media screen and (max-width: 768px) {
+  header nav .navbar-collapse form {
+    max-width: 140px;
+  }
+}
+@media screen and (max-width: 576px) {
+  header nav .navbar-collapse form {
+    display: none;
+  }
+}
+header nav .user .fa-magnifying-glass {
+  top: 0;
+  right: 50px;
   cursor: pointer;
+}
+@media screen and (max-width: 1140px) {
+  header nav .user .fa-magnifying-glass {
+    right: 40px;
+  }
+}
+@media screen and (max-width: 576px) {
+  header nav .user .fa-magnifying-glass {
+    right: 30px;
+  }
+}
+@media screen and (max-width: 384px) {
+  header nav .user .fa-magnifying-glass {
+    display: none;
+  }
 }
 header nav i {
   font-size: 22px;
@@ -114,7 +144,12 @@ header nav i {
   overflow: hidden;
 }
 .new_arrivals .row .new_arrivals_box:hover .box_view_more {
-  height: 150px;
+  height: 160px;
+}
+@media screen and (max-width: 992px) {
+  .new_arrivals .row .new_arrivals_box:hover .box_view_more {
+    height: 200px;
+  }
 }
 .new_arrivals .row .new_arrivals_box .box_content {
   display: flex;
@@ -189,6 +224,11 @@ header nav i {
 @media screen and (max-width: 992px) {
   .new_arrivals .row .new_arrivals_img:last-child {
     display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .new_arrivals .row .new_arrivals_img:last-child {
+    display: block;
   }
 }
 
