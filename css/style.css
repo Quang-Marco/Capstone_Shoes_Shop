@@ -1,1 +1,146 @@
 /*# sourcesMappingURL=style.css.map */
+#home_services {
+  padding: 100px 0;
+}
+#home_services h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #222222;
+  line-height: 51px;
+}
+#home_services .service_item img {
+  width: 15%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+#home_services .service_item h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #222222;
+  margin: 30px 0 10px;
+}
+#home_services .service_item p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #505157;
+  margin: 0;
+  padding: 0 10px;
+  font-family: "Jost", sans-serif;
+}
+#home_services .service_item:hover img {
+  animation: leftRight 1s;
+}
+
+#home_footer {
+  background-color: black;
+  padding: 100px 0 40px;
+}
+#home_footer .footer_top {
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 70px;
+}
+#home_footer .footer_top h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 25px;
+}
+#home_footer .footer_top ul li {
+  margin: 0 0 16px;
+}
+#home_footer .footer_top ul li a {
+  font-size: 16px;
+  font-weight: 300;
+  color: white;
+  font-family: "Jost", sans-serif;
+  transition: all 0.5s;
+}
+#home_footer .footer_top ul li a:hover {
+  color: #2ed573;
+}
+#home_footer .footer_top p {
+  font-size: 16px;
+  font-weight: 300;
+  color: white;
+  font-family: "Jost", sans-serif;
+  margin-bottom: 35px;
+}
+#home_footer .footer_top form {
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#home_footer .footer_top form input {
+  width: 85%;
+  padding: 5px 0 5px 20px;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  color: #222222;
+  border: none;
+}
+#home_footer .footer_top form input:focus {
+  outline: none;
+}
+#home_footer .footer_top form i {
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  line-height: 48px;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.5s;
+  font-size: 18px;
+}
+#home_footer .footer_top form i:hover {
+  background-color: #2ed573;
+  color: white;
+}
+#home_footer .footer_top .footer_media {
+  margin: 35px;
+}
+#home_footer .footer_top .footer_media a {
+  margin: 0 10px;
+}
+#home_footer .footer_top .footer_media a i {
+  font-size: 14px;
+  color: white;
+  transition: all 0.5s;
+}
+#home_footer .footer_top .footer_media a i:hover {
+  color: #2ed573;
+}
+#home_footer .footer_bottom {
+  padding-top: 40px;
+}
+#home_footer .footer_bottom .col-lg-3 a span {
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  font-family: "Jost", sans-serif;
+  transition: all 0.5s;
+}
+#home_footer .footer_bottom .col-lg-3 a span:hover {
+  color: #2ed573;
+}
+#home_footer .footer_bottom .col-lg-3 a:nth-of-type(2) {
+  margin-left: 20px;
+}
+#home_footer .footer_bottom .col-lg-3 p {
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  font-family: "Jost", sans-serif;
+  margin: 0;
+}
+#home_footer .footer_bottom .col-lg-6 img {
+  max-width: 40px;
+  border-radius: 5px;
+  margin: 5px;
+}
+#home_footer .footer_bottom .col-lg-3 a span {
+  font-size: 16px;
+}
