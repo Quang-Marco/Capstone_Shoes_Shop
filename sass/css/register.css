@@ -182,12 +182,7 @@ h6 {
   width: 100%;
   height: 100vh;
   z-index: -1;
-  display: none;
-}
-@media (min-width: 768px) {
-  .video_bg {
-    display: inline-block;
-  }
+  overflow: hidden;
 }
 .video_bg::after {
   content: "";
@@ -199,25 +194,13 @@ h6 {
   height: 100%;
 }
 .video_bg video {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.img_bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url(../../public/image/keyboard.jpg) no-repeat center/cover;
-  z-index: -1;
-}
-@media (min-width: 768px) {
-  .img_bg {
-    display: none;
-  }
 }
 
 .register {
@@ -234,7 +217,7 @@ h6 {
 }
 .register .container form .mb-3 {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding-bottom: 15px;
   border-bottom: 1px solid white;
@@ -255,18 +238,19 @@ h6 {
 .register .container form .mb-3 .form-control::placeholder {
   color: white;
 }
-.register .container .remember_forgot {
+.register .container .remember_login {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.register .container .remember_forgot .form-check input {
+.register .container .remember_login .form-check input {
   cursor: pointer;
 }
-.register .container .remember_forgot .forgot a {
-  color: white;
+.register .container .remember_login .login a {
+  color: rgb(6, 246, 74);
+  font-size: 18px;
   transition: all 0.5s ease;
 }
-.register .container .remember_forgot .forgot a:hover {
-  color: rgb(6, 246, 74);
+.register .container .remember_login .login a:hover {
+  color: rgb(254, 85, 85);
 }/*# sourceMappingURL=register.css.map */

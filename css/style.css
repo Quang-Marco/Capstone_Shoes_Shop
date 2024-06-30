@@ -403,24 +403,39 @@ header nav .navbar-icon .fa-user {
 .banner {
   background-color: #000;
 }
-@media screen and (min-width: 992px) {
-  .banner {
-    height: 560px;
-  }
-}
-.banner #homeSlider .carousel-item {
+.banner #homeSlider .carousel-inner .carousel-item {
   background-repeat: no-repeat;
   background-size: contain;
 }
-.banner #homeSlider .carousel-item .carousel-pic .watermark {
+@media screen and (min-width: 320px) {
+  .banner #homeSlider .carousel-inner .carousel-item {
+    height: 710px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .banner #homeSlider .carousel-inner .carousel-item {
+    height: 770px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .banner #homeSlider .carousel-inner .carousel-item {
+    height: 500px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .banner #homeSlider .carousel-inner .carousel-item {
+    height: 560px;
+  }
+}
+.banner #homeSlider .carousel-inner .carousel-item .carousel-pic .watermark {
   position: absolute;
   text-transform: uppercase;
   opacity: 0.2;
 }
-.banner #homeSlider .carousel-item .carousel-pic img {
+.banner #homeSlider .carousel-inner .carousel-item .carousel-pic img {
   animation: picRotate 5s infinite;
 }
-.banner #homeSlider .carousel-item .carousel-caption {
+.banner #homeSlider .carousel-inner .carousel-item .carousel-caption {
   position: unset;
   right: unset;
   bottom: unset;
@@ -429,33 +444,33 @@ header nav .navbar-icon .fa-user {
   margin-top: 50px;
   margin-left: 20%;
 }
-.banner #homeSlider .carousel-item .carousel-caption .subTitle {
+.banner #homeSlider .carousel-inner .carousel-item .carousel-caption .subTitle {
   font-size: 24px;
   font-weight: 600;
   color: #fff;
   line-height: 1;
   margin-bottom: 0;
 }
-.banner #homeSlider .carousel-item .carousel-caption h2 {
+.banner #homeSlider .carousel-inner .carousel-item .carousel-caption h2 {
   font-size: 100px;
   font-weight: 900;
   color: #205d92;
   line-height: 1;
   margin-top: 0;
 }
-.banner #homeSlider .carousel-item .carousel-caption h2.nikeFuturaND {
+.banner #homeSlider .carousel-inner .carousel-item .carousel-caption h2.nikeFuturaND {
   font-size: 106px !important;
 }
-.banner #homeSlider .carousel-item .carousel-caption button {
+.banner #homeSlider .carousel-inner .carousel-item .carousel-caption button {
   border: solid 1px transparent;
 }
-.banner #homeSlider .carousel-item .carousel-caption.iOrange h2 {
+.banner #homeSlider .carousel-inner .carousel-item .carousel-caption.iOrange h2 {
   color: #ff7e22;
 }
-.banner #homeSlider .carousel-item .carousel-caption.iOrange h2.nikeFuturaND {
+.banner #homeSlider .carousel-inner .carousel-item .carousel-caption.iOrange h2.nikeFuturaND {
   color: #b50c0c !important;
 }
-.banner #homeSlider .carousel-item .carousel-caption.iOrange button {
+.banner #homeSlider .carousel-inner .carousel-item .carousel-caption.iOrange button {
   padding: 6px 50px;
   margin: 15px 10px 15px 0;
   border-radius: 30px;
@@ -470,19 +485,19 @@ header nav .navbar-icon .fa-user {
   transition: all 0.5s;
   cursor: pointer;
 }
-.banner #homeSlider .carousel-item .carousel-caption.iOrange button:hover {
+.banner #homeSlider .carousel-inner .carousel-item .carousel-caption.iOrange button:hover {
   color: #de411d;
   background-color: #fff;
   background-position: right center;
 }
-.banner #homeSlider .carousel-item .carousel-caption.iOrange button:hover {
+.banner #homeSlider .carousel-inner .carousel-item .carousel-caption.iOrange button:hover {
   box-shadow: #fca356 -10px 0px 30px, #fca356 10px 0px 30px;
   border-color: #fca356;
 }
-.banner #homeSlider .carousel-item .carousel-caption.iBlue h2 {
+.banner #homeSlider .carousel-inner .carousel-item .carousel-caption.iBlue h2 {
   color: #205d92;
 }
-.banner #homeSlider .carousel-item .carousel-caption.iBlue button {
+.banner #homeSlider .carousel-inner .carousel-item .carousel-caption.iBlue button {
   padding: 6px 50px;
   margin: 15px 10px 15px 0;
   border-radius: 30px;
@@ -497,19 +512,19 @@ header nav .navbar-icon .fa-user {
   transition: all 0.5s;
   cursor: pointer;
 }
-.banner #homeSlider .carousel-item .carousel-caption.iBlue button:hover {
+.banner #homeSlider .carousel-inner .carousel-item .carousel-caption.iBlue button:hover {
   color: #205d92;
   background-color: #fff;
   background-position: right center;
 }
-.banner #homeSlider .carousel-item .carousel-caption.iBlue button:hover {
+.banner #homeSlider .carousel-inner .carousel-item .carousel-caption.iBlue button:hover {
   box-shadow: #15bff1 -10px 0px 30px, #15bff1 10px 0px 30px;
   border-color: #15bff1;
 }
-.banner #homeSlider .carousel-item .carousel-caption.iRed h2 {
+.banner #homeSlider .carousel-inner .carousel-item .carousel-caption.iRed h2 {
   color: #790f1a;
 }
-.banner #homeSlider .carousel-item .carousel-caption.iRed button {
+.banner #homeSlider .carousel-inner .carousel-item .carousel-caption.iRed button {
   padding: 6px 50px;
   margin: 15px 10px 15px 0;
   border-radius: 30px;
@@ -524,19 +539,19 @@ header nav .navbar-icon .fa-user {
   transition: all 0.5s;
   cursor: pointer;
 }
-.banner #homeSlider .carousel-item .carousel-caption.iRed button:hover {
+.banner #homeSlider .carousel-inner .carousel-item .carousel-caption.iRed button:hover {
   color: #790f1a;
   background-color: #fff;
   background-position: right center;
 }
-.banner #homeSlider .carousel-item .carousel-caption.iRed button:hover {
+.banner #homeSlider .carousel-inner .carousel-item .carousel-caption.iRed button:hover {
   box-shadow: #e54757 -10px 0px 30px, #e54757 10px 0px 30px;
   border-color: #e54757;
 }
-.banner #homeSlider .carousel-item .carousel-caption.iVioletBlue h2 {
+.banner #homeSlider .carousel-inner .carousel-item .carousel-caption.iVioletBlue h2 {
   color: #3f3f90;
 }
-.banner #homeSlider .carousel-item .carousel-caption.iVioletBlue button {
+.banner #homeSlider .carousel-inner .carousel-item .carousel-caption.iVioletBlue button {
   padding: 6px 50px;
   margin: 15px 10px 15px 0;
   border-radius: 30px;
@@ -551,19 +566,19 @@ header nav .navbar-icon .fa-user {
   transition: all 0.5s;
   cursor: pointer;
 }
-.banner #homeSlider .carousel-item .carousel-caption.iVioletBlue button:hover {
+.banner #homeSlider .carousel-inner .carousel-item .carousel-caption.iVioletBlue button:hover {
   color: #3f3f90;
   background-color: #fff;
   background-position: right center;
 }
-.banner #homeSlider .carousel-item .carousel-caption.iVioletBlue button:hover {
+.banner #homeSlider .carousel-inner .carousel-item .carousel-caption.iVioletBlue button:hover {
   box-shadow: #7e65d8 -10px 0px 30px, #7e65d8 10px 0px 30px;
   border-color: #7e65d8;
 }
-.banner #homeSlider .carousel-item.left {
+.banner #homeSlider .carousel-inner .carousel-item.left {
   background-position: left top !important;
 }
-.banner #homeSlider .carousel-item.left .row .carousel-pic .watermark {
+.banner #homeSlider .carousel-inner .carousel-item.left .row .carousel-pic .watermark {
   top: 0px;
   line-height: 0.8;
   font-size: 115px;
@@ -571,7 +586,7 @@ header nav .navbar-icon .fa-user {
   color: #fff;
   line-height: 1;
 }
-.banner #homeSlider .carousel-item.left .row .carousel-pic .watermark span {
+.banner #homeSlider .carousel-inner .carousel-item.left .row .carousel-pic .watermark span {
   font-size: 200px;
   font-weight: 600;
   color: #fff;
@@ -580,7 +595,7 @@ header nav .navbar-icon .fa-user {
   margin-top: -20px;
 }
 @media screen and (max-width: 600px) {
-  .banner #homeSlider .carousel-item.left .row .carousel-pic .watermark {
+  .banner #homeSlider .carousel-inner .carousel-item.left .row .carousel-pic .watermark {
     transform: scale(50%);
     transform-origin: top left;
     margin-left: 0 !important;
@@ -588,20 +603,20 @@ header nav .navbar-icon .fa-user {
   }
 }
 @media screen and (max-width: 400px) {
-  .banner #homeSlider .carousel-item.left .row .carousel-pic .watermark {
+  .banner #homeSlider .carousel-inner .carousel-item.left .row .carousel-pic .watermark {
     display: none;
   }
 }
-.banner #homeSlider .carousel-item.left .row .carousel-caption {
+.banner #homeSlider .carousel-inner .carousel-item.left .row .carousel-caption {
   text-align: left;
 }
-.banner #homeSlider .carousel-item.left .row .carousel-caption h2 {
+.banner #homeSlider .carousel-inner .carousel-item.left .row .carousel-caption h2 {
   font-size: 75px;
 }
-.banner #homeSlider .carousel-item.right {
+.banner #homeSlider .carousel-inner .carousel-item.right {
   background-position: right top !important;
 }
-.banner #homeSlider .carousel-item.right .row .carousel-pic .watermark {
+.banner #homeSlider .carousel-inner .carousel-item.right .row .carousel-pic .watermark {
   top: 33vh;
   margin-left: 80px;
   font-size: 21vw;
@@ -609,55 +624,55 @@ header nav .navbar-icon .fa-user {
   color: #fff;
   line-height: 1;
 }
-.banner #homeSlider .carousel-item.right .row .carousel-caption {
+.banner #homeSlider .carousel-inner .carousel-item.right .row .carousel-caption {
   text-align: left;
 }
-.banner #homeSlider .carousel-item.right .row .carousel-caption h2 {
+.banner #homeSlider .carousel-inner .carousel-item.right .row .carousel-caption h2 {
   font-size: 100px;
 }
 @media screen and (max-width: 991.98px) {
-  .banner #homeSlider .carousel-item {
+  .banner #homeSlider .carousel-inner .carousel-item {
     background-size: cover;
   }
-  .banner #homeSlider .carousel-item .carousel-caption {
+  .banner #homeSlider .carousel-inner .carousel-item .carousel-caption {
     margin-left: 20px !important;
   }
-  .banner #homeSlider .carousel-item .carousel-caption h2.nikeFuturaND {
+  .banner #homeSlider .carousel-inner .carousel-item .carousel-caption h2.nikeFuturaND {
     font-size: 95px !important;
   }
-  .banner #homeSlider .carousel-item.left {
+  .banner #homeSlider .carousel-inner .carousel-item.left {
     background-position: left top !important;
   }
-  .banner #homeSlider .carousel-item.left .row .carousel-pic .watermark {
+  .banner #homeSlider .carousel-inner .carousel-item.left .row .carousel-pic .watermark {
     transform: scale(75%);
     transform-origin: top left;
   }
-  .banner #homeSlider .carousel-item.left .row .carousel-caption {
+  .banner #homeSlider .carousel-inner .carousel-item.left .row .carousel-caption {
     width: 100%;
   }
-  .banner #homeSlider .carousel-item.left .row .carousel-caption .subTitle {
+  .banner #homeSlider .carousel-inner .carousel-item.left .row .carousel-caption .subTitle {
     font-size: 20px;
   }
-  .banner #homeSlider .carousel-item.left .row .carousel-caption h2 {
+  .banner #homeSlider .carousel-inner .carousel-item.left .row .carousel-caption h2 {
     font-size: 50px;
   }
-  .banner #homeSlider .carousel-item.right .row .carousel-pic .watermark {
+  .banner #homeSlider .carousel-inner .carousel-item.right .row .carousel-pic .watermark {
     top: 19vh;
     margin-left: 30px;
   }
 }
 @media screen and (max-width: 767.98px) {
-  .banner #homeSlider .carousel-item .carousel-caption {
+  .banner #homeSlider .carousel-inner .carousel-item .carousel-caption {
     text-align: center !important;
     margin: -30px 0 20px !important;
     width: unset;
   }
-  .banner #homeSlider .carousel-item.right .row .carousel-pic .watermark {
+  .banner #homeSlider .carousel-inner .carousel-item.right .row .carousel-pic .watermark {
     display: none;
   }
 }
 @media screen and (max-width: 600px) {
-  .banner #homeSlider .carousel-item.left .row .carousel-pic .watermark {
+  .banner #homeSlider .carousel-inner .carousel-item.left .row .carousel-pic .watermark {
     transform: scale(50%);
     transform-origin: top left;
     margin-left: 0 !important;
@@ -665,9 +680,41 @@ header nav .navbar-icon .fa-user {
   }
 }
 @media screen and (max-width: 400px) {
-  .banner #homeSlider .carousel-item.left .row .carousel-pic .watermark {
+  .banner #homeSlider .carousel-inner .carousel-item.left .row .carousel-pic .watermark {
     display: none;
   }
 }
+.banner #homeSlider .carousel_arrow {
+  display: none;
+}
+.banner #homeSlider:hover .carousel_arrow {
+  display: flex;
+}
 
-/**=== end devCong ===**//*# sourceMappingURL=style.css.map */
+/**=== end devCong ===**/
+.backToTop {
+  width: 50px;
+  height: 50px;
+  background: #f55f8d;
+  border-radius: 8px;
+  line-height: 50px;
+  text-align: center;
+  display: block;
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  color: white;
+  transition: all 0.2s;
+  box-shadow: -4px 4px 24px -10px #f55f8d;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.cd-top--is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.cd-top--fade-out {
+  opacity: 0.5;
+}/*# sourceMappingURL=style.css.map */
