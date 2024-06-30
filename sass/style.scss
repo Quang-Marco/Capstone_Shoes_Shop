@@ -3,18 +3,213 @@
 @import "./helpers/animations";
 @import "./helpers/mixins";
 @import "./themes/darkThemes";
-@import "./pages/detail";
-@import "./pages/register";
 
 header {
   nav {
-    .navbar-brand {
+    i {
+      font-size: 22px;
     }
-    .navbar-collapse {
-      .nav-item {
-        .nav-link {
+    .navbar-brand {
+      img {
+        @media screen and (max-width: 1200px) {
+          height: 70px;
+          width: 70px;
+        }
+        @media screen and (max-width: 992px) {
+          height: 60px;
+          width: 60px;
+        }
+        @media screen and (max-width: 768px) {
+          height: 50px;
+          width: 50px;
+        }
+        @media screen and (max-width: 576px) {
+          height: 40px;
+          width: 40px;
         }
       }
+      span {
+        @media screen and (max-width: 576px) {
+          display: none;
+        }
+      }
+    }
+    .navbar-collapse {
+      @media screen and (max-width: 992px) {
+        order: 1;
+      }
+      .navbar-nav {
+        .nav-item {
+          .dropdown {
+            transition: $transition;
+            button {
+              position: relative;
+              padding: 0;
+              margin: 0 20px;
+              @media screen and (max-width: 1200px) {
+                margin: 0 12px;
+              }
+              &::before {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 0;
+                height: 3px;
+                background: $main-color;
+                transition: $transition;
+              }
+              &:hover::before {
+                width: 100%;
+              }
+            }
+            .dropdown-menu {
+              transition: $transition;
+            }
+            &:hover .dropdown-menu {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+    form {
+      input.form-control {
+        @media screen and (max-width: 1400px) {
+          display: none;
+        }
+        @media screen and (max-width: 992px) {
+          display: block;
+        }
+        @media screen and (max-width: 768px) {
+          max-width: 130px;
+        }
+        @media screen and (max-width: 576px) {
+          max-width: 240px;
+        }
+        @media screen and (max-width: 452px) {
+          max-width: 120px;
+        }
+      }
+      .fa-magnifying-glass {
+        top: 7px;
+        right: 12px;
+        @media screen and (max-width: 1400px) {
+          top: -12px;
+        }
+        @media screen and (max-width: 992px) {
+          top: 7px;
+        }
+      }
+    }
+    .navbar-icon {
+      .fa-user {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.new_arrivals {
+  .row {
+    .new_arrivals_box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      // transition: $transition;
+      .box_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h3 {
+          position: relative;
+          &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 1px;
+            width: 100%;
+            background-color: $main-color;
+          }
+        }
+      }
+      .box_view_more {
+        text-align: center;
+        height: 0;
+        overflow: hidden;
+        transition: $transition;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+      &:hover .box_content {
+        height: 0;
+        opacity: 0;
+        overflow: hidden;
+      }
+      &:hover .box_view_more {
+        height: 180px;
+      }
+    }
+    .new_arrivals_img {
+      position: relative;
+      height: 620px;
+      overflow: hidden;
+      @media screen and (max-width: 1200px) {
+        height: 540px;
+      }
+      @media screen and (max-width: 992px) {
+        height: 460px;
+      }
+      @media screen and (max-width: 768px) {
+        height: 360px;
+      }
+      @media screen and (max-width: 576px) {
+        height: 500px;
+      }
+      @media screen and (max-width: 392px) {
+        height: 380px;
+      }
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transition: $transition;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        top: 0;
+        left: -100%;
+        background-color: rgba(255, 255, 255, 0.15);
+        transform: skewX(-20deg);
+        transition: $transition;
+      }
+      &:hover img {
+        transform: scale(1.1, 1.1);
+      }
+      &:hover::after {
+        left: 150%;
+      }
+    }
+  }
+}
+
+.index_video {
+  iframe {
+    @media screen and (max-width: 992px) {
+      max-height: 500px;
+    }
+    @media screen and (max-width: 768px) {
+      max-height: 400px;
+    }
+    @media screen and (max-width: 576px) {
+      max-height: 300px;
     }
   }
 }

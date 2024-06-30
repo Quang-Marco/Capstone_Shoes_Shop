@@ -8,17 +8,44 @@
   font-weight: 400;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 a {
   text-decoration: none;
+  color: black;
 }
 
 ul {
   list-style: none;
 }
 
-.title,
-.nav-link,
-button,
+i {
+  cursor: pointer;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+.title {
+  font-family: "Nike Futura";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  @media screen and (max-width: 1200px) {
+    font-size: 42px;
+  }
+  @media screen and (max-width: 992px) {
+    font-size: 38px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 32px;
+  }
+}
+
+.dropdown,
 h1,
 h2,
 h3,
