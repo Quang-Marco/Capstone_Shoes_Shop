@@ -44,9 +44,317 @@
 
     <!-- Style CSS -->
     <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Register CSS -->
+    <link rel="stylesheet" href="sass/css/register.css" />
   </head>
 
-  <body>
+  <body class="position-relative">
+    <!-- HEADER -->
+    <header class="container">
+      <nav class="navbar navbar-expand-lg py-4">
+        <div class="container-fluid">
+          <a class="navbar-brand title me-0" href="index.html">
+            <img src="public/image/logo.png" alt="Logo" />
+            <span class="title">KICKS HAVEN</span>
+          </a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <!-- <a class="nav-link" href="#">New & Featured</a> -->
+                <div class="dropdown">
+                  <button
+                    class="btn btn-close-white w-100"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Featured
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#">New Arrivals</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">New Releases</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Latest Shoes</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <!-- <a class="nav-link" href="#">Men</a> -->
+                <div class="dropdown">
+                  <button
+                    class="btn btn-close-white w-100"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Men
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#">All Shoes</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Lifestyle</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Running</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Gym and Training</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Football</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Basketball</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <!-- <a class="nav-link" href="#">Women</a> -->
+                <div class="dropdown">
+                  <button
+                    class="btn btn-close-white w-100"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Women
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#">All Shoes</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Lifestyle</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Running</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Gym and Training</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Football</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Basketball</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <!-- <a class="nav-link" href="#">Kids</a> -->
+                <div class="dropdown">
+                  <button
+                    class="btn btn-close-white w-100"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Kids
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#">All Shoes</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Boys</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Girls</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Lifestyle</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Running</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Football</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Basketball</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <!-- <a class="nav-link" href="#">Brands</a> -->
+                <div class="dropdown">
+                  <button
+                    class="btn btn-close-white w-100"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Brands
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#">Nike</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Adidas</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Converse</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Vans</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <!-- <a class="nav-link" href="#">Sale Off</a> -->
+                <div class="dropdown">
+                  <button
+                    class="btn btn-close-white w-100"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Sale Off
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#">All Sale</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">10%</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">20%</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">30%</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">40%</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">50%</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <form class="d-flex position-relative" role="search">
+            <input
+              class="form-control"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <i class="fa-solid fa-magnifying-glass position-absolute"></i>
+          </form>
+          <div class="navbar-icon ms-lg-3 ms-md-2 ms-sm-1 ms-0">
+            <a href="register.html"><i class="fa-regular fa-user"></i></a>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+          <button
+            class="navbar-toggler ms-1"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- VIDEO BACKGROUND -->
+    <div class="video_bg">
+      <video src="public/video/keyboard.mp4" autoplay loop muted></video>
+    </div>
+
+    <!-- IMAGE BACKGROUND -->
+    <div class="img_bg"></div>
+
+    <!-- ACCOUNT -->
+    <section class="login pb-4">
+      <div class="container">
+        <h2 class="title text-center pb-3">Register</h2>
+        <div class="row justify-content-around">
+          <form class="col-md-6 text" action="#">
+            <div class="mb-3">
+              <i class="fa-solid fa-user"></i>
+              <input
+                type="text"
+                class="form-control"
+                id="firstName"
+                aria-describedby="helpId"
+                placeholder="Full name"
+              />
+            </div>
+            <div class="mb-3">
+              <i class="fa-regular fa-user"></i>
+              <input
+                type="text"
+                class="form-control"
+                id="userName"
+                aria-describedby="helpId"
+                placeholder="User name"
+              />
+            </div>
+            <div class="mb-3">
+              <i class="fa-solid fa-lock"></i>
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                aria-describedby="helpId"
+                placeholder="Password"
+              />
+            </div>
+            <div class="mb-3">
+              <i class="fa-regular fa-envelope"></i>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                aria-describedby="helpId"
+                placeholder="Email"
+              />
+            </div>
+            <div class="mb-3">
+              <i class="fa-solid fa-phone"></i>
+              <input
+                type="tel"
+                class="form-control"
+                id="phoneNumber"
+                aria-describedby="helpId"
+                placeholder="Phone number"
+              />
+            </div>
+            <div class="remember_forgot py-4">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" />
+                <label class="form-check-label" for=""> Remember Me </label>
+              </div>
+              <div class="forgot">
+                <a href="#">Forgot Password?</a>
+              </div>
+            </div>
+            <button class="btn btn-danger w-100 py-2">Sign Up</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
     <!-- Bootstrap JavaScript Libraries -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -59,5 +367,8 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Register JS -->
+    <script src="src/controllers/register.js"></script>
   </body>
 </html>
