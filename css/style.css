@@ -403,6 +403,11 @@ header nav .navbar-icon .fa-user {
 .banner {
   background-color: #000;
 }
+@media screen and (min-width: 992px) {
+  .banner {
+    height: 560px;
+  }
+}
 .banner #homeSlider .carousel-item {
   background-repeat: no-repeat;
   background-size: contain;
