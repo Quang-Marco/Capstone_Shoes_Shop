@@ -175,12 +175,231 @@ h6 {
     transform: translateX(0);
   }
 }
-/**=== Banner (devCong) ===**/
-header {
-  height: 140px;
-  background-color: #ccc;
+header nav i {
+  font-size: 22px;
+}
+@media screen and (max-width: 1200px) {
+  header nav .navbar-brand img {
+    height: 70px;
+    width: 70px;
+  }
+}
+@media screen and (max-width: 992px) {
+  header nav .navbar-brand img {
+    height: 60px;
+    width: 60px;
+  }
+}
+@media screen and (max-width: 768px) {
+  header nav .navbar-brand img {
+    height: 50px;
+    width: 50px;
+  }
+}
+@media screen and (max-width: 576px) {
+  header nav .navbar-brand img {
+    height: 40px;
+    width: 40px;
+  }
+}
+@media screen and (max-width: 576px) {
+  header nav .navbar-brand span {
+    display: none;
+  }
+}
+@media screen and (max-width: 992px) {
+  header nav .navbar-collapse {
+    order: 1;
+  }
+}
+header nav .navbar-collapse .navbar-nav .nav-item .dropdown {
+  transition: all 0.5s ease;
+}
+header nav .navbar-collapse .navbar-nav .nav-item .dropdown button {
+  position: relative;
+  padding: 0;
+  margin: 0 20px;
+}
+@media screen and (max-width: 1200px) {
+  header nav .navbar-collapse .navbar-nav .nav-item .dropdown button {
+    margin: 0 12px;
+  }
+}
+header nav .navbar-collapse .navbar-nav .nav-item .dropdown button::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: #000;
+  transition: all 0.5s ease;
+}
+header nav .navbar-collapse .navbar-nav .nav-item .dropdown button:hover::before {
+  width: 100%;
+}
+header nav .navbar-collapse .navbar-nav .nav-item .dropdown .dropdown-menu {
+  transition: all 0.5s ease;
+}
+header nav .navbar-collapse .navbar-nav .nav-item .dropdown:hover .dropdown-menu {
+  display: block;
+}
+@media screen and (max-width: 1400px) {
+  header nav form input.form-control {
+    display: none;
+  }
+}
+@media screen and (max-width: 992px) {
+  header nav form input.form-control {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  header nav form input.form-control {
+    max-width: 130px;
+  }
+}
+@media screen and (max-width: 576px) {
+  header nav form input.form-control {
+    max-width: 240px;
+  }
+}
+@media screen and (max-width: 452px) {
+  header nav form input.form-control {
+    max-width: 120px;
+  }
+}
+header nav form .fa-magnifying-glass {
+  top: 7px;
+  right: 12px;
+}
+@media screen and (max-width: 1400px) {
+  header nav form .fa-magnifying-glass {
+    top: -12px;
+  }
+}
+@media screen and (max-width: 992px) {
+  header nav form .fa-magnifying-glass {
+    top: 7px;
+  }
+}
+header nav .navbar-icon .fa-user {
+  margin-right: 10px;
 }
 
+.new_arrivals .row .new_arrivals_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.new_arrivals .row .new_arrivals_box .box_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.new_arrivals .row .new_arrivals_box .box_content h3 {
+  position: relative;
+}
+.new_arrivals .row .new_arrivals_box .box_content h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 1px;
+  width: 100%;
+  background-color: #000;
+}
+.new_arrivals .row .new_arrivals_box .box_view_more {
+  text-align: center;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+.new_arrivals .row .new_arrivals_box .box_view_more:hover {
+  opacity: 0.8;
+}
+.new_arrivals .row .new_arrivals_box:hover .box_content {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+.new_arrivals .row .new_arrivals_box:hover .box_view_more {
+  height: 180px;
+}
+.new_arrivals .row .new_arrivals_img {
+  position: relative;
+  height: 620px;
+  overflow: hidden;
+}
+@media screen and (max-width: 1200px) {
+  .new_arrivals .row .new_arrivals_img {
+    height: 540px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .new_arrivals .row .new_arrivals_img {
+    height: 460px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .new_arrivals .row .new_arrivals_img {
+    height: 360px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .new_arrivals .row .new_arrivals_img {
+    height: 500px;
+  }
+}
+@media screen and (max-width: 392px) {
+  .new_arrivals .row .new_arrivals_img {
+    height: 380px;
+  }
+}
+.new_arrivals .row .new_arrivals_img img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.5s ease;
+}
+.new_arrivals .row .new_arrivals_img::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: -100%;
+  background-color: rgba(255, 255, 255, 0.15);
+  transform: skewX(-20deg);
+  transition: all 0.5s ease;
+}
+.new_arrivals .row .new_arrivals_img:hover img {
+  transform: scale(1.1, 1.1);
+}
+.new_arrivals .row .new_arrivals_img:hover::after {
+  left: 150%;
+}
+
+@media screen and (max-width: 992px) {
+  .index_video iframe {
+    max-height: 500px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .index_video iframe {
+    max-height: 400px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .index_video iframe {
+    max-height: 300px;
+  }
+}
+
+/**=== Banner (devCong) ===**/
 .banner {
   background-color: #000;
 }
@@ -447,227 +666,3 @@ header {
 }
 
 /**=== end devCong ===**//*# sourceMappingURL=style.css.map */
-
-header nav i {
-  font-size: 22px;
-}
-@media screen and (max-width: 1200px) {
-  header nav .navbar-brand img {
-    height: 70px;
-    width: 70px;
-  }
-}
-@media screen and (max-width: 992px) {
-  header nav .navbar-brand img {
-    height: 60px;
-    width: 60px;
-  }
-}
-@media screen and (max-width: 768px) {
-  header nav .navbar-brand img {
-    height: 50px;
-    width: 50px;
-  }
-}
-@media screen and (max-width: 576px) {
-  header nav .navbar-brand img {
-    height: 40px;
-    width: 40px;
-  }
-}
-@media screen and (max-width: 576px) {
-  header nav .navbar-brand span {
-    display: none;
-  }
-}
-@media screen and (max-width: 992px) {
-  header nav .navbar-collapse {
-    order: 1;
-  }
-}
-header nav .navbar-collapse .navbar-nav .nav-item .dropdown {
-  transition: all 0.5s ease;
-}
-header nav .navbar-collapse .navbar-nav .nav-item .dropdown button {
-  position: relative;
-  padding: 0;
-  margin: 0 20px;
-}
-@media screen and (max-width: 1200px) {
-  header nav .navbar-collapse .navbar-nav .nav-item .dropdown button {
-    margin: 0 12px;
-  }
-}
-header nav .navbar-collapse .navbar-nav .nav-item .dropdown button::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 3px;
-  background: #000;
-  transition: all 0.5s ease;
-}
-header nav .navbar-collapse .navbar-nav .nav-item .dropdown button:hover::before {
-  width: 100%;
-}
-header nav .navbar-collapse .navbar-nav .nav-item .dropdown .dropdown-menu {
-  transition: all 0.5s ease;
-}
-header nav .navbar-collapse .navbar-nav .nav-item .dropdown:hover .dropdown-menu {
-  display: block;
-}
-@media screen and (max-width: 1400px) {
-  header nav form input.form-control {
-    display: none;
-  }
-}
-@media screen and (max-width: 992px) {
-  header nav form input.form-control {
-    display: block;
-  }
-}
-@media screen and (max-width: 768px) {
-  header nav form input.form-control {
-    max-width: 130px;
-  }
-}
-@media screen and (max-width: 576px) {
-  header nav form input.form-control {
-    max-width: 240px;
-  }
-}
-@media screen and (max-width: 452px) {
-  header nav form input.form-control {
-    max-width: 120px;
-  }
-}
-header nav form .fa-magnifying-glass {
-  top: 7px;
-  right: 12px;
-}
-@media screen and (max-width: 1400px) {
-  header nav form .fa-magnifying-glass {
-    top: -12px;
-  }
-}
-@media screen and (max-width: 992px) {
-  header nav form .fa-magnifying-glass {
-    top: 7px;
-  }
-}
-header nav .navbar-icon .fa-user {
-  margin-right: 10px;
-}
-
-.new_arrivals .row .new_arrivals_box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.new_arrivals .row .new_arrivals_box .box_content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.new_arrivals .row .new_arrivals_box .box_content h3 {
-  position: relative;
-}
-.new_arrivals .row .new_arrivals_box .box_content h3::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 1px;
-  width: 100%;
-  background-color: #000;
-}
-.new_arrivals .row .new_arrivals_box .box_view_more {
-  text-align: center;
-  height: 0;
-  overflow: hidden;
-  transition: all 0.5s ease;
-}
-.new_arrivals .row .new_arrivals_box .box_view_more:hover {
-  opacity: 0.8;
-}
-.new_arrivals .row .new_arrivals_box:hover .box_content {
-  height: 0;
-  opacity: 0;
-  overflow: hidden;
-}
-.new_arrivals .row .new_arrivals_box:hover .box_view_more {
-  height: 180px;
-}
-.new_arrivals .row .new_arrivals_img {
-  position: relative;
-  height: 620px;
-  overflow: hidden;
-}
-@media screen and (max-width: 1200px) {
-  .new_arrivals .row .new_arrivals_img {
-    height: 540px;
-  }
-}
-@media screen and (max-width: 992px) {
-  .new_arrivals .row .new_arrivals_img {
-    height: 460px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .new_arrivals .row .new_arrivals_img {
-    height: 360px;
-  }
-}
-@media screen and (max-width: 576px) {
-  .new_arrivals .row .new_arrivals_img {
-    height: 500px;
-  }
-}
-@media screen and (max-width: 392px) {
-  .new_arrivals .row .new_arrivals_img {
-    height: 380px;
-  }
-}
-.new_arrivals .row .new_arrivals_img img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  transition: all 0.5s ease;
-}
-.new_arrivals .row .new_arrivals_img::after {
-  content: "";
-  position: absolute;
-  width: 50%;
-  height: 100%;
-  top: 0;
-  left: -100%;
-  background-color: rgba(255, 255, 255, 0.15);
-  transform: skewX(-20deg);
-  transition: all 0.5s ease;
-}
-.new_arrivals .row .new_arrivals_img:hover img {
-  transform: scale(1.1, 1.1);
-}
-.new_arrivals .row .new_arrivals_img:hover::after {
-  left: 150%;
-}
-
-@media screen and (max-width: 992px) {
-  .index_video iframe {
-    max-height: 500px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .index_video iframe {
-    max-height: 400px;
-  }
-}
-@media screen and (max-width: 576px) {
-  .index_video iframe {
-    max-height: 300px;
-  }
-}/*# sourceMappingURL=style.css.map */
