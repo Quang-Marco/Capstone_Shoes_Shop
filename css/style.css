@@ -173,6 +173,7 @@ header nav form .fa-magnifying-glass {
 header nav .navbar-icon .fa-user {
   margin-right: 10px;
 }
+
 .new_arrivals .row .new_arrivals_box {
   display: flex;
   flex-direction: column;
@@ -270,17 +271,17 @@ header nav .navbar-icon .fa-user {
 }
 
 @media screen and (max-width: 992px) {
-  .video iframe {
+  .index_video iframe {
     max-height: 500px;
   }
 }
 @media screen and (max-width: 768px) {
-  .video iframe {
+  .index_video iframe {
     max-height: 400px;
   }
 }
 @media screen and (max-width: 576px) {
-  .video iframe {
+  .index_video iframe {
     max-height: 300px;
   }
 }/*# sourceMappingURL=style.css.map */

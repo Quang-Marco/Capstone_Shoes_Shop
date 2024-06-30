@@ -3,8 +3,6 @@
 @import "./helpers/animations";
 @import "./helpers/mixins";
 @import "./themes/darkThemes";
-@import "./pages/detail";
-@import "./pages/register";
 
 header {
   nav {
@@ -108,10 +106,6 @@ header {
       .fa-user {
         margin-right: 10px;
       }
-      .fa-cart-shopping {
-      }
-    }
-    button {
     }
   }
 }
@@ -129,8 +123,6 @@ header {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        h2 {
-        }
         h3 {
           position: relative;
           &::after {
@@ -208,7 +200,7 @@ header {
   }
 }
 
-.video {
+.index_video {
   iframe {
     @media screen and (max-width: 992px) {
       max-height: 500px;
