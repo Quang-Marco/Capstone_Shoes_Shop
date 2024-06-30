@@ -62,6 +62,119 @@ h6 {
   font-weight: 400;
 }
 
+.nikeFuturaND {
+  font-family: "Nike Futura ND";
+  font-style: italic;
+}
+
+.fs-xs {
+  font-size: 10px !important;
+}
+
+.fs-sm {
+  font-size: 12px !important;
+}
+
+.fs-base {
+  font-size: 16px !important;
+}
+
+.fs-lg {
+  font-size: 20px !important;
+}
+
+.fs-xl {
+  font-size: 24px !important;
+}
+
+.fs-xxl {
+  font-size: 28px !important;
+}
+
+.fs-slide {
+  font-size: 100px !important;
+}
+
+.fs-slide-lg {
+  font-size: 150px !important;
+}
+
+.fs-slide-sm {
+  font-size: 80px !important;
+}
+
+.ms-n4 {
+  margin-left: -2.5rem !important;
+}
+
+.ms-n5 {
+  margin-left: -3rem !important;
+}
+
+.ms-n6 {
+  margin-left: -4rem !important;
+}
+
+.ms-n7 {
+  margin-left: -6rem !important;
+}
+
+.mt-6 {
+  margin-top: 4rem !important;
+}
+
+.mt-7 {
+  margin-top: 5rem !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+@keyframes picRotate {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(3deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-3deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes leftRight {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(10px);
+  }
+  40% {
+    transform: translateX(-8px);
+  }
+  60% {
+    transform: translateX(6px);
+  }
+  80% {
+    transform: translateX(-4px);
+  }
+  90% {
+    transform: translateX(2px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 .video_bg {
   position: absolute;
   top: 0;

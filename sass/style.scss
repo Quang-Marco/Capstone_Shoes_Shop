@@ -215,14 +215,12 @@ header {
 }
 
 /**=== Banner (devCong) ===**/
-// chỉnh tạm header height
-header {
-  height: 140px;
-  background-color: #ccc;
-}
 
 .banner {
   background-color: $main-color;
+  @media screen and (min-width: 992px) {
+    height: 560px;
+  }
   #homeSlider {
     .carousel-item {
       // height: 80vh;
