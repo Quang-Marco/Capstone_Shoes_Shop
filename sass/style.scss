@@ -213,3 +213,292 @@ header {
     }
   }
 }
+
+/**=== Banner (devCong) ===**/
+// chỉnh tạm header height
+header {
+  height: 140px;
+  background-color: #ccc;
+}
+
+.banner {
+  background-color: $main-color;
+  #homeSlider {
+    .carousel-item {
+      // height: 80vh;
+      background-repeat: no-repeat;
+      background-size: contain;
+      .carousel-pic {
+        .watermark {
+          position: absolute;
+          text-transform: uppercase;
+          opacity: 0.2;
+        }
+        img {
+          animation: picRotate 5s infinite;
+        }
+      }
+
+      .carousel-caption {
+        position: unset;
+        right: unset;
+        bottom: unset;
+        left: unset;
+        width: 75%;
+        margin-top: 50px;
+        margin-left: 20%;
+
+        .subTitle {
+          @include styleText($white, $fs-xl, 600);
+          margin-bottom: 0;
+        }
+        h2 {
+          @include styleText($blue-dark, $fs-slide, 900);
+          margin-top: 0;
+          &.nikeFuturaND {
+            font-size: 106px !important;
+          }
+        }
+        p {
+        }
+        button {
+          border: solid 1px transparent;
+        }
+
+        &.iOrange {
+          h2 {
+            color: $highlight-color;
+            &.nikeFuturaND {
+              color: #b50c0c !important;
+            }
+          }
+          p {
+          }
+          button {
+            @include styleButton($white, $orange-bold);
+            &:hover {
+              box-shadow: $orange-light -10px 0px 30px,
+                $orange-light 10px 0px 30px;
+              border-color: $orange-light;
+            }
+          }
+        }
+        &.iBlue {
+          h2 {
+            color: $blue-dark;
+          }
+          button {
+            @include styleButton($white, $blue-dark);
+            &:hover {
+              box-shadow: $cyan -10px 0px 30px, $cyan 10px 0px 30px;
+              border-color: $cyan;
+            }
+          }
+        }
+        &.iRed {
+          h2 {
+            color: $red-dark;
+          }
+          button {
+            @include styleButton($white, $red-dark);
+            &:hover {
+              box-shadow: $red-light -10px 0px 30px, $red-light 10px 0px 30px;
+              border-color: $red-light;
+            }
+          }
+        }
+        &.iVioletBlue {
+          h2 {
+            color: $violetBlue;
+          }
+          button {
+            @include styleButton($white, $violetBlue);
+            &:hover {
+              box-shadow: $violetBlue-light -10px 0px 30px,
+                $violetBlue-light 10px 0px 30px;
+              border-color: $violetBlue-light;
+            }
+          }
+        }
+      }
+
+      &.left {
+        background-position: left top !important;
+        .row {
+          .carousel-pic {
+            .watermark {
+              top: 0px;
+              line-height: 0.8;
+              @include styleText($white, $fs-slide * 1.15, 600);
+              span {
+                @include styleText($white, $fs-slide * 2, 600);
+                display: inline-block;
+                margin-top: -20px;
+              }
+
+              @media screen and (max-width: 600px) {
+                transform: scale(50%);
+                transform-origin: top left;
+                margin-left: 0 !important;
+                margin-top: 5vw !important;
+              }
+              @media screen and (max-width: 400px) {
+                display: none;
+              }
+            }
+            img {
+            }
+          }
+          .carousel-caption {
+            text-align: left;
+
+            .subTitle {
+            }
+            h2 {
+              font-size: $fs-slide * 0.75;
+            }
+          }
+        }
+      }
+
+      &.right {
+        background-position: right top !important;
+
+        .row {
+          // flex-direction: row-reverse;
+
+          .carousel-pic {
+            .watermark {
+              top: 33vh;
+              margin-left: 80px;
+              @include styleText($white, 21vw, 600);
+            }
+          }
+          .carousel-caption {
+            text-align: left;
+            h2 {
+              font-size: $fs-slide;
+            }
+          }
+        }
+      }
+      // =============== responsive carousel item ================
+      @media screen and (max-width: 991.98px) {
+        background-size: cover;
+
+        .carousel-caption {
+          margin-left: 20px !important;
+          h2 {
+            &.nikeFuturaND {
+              font-size: 95px !important;
+            }
+          }
+        }
+
+        &.left {
+          background-position: left top !important;
+          .row {
+            .carousel-pic {
+              .watermark {
+                transform: scale(75%);
+                transform-origin: top left;
+              }
+            }
+            .carousel-caption {
+              width: 100%;
+
+              .subTitle {
+                font-size: $fs-lg;
+              }
+              h2 {
+                font-size: $fs-slide * 0.5;
+              }
+            }
+          }
+        }
+
+        &.right {
+          .row {
+            .carousel-pic {
+              .watermark {
+                top: 19vh;
+                margin-left: 30px;
+              }
+            }
+            .carousel-caption {
+            }
+          }
+        }
+      }
+
+      @media screen and (max-width: 767.98px) {
+        .carousel-caption {
+          text-align: center !important;
+          margin: -30px 0 20px !important;
+          width: unset;
+        }
+        &.right {
+          .row {
+            .carousel-pic {
+              .watermark {
+                display: none;
+              }
+            }
+            .carousel-caption {
+              h2 {
+              }
+            }
+          }
+        }
+      }
+
+      @media screen and (max-width: 575.98px) {
+      }
+
+      @media screen and (max-width: 600px) {
+        &.left {
+          .row {
+            .carousel-pic {
+              .watermark {
+                transform: scale(50%);
+                transform-origin: top left;
+                margin-left: 0 !important;
+                margin-top: 5vw !important;
+              }
+              img {
+              }
+            }
+            .carousel-caption {
+              .subTitle {
+              }
+              h2 {
+              }
+            }
+          }
+        }
+      }
+
+      @media screen and (max-width: 400px) {
+        &.left {
+          .row {
+            .carousel-pic {
+              .watermark {
+                display: none;
+              }
+              img {
+              }
+            }
+            .carousel-caption {
+              .subTitle {
+              }
+              h2 {
+              }
+            }
+          }
+        }
+      }
+    }
+    // end carousel item
+  }
+}
+/**=== end devCong ===**/

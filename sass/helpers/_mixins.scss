@@ -1,0 +1,29 @@
+// mixin style text
+@mixin styleText($color, $fs: 16px, $fw: 400) {
+  font-size: $fs;
+  font-weight: $fw;
+  color: $color;
+  line-height: 1;
+}
+
+@mixin styleButton($color, $bg, $bg-gradient: none) {
+  padding: 6px 50px;
+  margin: 15px 10px 15px 0;
+  border-radius: 30px;
+  background-color: $bg;
+  background-image: $bg-gradient;
+  background-size: 200%;
+  background-position: left center;
+  color: $color;
+  //   border: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: $fs-lg;
+  transition: all 0.5s;
+  cursor: pointer;
+  &:hover {
+    color: $bg;
+    background-color: $color;
+    background-position: right center;
+  }
+}
