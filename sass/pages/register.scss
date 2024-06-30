@@ -44,7 +44,7 @@
   }
 }
 
-.login {
+.register {
   color: white;
   opacity: 0.8;
   .container {
@@ -69,6 +69,7 @@
           color: white;
           background: transparent;
           border: none;
+          fill: white;
           &::placeholder {
             color: white;
           }
