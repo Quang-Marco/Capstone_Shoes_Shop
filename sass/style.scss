@@ -88,6 +88,9 @@ header {
           max-width: 240px;
         }
         @media screen and (max-width: 452px) {
+          max-width: 140px;
+        }
+        @media screen and (max-width: 400px) {
           max-width: 120px;
         }
       }
@@ -110,110 +113,6 @@ header {
   }
 }
 
-.new_arrivals {
-  .row {
-    .new_arrivals_box {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      // transition: $transition;
-      .box_content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        h3 {
-          position: relative;
-          &::after {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 0;
-            height: 1px;
-            width: 100%;
-            background-color: $main-color;
-          }
-        }
-      }
-      .box_view_more {
-        text-align: center;
-        height: 0;
-        overflow: hidden;
-        transition: $transition;
-        &:hover {
-          opacity: 0.8;
-        }
-      }
-      &:hover .box_content {
-        height: 0;
-        opacity: 0;
-        overflow: hidden;
-      }
-      &:hover .box_view_more {
-        height: 180px;
-      }
-    }
-    .new_arrivals_img {
-      position: relative;
-      height: 620px;
-      overflow: hidden;
-      @media screen and (max-width: 1200px) {
-        height: 540px;
-      }
-      @media screen and (max-width: 992px) {
-        height: 460px;
-      }
-      @media screen and (max-width: 768px) {
-        height: 360px;
-      }
-      @media screen and (max-width: 576px) {
-        height: 500px;
-      }
-      @media screen and (max-width: 392px) {
-        height: 380px;
-      }
-      img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        transition: $transition;
-      }
-      &::after {
-        content: "";
-        position: absolute;
-        width: 50%;
-        height: 100%;
-        top: 0;
-        left: -100%;
-        background-color: rgba(255, 255, 255, 0.15);
-        transform: skewX(-20deg);
-        transition: $transition;
-      }
-      &:hover img {
-        transform: scale(1.1, 1.1);
-      }
-      &:hover::after {
-        left: 150%;
-      }
-    }
-  }
-}
-
-.index_video {
-  iframe {
-    @media screen and (max-width: 992px) {
-      max-height: 500px;
-    }
-    @media screen and (max-width: 768px) {
-      max-height: 400px;
-    }
-    @media screen and (max-width: 576px) {
-      max-height: 300px;
-    }
-  }
-}
-
 /**=== Banner (devCong) ===**/
 .banner {
   background-color: $main-color;
@@ -224,18 +123,6 @@ header {
         // height: 80vh;
         background-repeat: no-repeat;
         background-size: contain;
-        // @media screen and (min-width: 320px) {
-        //   height: 710px;
-        // }
-        // @media screen and (min-width: 576px) {
-        //   height: 770px;
-        // }
-        // @media screen and (min-width: 768px) {
-        //   height: 500px;
-        // }
-        // @media screen and (min-width: 992px) {
-        //   height: 450px;
-        // }
         .carousel-pic {
           .watermark {
             position: absolute;
@@ -392,10 +279,13 @@ header {
         }
         // =============== responsive carousel item ================
         // responsive carousel item
-        @media screen and (min-width: 992px) {
+
+        @media screen and (min-width: 1200px) {
           height: 558px;
         }
+
         @media screen and (max-width: 991.98px) {
+          height: 460px;
           background-size: cover;
 
           .carousel-caption {
@@ -444,6 +334,7 @@ header {
         }
 
         @media screen and (max-width: 767.98px) {
+          height: 770px;
           .carousel-caption {
             text-align: center !important;
             margin: -30px 0 20px !important;
@@ -465,6 +356,7 @@ header {
         }
 
         @media screen and (max-width: 575.98px) {
+          height: 700px;
         }
 
         @media screen and (max-width: 600px) {
@@ -522,23 +414,211 @@ header {
 }
 /**=== end devCong ===**/
 
+.new_arrivals {
+  .row {
+    .new_arrivals_box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      // transition: $transition;
+      .box_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h3 {
+          position: relative;
+          &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 1px;
+            width: 100%;
+            background-color: $main-color;
+          }
+        }
+      }
+      .box_view_more {
+        text-align: center;
+        height: 0;
+        overflow: hidden;
+        transition: $transition;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+      &:hover .box_content {
+        height: 0;
+        opacity: 0;
+        overflow: hidden;
+      }
+      &:hover .box_view_more {
+        height: 180px;
+      }
+    }
+    .new_arrivals_img {
+      position: relative;
+      height: 620px;
+      overflow: hidden;
+      @media screen and (max-width: 1200px) {
+        height: 500px;
+      }
+      @media screen and (max-width: 992px) {
+        height: 420px;
+      }
+      @media screen and (max-width: 768px) {
+        height: 360px;
+      }
+      @media screen and (max-width: 576px) {
+        height: 480px;
+      }
+      @media screen and (max-width: 392px) {
+        height: 380px;
+      }
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transition: $transition;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        top: 0;
+        left: -100%;
+        background-color: rgba(255, 255, 255, 0.15);
+        transform: skewX(-20deg);
+        transition: $transition;
+      }
+      &:hover img {
+        transform: scale(1.1, 1.1);
+      }
+      &:hover::after {
+        left: 150%;
+      }
+    }
+  }
+}
+
+.index_video {
+  iframe {
+    @media screen and (max-width: 992px) {
+      max-height: 500px;
+    }
+    @media screen and (max-width: 768px) {
+      max-height: 400px;
+    }
+    @media screen and (max-width: 576px) {
+      max-height: 300px;
+    }
+  }
+}
+
+footer {
+  color: white;
+  a {
+    color: white;
+    &:hover {
+      color: $highlight-color;
+    }
+  }
+  .footer_top {
+    padding: 100px 0;
+    @media screen and (max-width: 992px) {
+      padding: 70px 0;
+    }
+    .col-lg-3 {
+      ul {
+        li {
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .col-lg-6 {
+      .mb-3 {
+        .form-control-lg {
+          font-size: 16px;
+          border-radius: 50px;
+          margin: 30px 0;
+        }
+        .fa-arrow-right {
+          width: 48px;
+          height: 48px;
+          text-align: center;
+          line-height: 48px;
+          border-radius: 50%;
+          font-size: 20px;
+          color: black;
+          position: absolute;
+          top: 5px;
+          right: 20px;
+          &:hover {
+            color: white;
+            background-color: #2ed573;
+          }
+        }
+      }
+      .footer_icon {
+        i {
+          font-size: 24px;
+          margin: 0 10px;
+          &:hover {
+            color: $highlight-color;
+          }
+        }
+      }
+    }
+    h5 {
+      font-weight: 600;
+      margin-bottom: 25px;
+    }
+  }
+  .footer_bottom {
+    border-top: 0.5px solid rgba(255, 255, 255, 0.2);
+    .col-lg-3 {
+      .kicks_haven {
+        color: $highlight-color;
+        &:hover {
+          color: #2ed573;
+        }
+      }
+    }
+    .col-lg-6 {
+      img {
+        max-width: 40px;
+        margin: 0 5px;
+        cursor: pointer;
+        @media screen and (max-width: 400px) {
+          margin: 0 2px;
+        }
+      }
+    }
+  }
+}
+
 // Back To Top
 .backToTop {
-  width: 50px;
-  height: 50px;
-  background: #f55f8d;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
   border-radius: 8px;
-  line-height: 50px;
   text-align: center;
+  color: white;
+  background: $highlight-color;
   display: block;
   position: fixed;
-  right: 15px;
-  bottom: 15px;
-  color: white;
-  transition: all 0.2s;
+  right: 10px;
+  bottom: 10px;
   box-shadow: -4px 4px 24px -10px #f55f8d;
   visibility: hidden;
   opacity: 0;
+  &:hover {
+    color: $main-color;
+  }
 }
 
 .cd-top--is-visible {
@@ -547,7 +627,7 @@ header {
   opacity: 1;
 }
 
-.cd-top--fade-out {
-  // reduce button opacity if user keeps scrolling
-  opacity: 0.5;
-}
+// .cd-top--fade-out {
+//   // reduce button opacity if user keeps scrolling
+//   opacity: 0.7;
+// }
