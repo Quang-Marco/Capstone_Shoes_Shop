@@ -1,3 +1,71 @@
+.fs-xs {
+  font-size: 10px !important;
+}
+
+.fs-sm {
+  font-size: 12px !important;
+}
+
+.fs-base {
+  font-size: 16px !important;
+}
+
+.fs-lg {
+  font-size: 20px !important;
+}
+
+.fs-xl {
+  font-size: 24px !important;
+}
+
+.fs-xxl {
+  font-size: 28px !important;
+}
+
+.fs-slide {
+  font-size: 100px !important;
+}
+
+.fs-slide-lg {
+  font-size: 150px !important;
+}
+
+.fs-slide-sm {
+  font-size: 80px !important;
+}
+
+.ms-n4 {
+  margin-left: -2.5rem !important;
+}
+
+.ms-n5 {
+  margin-left: -3rem !important;
+}
+
+.ms-n6 {
+  margin-left: -4rem !important;
+}
+
+.ms-n7 {
+  margin-left: -6rem !important;
+}
+
+.mt-6 {
+  margin-top: 4rem !important;
+}
+
+.mt-7 {
+  margin-top: 5rem !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -14,6 +82,9 @@ body::-webkit-scrollbar {
 a {
   text-decoration: none;
   color: black;
+}
+a:hover {
+  color: #ff7e22;
 }
 
 ul {
@@ -175,279 +246,6 @@ h6 {
     transform: translateX(0);
   }
 }
-/**=== Banner (devCong) ===**/
-header {
-  height: 140px;
-  background-color: #ccc;
-}
-
-.banner {
-  background-color: #000;
-}
-.banner #homeSlider .carousel-item {
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-.banner #homeSlider .carousel-item .carousel-pic .watermark {
-  position: absolute;
-  text-transform: uppercase;
-  opacity: 0.2;
-}
-.banner #homeSlider .carousel-item .carousel-pic img {
-  animation: picRotate 5s infinite;
-}
-.banner #homeSlider .carousel-item .carousel-caption {
-  position: unset;
-  right: unset;
-  bottom: unset;
-  left: unset;
-  width: 75%;
-  margin-top: 50px;
-  margin-left: 20%;
-}
-.banner #homeSlider .carousel-item .carousel-caption .subTitle {
-  font-size: 24px;
-  font-weight: 600;
-  color: #fff;
-  line-height: 1;
-  margin-bottom: 0;
-}
-.banner #homeSlider .carousel-item .carousel-caption h2 {
-  font-size: 100px;
-  font-weight: 900;
-  color: #205d92;
-  line-height: 1;
-  margin-top: 0;
-}
-.banner #homeSlider .carousel-item .carousel-caption h2.nikeFuturaND {
-  font-size: 106px !important;
-}
-.banner #homeSlider .carousel-item .carousel-caption button {
-  border: solid 1px transparent;
-}
-.banner #homeSlider .carousel-item .carousel-caption.iOrange h2 {
-  color: #ff7e22;
-}
-.banner #homeSlider .carousel-item .carousel-caption.iOrange h2.nikeFuturaND {
-  color: #b50c0c !important;
-}
-.banner #homeSlider .carousel-item .carousel-caption.iOrange button {
-  padding: 6px 50px;
-  margin: 15px 10px 15px 0;
-  border-radius: 30px;
-  background-color: #de411d;
-  background-image: none;
-  background-size: 200%;
-  background-position: left center;
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 20px;
-  transition: all 0.5s;
-  cursor: pointer;
-}
-.banner #homeSlider .carousel-item .carousel-caption.iOrange button:hover {
-  color: #de411d;
-  background-color: #fff;
-  background-position: right center;
-}
-.banner #homeSlider .carousel-item .carousel-caption.iOrange button:hover {
-  box-shadow: #fca356 -10px 0px 30px, #fca356 10px 0px 30px;
-  border-color: #fca356;
-}
-.banner #homeSlider .carousel-item .carousel-caption.iBlue h2 {
-  color: #205d92;
-}
-.banner #homeSlider .carousel-item .carousel-caption.iBlue button {
-  padding: 6px 50px;
-  margin: 15px 10px 15px 0;
-  border-radius: 30px;
-  background-color: #205d92;
-  background-image: none;
-  background-size: 200%;
-  background-position: left center;
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 20px;
-  transition: all 0.5s;
-  cursor: pointer;
-}
-.banner #homeSlider .carousel-item .carousel-caption.iBlue button:hover {
-  color: #205d92;
-  background-color: #fff;
-  background-position: right center;
-}
-.banner #homeSlider .carousel-item .carousel-caption.iBlue button:hover {
-  box-shadow: #15bff1 -10px 0px 30px, #15bff1 10px 0px 30px;
-  border-color: #15bff1;
-}
-.banner #homeSlider .carousel-item .carousel-caption.iRed h2 {
-  color: #790f1a;
-}
-.banner #homeSlider .carousel-item .carousel-caption.iRed button {
-  padding: 6px 50px;
-  margin: 15px 10px 15px 0;
-  border-radius: 30px;
-  background-color: #790f1a;
-  background-image: none;
-  background-size: 200%;
-  background-position: left center;
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 20px;
-  transition: all 0.5s;
-  cursor: pointer;
-}
-.banner #homeSlider .carousel-item .carousel-caption.iRed button:hover {
-  color: #790f1a;
-  background-color: #fff;
-  background-position: right center;
-}
-.banner #homeSlider .carousel-item .carousel-caption.iRed button:hover {
-  box-shadow: #e54757 -10px 0px 30px, #e54757 10px 0px 30px;
-  border-color: #e54757;
-}
-.banner #homeSlider .carousel-item .carousel-caption.iVioletBlue h2 {
-  color: #3f3f90;
-}
-.banner #homeSlider .carousel-item .carousel-caption.iVioletBlue button {
-  padding: 6px 50px;
-  margin: 15px 10px 15px 0;
-  border-radius: 30px;
-  background-color: #3f3f90;
-  background-image: none;
-  background-size: 200%;
-  background-position: left center;
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 20px;
-  transition: all 0.5s;
-  cursor: pointer;
-}
-.banner #homeSlider .carousel-item .carousel-caption.iVioletBlue button:hover {
-  color: #3f3f90;
-  background-color: #fff;
-  background-position: right center;
-}
-.banner #homeSlider .carousel-item .carousel-caption.iVioletBlue button:hover {
-  box-shadow: #7e65d8 -10px 0px 30px, #7e65d8 10px 0px 30px;
-  border-color: #7e65d8;
-}
-.banner #homeSlider .carousel-item.left {
-  background-position: left top !important;
-}
-.banner #homeSlider .carousel-item.left .row .carousel-pic .watermark {
-  top: 0px;
-  line-height: 0.8;
-  font-size: 115px;
-  font-weight: 600;
-  color: #fff;
-  line-height: 1;
-}
-.banner #homeSlider .carousel-item.left .row .carousel-pic .watermark span {
-  font-size: 200px;
-  font-weight: 600;
-  color: #fff;
-  line-height: 1;
-  display: inline-block;
-  margin-top: -20px;
-}
-@media screen and (max-width: 600px) {
-  .banner #homeSlider .carousel-item.left .row .carousel-pic .watermark {
-    transform: scale(50%);
-    transform-origin: top left;
-    margin-left: 0 !important;
-    margin-top: 5vw !important;
-  }
-}
-@media screen and (max-width: 400px) {
-  .banner #homeSlider .carousel-item.left .row .carousel-pic .watermark {
-    display: none;
-  }
-}
-.banner #homeSlider .carousel-item.left .row .carousel-caption {
-  text-align: left;
-}
-.banner #homeSlider .carousel-item.left .row .carousel-caption h2 {
-  font-size: 75px;
-}
-.banner #homeSlider .carousel-item.right {
-  background-position: right top !important;
-}
-.banner #homeSlider .carousel-item.right .row .carousel-pic .watermark {
-  top: 33vh;
-  margin-left: 80px;
-  font-size: 21vw;
-  font-weight: 600;
-  color: #fff;
-  line-height: 1;
-}
-.banner #homeSlider .carousel-item.right .row .carousel-caption {
-  text-align: left;
-}
-.banner #homeSlider .carousel-item.right .row .carousel-caption h2 {
-  font-size: 100px;
-}
-@media screen and (max-width: 991.98px) {
-  .banner #homeSlider .carousel-item {
-    background-size: cover;
-  }
-  .banner #homeSlider .carousel-item .carousel-caption {
-    margin-left: 20px !important;
-  }
-  .banner #homeSlider .carousel-item .carousel-caption h2.nikeFuturaND {
-    font-size: 95px !important;
-  }
-  .banner #homeSlider .carousel-item.left {
-    background-position: left top !important;
-  }
-  .banner #homeSlider .carousel-item.left .row .carousel-pic .watermark {
-    transform: scale(75%);
-    transform-origin: top left;
-  }
-  .banner #homeSlider .carousel-item.left .row .carousel-caption {
-    width: 100%;
-  }
-  .banner #homeSlider .carousel-item.left .row .carousel-caption .subTitle {
-    font-size: 20px;
-  }
-  .banner #homeSlider .carousel-item.left .row .carousel-caption h2 {
-    font-size: 50px;
-  }
-  .banner #homeSlider .carousel-item.right .row .carousel-pic .watermark {
-    top: 19vh;
-    margin-left: 30px;
-  }
-}
-@media screen and (max-width: 767.98px) {
-  .banner #homeSlider .carousel-item .carousel-caption {
-    text-align: center !important;
-    margin: -30px 0 20px !important;
-    width: unset;
-  }
-  .banner #homeSlider .carousel-item.right .row .carousel-pic .watermark {
-    display: none;
-  }
-}
-@media screen and (max-width: 600px) {
-  .banner #homeSlider .carousel-item.left .row .carousel-pic .watermark {
-    transform: scale(50%);
-    transform-origin: top left;
-    margin-left: 0 !important;
-    margin-top: 5vw !important;
-  }
-}
-@media screen and (max-width: 400px) {
-  .banner #homeSlider .carousel-item.left .row .carousel-pic .watermark {
-    display: none;
-  }
-}
-
-/**=== end devCong ===**//*# sourceMappingURL=style.css.map */
-
 header nav i {
   font-size: 22px;
 }
@@ -670,4 +468,277 @@ header nav .navbar-icon .fa-user {
   .index_video iframe {
     max-height: 300px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/**=== Banner (devCong) ===**/
+.banner {
+  background-color: #000;
+}
+.banner #homeSlider .carousel-item {
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.banner #homeSlider .carousel-item .carousel-pic .watermark {
+  position: absolute;
+  text-transform: uppercase;
+  opacity: 0.2;
+}
+.banner #homeSlider .carousel-item .carousel-pic img {
+  animation: picRotate 5s infinite;
+}
+.banner #homeSlider .carousel-item .carousel-caption {
+  position: unset;
+  right: unset;
+  bottom: unset;
+  left: unset;
+  width: 75%;
+  margin-top: 50px;
+  margin-left: 20%;
+}
+.banner #homeSlider .carousel-item .carousel-caption .subTitle {
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1;
+  margin-bottom: 0;
+}
+.banner #homeSlider .carousel-item .carousel-caption h2 {
+  font-size: 100px;
+  font-weight: 900;
+  color: #205d92;
+  line-height: 1;
+  margin-top: 0;
+}
+.banner #homeSlider .carousel-item .carousel-caption h2.nikeFuturaND {
+  font-size: 106px !important;
+}
+.banner #homeSlider .carousel-item .carousel-caption button {
+  border: solid 1px transparent;
+}
+.banner #homeSlider .carousel-item .carousel-caption.iOrange h2 {
+  color: #ff7e22;
+}
+.banner #homeSlider .carousel-item .carousel-caption.iOrange h2.nikeFuturaND {
+  color: #b50c0c !important;
+}
+.banner #homeSlider .carousel-item .carousel-caption.iOrange button {
+  padding: 6px 50px;
+  margin: 15px 10px 15px 0;
+  border-radius: 30px;
+  background-color: #de411d;
+  background-image: none;
+  background-size: 200%;
+  background-position: left center;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 20px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.banner #homeSlider .carousel-item .carousel-caption.iOrange button:hover {
+  color: #de411d;
+  background-color: #fff;
+  background-position: right center;
+}
+.banner #homeSlider .carousel-item .carousel-caption.iOrange button:hover {
+  box-shadow: #fca356 -10px 0px 30px, #fca356 10px 0px 30px;
+  border-color: #fca356;
+}
+.banner #homeSlider .carousel-item .carousel-caption.iBlue h2 {
+  color: #205d92;
+}
+.banner #homeSlider .carousel-item .carousel-caption.iBlue button {
+  padding: 6px 50px;
+  margin: 15px 10px 15px 0;
+  border-radius: 30px;
+  background-color: #205d92;
+  background-image: none;
+  background-size: 200%;
+  background-position: left center;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 20px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.banner #homeSlider .carousel-item .carousel-caption.iBlue button:hover {
+  color: #205d92;
+  background-color: #fff;
+  background-position: right center;
+}
+.banner #homeSlider .carousel-item .carousel-caption.iBlue button:hover {
+  box-shadow: #15bff1 -10px 0px 30px, #15bff1 10px 0px 30px;
+  border-color: #15bff1;
+}
+.banner #homeSlider .carousel-item .carousel-caption.iRed h2 {
+  color: #790f1a;
+}
+.banner #homeSlider .carousel-item .carousel-caption.iRed button {
+  padding: 6px 50px;
+  margin: 15px 10px 15px 0;
+  border-radius: 30px;
+  background-color: #790f1a;
+  background-image: none;
+  background-size: 200%;
+  background-position: left center;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 20px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.banner #homeSlider .carousel-item .carousel-caption.iRed button:hover {
+  color: #790f1a;
+  background-color: #fff;
+  background-position: right center;
+}
+.banner #homeSlider .carousel-item .carousel-caption.iRed button:hover {
+  box-shadow: #e54757 -10px 0px 30px, #e54757 10px 0px 30px;
+  border-color: #e54757;
+}
+.banner #homeSlider .carousel-item .carousel-caption.iVioletBlue h2 {
+  color: #3f3f90;
+}
+.banner #homeSlider .carousel-item .carousel-caption.iVioletBlue button {
+  padding: 6px 50px;
+  margin: 15px 10px 15px 0;
+  border-radius: 30px;
+  background-color: #3f3f90;
+  background-image: none;
+  background-size: 200%;
+  background-position: left center;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 20px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.banner #homeSlider .carousel-item .carousel-caption.iVioletBlue button:hover {
+  color: #3f3f90;
+  background-color: #fff;
+  background-position: right center;
+}
+.banner #homeSlider .carousel-item .carousel-caption.iVioletBlue button:hover {
+  box-shadow: #7e65d8 -10px 0px 30px, #7e65d8 10px 0px 30px;
+  border-color: #7e65d8;
+}
+.banner #homeSlider .carousel-item.left {
+  background-position: left top !important;
+}
+.banner #homeSlider .carousel-item.left .row .carousel-pic .watermark {
+  top: 0px;
+  line-height: 0.8;
+  font-size: 115px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1;
+}
+.banner #homeSlider .carousel-item.left .row .carousel-pic .watermark span {
+  font-size: 200px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1;
+  display: inline-block;
+  margin-top: -20px;
+}
+@media screen and (max-width: 600px) {
+  .banner #homeSlider .carousel-item.left .row .carousel-pic .watermark {
+    transform: scale(50%);
+    transform-origin: top left;
+    margin-left: 0 !important;
+    margin-top: 5vw !important;
+  }
+}
+@media screen and (max-width: 400px) {
+  .banner #homeSlider .carousel-item.left .row .carousel-pic .watermark {
+    display: none;
+  }
+}
+.banner #homeSlider .carousel-item.left .row .carousel-caption {
+  text-align: left;
+}
+.banner #homeSlider .carousel-item.left .row .carousel-caption h2 {
+  font-size: 75px;
+}
+.banner #homeSlider .carousel-item.right {
+  background-position: right top !important;
+}
+.banner #homeSlider .carousel-item.right .row .carousel-pic .watermark {
+  top: 33vh;
+  margin-left: 80px;
+  font-size: 21vw;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1;
+}
+.banner #homeSlider .carousel-item.right .row .carousel-caption {
+  text-align: left;
+}
+.banner #homeSlider .carousel-item.right .row .carousel-caption h2 {
+  font-size: 100px;
+}
+@media screen and (min-width: 992px) {
+  .banner #homeSlider .carousel-item {
+    min-height: 558px;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .banner #homeSlider .carousel-item {
+    background-size: cover;
+  }
+  .banner #homeSlider .carousel-item .carousel-caption {
+    margin-left: 20px !important;
+  }
+  .banner #homeSlider .carousel-item .carousel-caption h2.nikeFuturaND {
+    font-size: 95px !important;
+  }
+  .banner #homeSlider .carousel-item.left {
+    background-position: left top !important;
+  }
+  .banner #homeSlider .carousel-item.left .row .carousel-pic .watermark {
+    transform: scale(75%);
+    transform-origin: top left;
+  }
+  .banner #homeSlider .carousel-item.left .row .carousel-caption {
+    width: 100%;
+  }
+  .banner #homeSlider .carousel-item.left .row .carousel-caption .subTitle {
+    font-size: 20px;
+  }
+  .banner #homeSlider .carousel-item.left .row .carousel-caption h2 {
+    font-size: 50px;
+  }
+  .banner #homeSlider .carousel-item.right .row .carousel-pic .watermark {
+    top: 19vh;
+    margin-left: 30px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .banner #homeSlider .carousel-item .carousel-caption {
+    text-align: center !important;
+    margin: -30px 0 20px !important;
+    width: unset;
+  }
+  .banner #homeSlider .carousel-item.right .row .carousel-pic .watermark {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .banner #homeSlider .carousel-item.left .row .carousel-pic .watermark {
+    transform: scale(50%);
+    transform-origin: top left;
+    margin-left: 0 !important;
+    margin-top: 5vw !important;
+  }
+}
+@media screen and (max-width: 400px) {
+  .banner #homeSlider .carousel-item.left .row .carousel-pic .watermark {
+    display: none;
+  }
+}
+
+/**=== end devCong ===**//*# sourceMappingURL=style.css.map */
