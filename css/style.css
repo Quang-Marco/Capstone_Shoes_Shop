@@ -407,24 +407,9 @@ header nav .navbar-icon .fa-user {
   background-repeat: no-repeat;
   background-size: contain;
 }
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 992px) {
   .banner #homeSlider .carousel-inner .carousel-item {
-    height: 710px;
-  }
-}
-@media screen and (min-width: 576px) {
-  .banner #homeSlider .carousel-inner .carousel-item {
-    height: 770px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .banner #homeSlider .carousel-inner .carousel-item {
-    height: 500px;
-  }
-}
-@media screen and (min-width: 1025px) {
-  .banner #homeSlider .carousel-inner .carousel-item {
-    height: 560px;
+    min-height: 558px;
   }
 }
 .banner #homeSlider .carousel-inner .carousel-item .carousel-pic .watermark {
