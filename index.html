@@ -52,7 +52,7 @@
       <nav class="navbar navbar-expand-lg py-4">
         <div class="container-fluid">
           <a class="navbar-brand title me-0" href="index.html">
-            <img src="public/image/logo.png" alt="Logo" />
+            <img src="public/image/icon_logo.png" alt="Logo" />
             <span class="title">KICKS HAVEN</span>
           </a>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -273,14 +273,15 @@
       </nav>
     </header>
 
-    <!-- Banner - devCong -->
+    <!-- BANNER -->
     <section class="banner">
       <div
         id="homeSlider"
         class="carousel slide carousel-fade"
-        data-bs-ridex="carousel"
+        data-bs-ride="carousel"
+        data-bs-interval="4000"
       >
-        <div class="carousel-indicators">
+        <!-- <div class="carousel-indicators">
           <button
             type="button"
             data-bs-target="#homeSlider"
@@ -307,7 +308,7 @@
             data-bs-slide-to="3"
             aria-label="Slide 4"
           ></button>
-        </div>
+        </div> -->
 
         <div class="carousel-inner">
           <!-- item -->
@@ -332,14 +333,9 @@
                   <div
                     class="animate__animated animate__fadeInDown animate__delay-1s carousel-caption iOrange"
                   >
-                    <!-- <p
-                      class="animate__animated animate__fadeInDown animate__delay-2s subTitle"
-                    >
-                      AIRFORCE 2
-                    </p> -->
                     <h2 class="nikeFuturaND">
                       JUST <br />
-                      DO IT.
+                      DO IT
                     </h2>
                     <p
                       class="animate__animated animate__fadeInDown animate__delay-2s fs-3"
@@ -507,16 +503,33 @@
             </div>
           </div>
         </div>
+        <button
+          class="carousel-control-prev carousel_arrow"
+          type="button"
+          data-bs-target="#homeSlider"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next carousel_arrow"
+          type="button"
+          data-bs-target="#homeSlider"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </section>
 
     <!-- NEW ARRIVALS -->
     <section class="new_arrivals py-5">
-      <h2 class="title py-5 text-center bg-body-secondary">New Arrivals</h2>
+      <h2 class="title py-5 text-center">New Arrivals</h2>
       <div class="row gx-0">
         <div class="col-sm-4 col-12 new_arrivals_img">
-          <a href="#"> </a>
-          <img src="public/image/blue_jordan.jpg" alt="" />
+          <a href="#"><img src="public/image/blue_jordan.jpg" alt="" /></a>
         </div>
         <div class="col-sm-4 col-12 new_arrivals_box">
           <div class="box_content py-lg-0 py-5">
@@ -606,7 +619,7 @@
       <iframe
         width="100%"
         height="700"
-        src="https://www.youtube.com/embed/Sp3Xkbnvz50?autoplay=0"
+        src="https://www.youtube.com/embed/Sp3Xkbnvz50?"
         title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -614,6 +627,14 @@
         allowfullscreen
       ></iframe>
     </section>
+
+    <!-- FOOTER  -->
+    <footer class="container py-5"></footer>
+
+    <!-- BACK TO TOP -->
+    <a href="#" class="backToTop cd-top text-replace js-cd-top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
 
     <!-- Bootstrap JavaScript Libraries -->
     <script
@@ -628,6 +649,23 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- Back To Top JS -->
+    <script src="src/assets/js/util.js"></script>
+    <script src="src/assets/js/main.js"></script>
+
+    <!-- Wow JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+      integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+
     <!-- jQuery 3.7.1 -->
     <!-- <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
@@ -635,5 +673,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script> -->
+
+    <!-- Index JS -->
+    <script src="src/controllers/index.js"></script>
   </body>
 </html>

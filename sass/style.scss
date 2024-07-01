@@ -215,164 +215,109 @@ header {
 }
 
 /**=== Banner (devCong) ===**/
+
 .banner {
   background-color: $main-color;
   // height: 80vh;
   #homeSlider {
-    .carousel-item {
-      // height: 80vh;
-      background-repeat: no-repeat;
-      background-size: contain;
-      .carousel-pic {
-        .watermark {
-          position: absolute;
-          text-transform: uppercase;
-          opacity: 0.2;
-        }
-        img {
-          animation: picRotate 5s infinite;
-        }
-      }
-
-      .carousel-caption {
-        position: unset;
-        right: unset;
-        bottom: unset;
-        left: unset;
-        width: 75%;
-        margin-top: 50px;
-        margin-left: 20%;
-
-        .subTitle {
-          @include styleText($white, $fs-xl, 600);
-          margin-bottom: 0;
-        }
-        h2 {
-          @include styleText($blue-dark, $fs-slide, 900);
-          margin-top: 0;
-          &.nikeFuturaND {
-            font-size: 106px !important;
+    .carousel-inner {
+      .carousel-item {
+        background-repeat: no-repeat;
+        background-size: contain;
+        // @media screen and (min-width: 320px) {
+        //   height: 710px;
+        // }
+        // @media screen and (min-width: 576px) {
+        //   height: 770px;
+        // }
+        // @media screen and (min-width: 768px) {
+        //   height: 500px;
+        // }
+        // @media screen and (min-width: 992px) {
+        //   height: 450px;
+        // }
+        .carousel-pic {
+          .watermark {
+            position: absolute;
+            text-transform: uppercase;
+            opacity: 0.2;
+          }
+          img {
+            animation: picRotate 5s infinite;
           }
         }
-        p {
-        }
-        button {
-          border: solid 1px transparent;
-        }
 
-        &.iOrange {
+        .carousel-caption {
+          position: unset;
+          right: unset;
+          bottom: unset;
+          left: unset;
+          width: 75%;
+          margin-top: 50px;
+          margin-left: 20%;
+
+          .subTitle {
+            @include styleText($white, $fs-xl, 600);
+            margin-bottom: 0;
+          }
           h2 {
-            color: $highlight-color;
+            @include styleText($blue-dark, $fs-slide, 900);
+            margin-top: 0;
             &.nikeFuturaND {
-              color: #b50c0c !important;
+              font-size: 106px !important;
             }
           }
           p {
           }
           button {
-            @include styleButton($white, $orange-bold);
-            &:hover {
-              box-shadow: $orange-light -10px 0px 30px,
-                $orange-light 10px 0px 30px;
-              border-color: $orange-light;
-            }
+            border: solid 1px transparent;
           }
-        }
-        &.iBlue {
-          h2 {
-            color: $blue-dark;
-          }
-          button {
-            @include styleButton($white, $blue-dark);
-            &:hover {
-              box-shadow: $cyan -10px 0px 30px, $cyan 10px 0px 30px;
-              border-color: $cyan;
-            }
-          }
-        }
-        &.iRed {
-          h2 {
-            color: $red-dark;
-          }
-          button {
-            @include styleButton($white, $red-dark);
-            &:hover {
-              box-shadow: $red-light -10px 0px 30px, $red-light 10px 0px 30px;
-              border-color: $red-light;
-            }
-          }
-        }
-        &.iVioletBlue {
-          h2 {
-            color: $violetBlue;
-          }
-          button {
-            @include styleButton($white, $violetBlue);
-            &:hover {
-              box-shadow: $violetBlue-light -10px 0px 30px,
-                $violetBlue-light 10px 0px 30px;
-              border-color: $violetBlue-light;
-            }
-          }
-        }
-      }
 
-      &.left {
-        background-position: left top !important;
-        .row {
-          .carousel-pic {
-            .watermark {
-              top: 0px;
-              line-height: 0.8;
-              @include styleText($white, $fs-slide * 1.15, 600);
-              span {
-                @include styleText($white, $fs-slide * 2, 600);
-                display: inline-block;
-                margin-top: -20px;
-              }
-
-              @media screen and (max-width: 600px) {
-                transform: scale(50%);
-                transform-origin: top left;
-                margin-left: 0 !important;
-                margin-top: 5vw !important;
-              }
-              @media screen and (max-width: 400px) {
-                display: none;
-              }
-            }
-            img {
-            }
-          }
-          .carousel-caption {
-            text-align: left;
-
-            .subTitle {
-            }
+          &.iOrange {
             h2 {
-              font-size: $fs-slide * 0.75;
+              color: $highlight-color;
+              &.nikeFuturaND {
+                color: #b50c0c !important;
+              }
+            }
+            p {
+            }
+            button {
+              @include styleButton($white, $orange-bold);
+              &:hover {
+                box-shadow: $orange-light -10px 0px 30px,
+                  $orange-light 10px 0px 30px;
+                border-color: $orange-light;
+              }
             }
           }
-        }
-      }
-
-      &.right {
-        background-position: right top !important;
-
-        .row {
-          // flex-direction: row-reverse;
-
-          .carousel-pic {
-            .watermark {
-              top: 33vh;
-              margin-left: 80px;
-              @include styleText($white, 21vw, 600);
-            }
-          }
-          .carousel-caption {
-            text-align: left;
+          &.iBlue {
             h2 {
-              font-size: $fs-slide;
+              color: $blue-dark;
+            }
+            button {
+              @include styleButton($white, $blue-dark);
+              &:hover {
+                box-shadow: $cyan -10px 0px 30px, $cyan 10px 0px 30px;
+                border-color: $cyan;
+              }
+            }
+          }
+          &.iRed {
+            h2 {
+              color: $red-dark;
+            }
+            button {
+              @include styleButton($white, $red-dark);
+              &:hover {
+                box-shadow: $red-light -10px 0px 30px, $red-light 10px 0px 30px;
+                border-color: $red-light;
+              }
+            }
+          }
+          &.iVioletBlue {
+            h2 {
+              color: $violetBlue;
             }
           }
         }
@@ -390,6 +335,13 @@ header {
           h2 {
             &.nikeFuturaND {
               font-size: 95px !important;
+            button {
+              @include styleButton($white, $violetBlue);
+              &:hover {
+                box-shadow: $violetBlue-light -10px 0px 30px,
+                  $violetBlue-light 10px 0px 30px;
+                border-color: $violetBlue-light;
+              }
             }
           }
         }
@@ -399,98 +351,147 @@ header {
           .row {
             .carousel-pic {
               .watermark {
-                transform: scale(75%);
-                transform-origin: top left;
+                top: 0px;
+                line-height: 0.8;
+                @include styleText($white, $fs-slide * 1.15, 600);
+                span {
+                  @include styleText($white, $fs-slide * 2, 600);
+                  display: inline-block;
+                  margin-top: -20px;
+                }
+
+                @media screen and (max-width: 600px) {
+                  transform: scale(50%);
+                  transform-origin: top left;
+                  margin-left: 0 !important;
+                  margin-top: 5vw !important;
+                }
+                @media screen and (max-width: 400px) {
+                  display: none;
+                }
+              }
+              img {
               }
             }
             .carousel-caption {
-              width: 100%;
+              text-align: left;
 
               .subTitle {
-                font-size: $fs-lg;
               }
               h2 {
-                font-size: $fs-slide * 0.5;
+                font-size: $fs-slide * 0.75;
               }
             }
           }
         }
 
         &.right {
-          .row {
-            .carousel-pic {
-              .watermark {
-                top: 19vh;
-                margin-left: 30px;
-              }
-            }
-            .carousel-caption {
-            }
-          }
-        }
-      }
+          background-position: right top !important;
 
-      @media screen and (max-width: 767.98px) {
-        .carousel-caption {
-          text-align: center !important;
-          margin: -30px 0 20px !important;
-          width: unset;
-        }
-        &.right {
           .row {
+            // flex-direction: row-reverse;
+
             .carousel-pic {
               .watermark {
-                display: none;
+                top: 33vh;
+                margin-left: 80px;
+                @include styleText($white, 21vw, 600);
               }
             }
             .carousel-caption {
+              text-align: left;
               h2 {
+                font-size: $fs-slide;
               }
             }
           }
         }
-      }
+        // =============== responsive carousel item ================
+        @media screen and (max-width: 991.98px) {
+          background-size: cover;
 
-      @media screen and (max-width: 575.98px) {
-      }
-
-      @media screen and (max-width: 600px) {
-        &.left {
-          .row {
-            .carousel-pic {
-              .watermark {
-                transform: scale(50%);
-                transform-origin: top left;
-                margin-left: 0 !important;
-                margin-top: 5vw !important;
-              }
-              img {
+          .carousel-caption {
+            margin-left: 20px !important;
+            h2 {
+              &.nikeFuturaND {
+                font-size: 95px !important;
               }
             }
-            .carousel-caption {
-              .subTitle {
+          }
+
+          &.left {
+            background-position: left top !important;
+            .row {
+              .carousel-pic {
+                .watermark {
+                  transform: scale(75%);
+                  transform-origin: top left;
+                }
               }
-              h2 {
+              .carousel-caption {
+                width: 100%;
+
+                .subTitle {
+                  font-size: $fs-lg;
+                }
+                h2 {
+                  font-size: $fs-slide * 0.5;
+                }
+              }
+            }
+          }
+
+          &.right {
+            .row {
+              .carousel-pic {
+                .watermark {
+                  top: 19vh;
+                  margin-left: 30px;
+                }
               }
             }
           }
         }
-      }
 
-      @media screen and (max-width: 400px) {
-        &.left {
-          .row {
-            .carousel-pic {
-              .watermark {
-                display: none;
-              }
-              img {
+        @media screen and (max-width: 767.98px) {
+          .carousel-caption {
+            text-align: center !important;
+            margin: -30px 0 20px !important;
+            width: unset;
+          }
+          &.right {
+            .row {
+              .carousel-pic {
+                .watermark {
+                  display: none;
+                }
               }
             }
-            .carousel-caption {
-              .subTitle {
+          }
+        }
+
+        @media screen and (max-width: 600px) {
+          &.left {
+            .row {
+              .carousel-pic {
+                .watermark {
+                  transform: scale(50%);
+                  transform-origin: top left;
+                  margin-left: 0 !important;
+                  margin-top: 5vw !important;
+                }
               }
-              h2 {
+            }
+          }
+        }
+
+        @media screen and (max-width: 400px) {
+          &.left {
+            .row {
+              .carousel-pic {
+                .watermark {
+                  display: none;
+                }
               }
             }
           }
@@ -498,6 +499,42 @@ header {
       }
     }
     // end carousel item
+    .carousel_arrow {
+      display: none;
+    }
+    &:hover .carousel_arrow {
+      display: flex;
+    }
   }
 }
 /**=== end devCong ===**/
+
+// Back To Top
+.backToTop {
+  width: 50px;
+  height: 50px;
+  background: #f55f8d;
+  border-radius: 8px;
+  line-height: 50px;
+  text-align: center;
+  display: block;
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  color: white;
+  transition: all 0.2s;
+  box-shadow: -4px 4px 24px -10px #f55f8d;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.cd-top--is-visible {
+  // back-to-top button visible
+  visibility: visible;
+  opacity: 1;
+}
+
+.cd-top--fade-out {
+  // reduce button opacity if user keeps scrolling
+  opacity: 0.5;
+}
