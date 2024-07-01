@@ -518,6 +518,100 @@ header {
   }
 }
 
+.current_product {
+  .product_content {
+    .nav {
+      .nav-item {
+        .nav-link {
+          width: 150px;
+          padding: 10px;
+          font-size: 20px;
+          color: #909090;
+          &:hover {
+            color: black;
+          }
+        }
+        .active {
+          color: white;
+          background-color: $highlight-color;
+        }
+      }
+    }
+    .tab-content {
+      .tab-pane {
+        .row {
+          .product_item {
+            .item_img {
+              position: relative;
+              padding: 20px;
+              background-color: #ebeeef;
+              overflow: hidden;
+              // box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+              img {
+                width: 100%;
+              }
+              .item_icon {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                i {
+                  width: 42px;
+                  height: 42px;
+                  line-height: 42px;
+                  text-align: center;
+                  border-radius: 50%;
+                  color: #909090;
+                  background-color: white;
+                  font-size: 14px;
+                  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.1);
+                  display: block;
+                  transform: translateX(60px);
+                }
+                .fa-heart {
+                  margin-bottom: 10px;
+                  &:hover {
+                    color: white;
+                    background-color: rgb(248, 52, 52);
+                  }
+                }
+                .fa-image {
+                  &:hover {
+                    color: white;
+                    background-color: $highlight-color;
+                  }
+                }
+              }
+              .item_price {
+                position: absolute;
+                bottom: 0;
+                left: 15px;
+                transition: $transition;
+              }
+            }
+            .item_info {
+              .info_star {
+                i {
+                  color: yellow;
+                }
+              }
+            }
+            &:hover .item_icon i {
+              transform: translateX(0);
+            }
+            &:hover .item_price {
+              transform: translateY(-20px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 footer {
   color: white;
   a {
