@@ -478,11 +478,6 @@ header nav .navbar-icon .fa-user {
   background-repeat: no-repeat;
   background-size: contain;
 }
-@media screen and (min-width: 992px) {
-  .banner #homeSlider .carousel-inner .carousel-item {
-    min-height: 558px;
-  }
-}
 .banner #homeSlider .carousel-inner .carousel-item .carousel-pic .watermark {
   position: absolute;
   text-transform: uppercase;
@@ -687,8 +682,8 @@ header nav .navbar-icon .fa-user {
   font-size: 100px;
 }
 @media screen and (min-width: 992px) {
-  .banner #homeSlider .carousel-item {
-    min-height: 558px;
+  .banner #homeSlider .carousel-inner .carousel-item {
+    height: 558px;
   }
 }
 @media screen and (max-width: 991.98px) {
@@ -741,13 +736,6 @@ header nav .navbar-icon .fa-user {
   }
 }
 @media screen and (max-width: 400px) {
-  .banner #homeSlider .carousel-item.left .row .carousel-pic .watermark {
-    display: none;
-  }
-}
-
-/**=== end devCong ===**//*# sourceMappingURL=style.css.map */
-
   .banner #homeSlider .carousel-inner .carousel-item.left .row .carousel-pic .watermark {
     display: none;
   }
