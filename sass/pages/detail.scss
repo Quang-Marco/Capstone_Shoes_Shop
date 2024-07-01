@@ -1,0 +1,31 @@
+@import "./../base/base";
+@import "./../helpers/variables";
+@import "./../helpers/animations";
+@import "./../helpers/mixins";
+@import "./../themes/darkThemes";
+
+.breadCrumbLinks {
+  background-color: #efefef;
+  padding: 15px 0;
+  .breadcrumb {
+    padding: 0;
+    margin: 0;
+    .breadcrumb-item {
+      text-transform: capitalize;
+      font-size: 14px;
+      &:before {
+        content: "›" !important;
+      }
+      &:first-child::before {
+        content: "" !important;
+      }
+
+      a {
+        font-weight: 600;
+      }
+      &.active {
+        color: #888;
+      }
+    }
+  }
+}

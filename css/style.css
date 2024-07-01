@@ -1,3 +1,71 @@
+.fs-xs {
+  font-size: 10px !important;
+}
+
+.fs-sm {
+  font-size: 12px !important;
+}
+
+.fs-base {
+  font-size: 16px !important;
+}
+
+.fs-lg {
+  font-size: 20px !important;
+}
+
+.fs-xl {
+  font-size: 24px !important;
+}
+
+.fs-xxl {
+  font-size: 28px !important;
+}
+
+.fs-slide {
+  font-size: 100px !important;
+}
+
+.fs-slide-lg {
+  font-size: 150px !important;
+}
+
+.fs-slide-sm {
+  font-size: 80px !important;
+}
+
+.ms-n4 {
+  margin-left: -2.5rem !important;
+}
+
+.ms-n5 {
+  margin-left: -3rem !important;
+}
+
+.ms-n6 {
+  margin-left: -4rem !important;
+}
+
+.ms-n7 {
+  margin-left: -6rem !important;
+}
+
+.mt-6 {
+  margin-top: 4rem !important;
+}
+
+.mt-7 {
+  margin-top: 5rem !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -14,6 +82,9 @@ body::-webkit-scrollbar {
 a {
   text-decoration: none;
   color: black;
+}
+a:hover {
+  color: #ff7e22;
 }
 
 ul {
@@ -615,6 +686,11 @@ header nav .navbar-icon .fa-user {
 .banner #homeSlider .carousel-inner .carousel-item.right .row .carousel-caption h2 {
   font-size: 100px;
 }
+@media screen and (min-width: 992px) {
+  .banner #homeSlider .carousel-item {
+    min-height: 558px;
+  }
+}
 @media screen and (max-width: 991.98px) {
   .banner #homeSlider .carousel-inner .carousel-item {
     background-size: cover;
@@ -665,6 +741,13 @@ header nav .navbar-icon .fa-user {
   }
 }
 @media screen and (max-width: 400px) {
+  .banner #homeSlider .carousel-item.left .row .carousel-pic .watermark {
+    display: none;
+  }
+}
+
+/**=== end devCong ===**//*# sourceMappingURL=style.css.map */
+
   .banner #homeSlider .carousel-inner .carousel-item.left .row .carousel-pic .watermark {
     display: none;
   }

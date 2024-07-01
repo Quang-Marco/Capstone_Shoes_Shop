@@ -218,6 +218,7 @@ header {
 
 .banner {
   background-color: $main-color;
+  // height: 80vh;
   #homeSlider {
     .carousel-inner {
       .carousel-item {
@@ -235,9 +236,6 @@ header {
         // @media screen and (min-width: 992px) {
         //   height: 450px;
         // }
-        @media screen and (min-width: 992px) {
-          min-height: 558px;
-        }
         .carousel-pic {
           .watermark {
             position: absolute;
@@ -321,6 +319,22 @@ header {
             h2 {
               color: $violetBlue;
             }
+          }
+        }
+      }
+      // =============== responsive carousel item ================
+      // responsive carousel item
+      @media screen and (min-width: 992px) {
+        min-height: 558px;
+      }
+      @media screen and (max-width: 991.98px) {
+        background-size: cover;
+
+        .carousel-caption {
+          margin-left: 20px !important;
+          h2 {
+            &.nikeFuturaND {
+              font-size: 95px !important;
             button {
               @include styleButton($white, $violetBlue);
               &:hover {
