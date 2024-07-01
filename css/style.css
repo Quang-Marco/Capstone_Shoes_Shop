@@ -92,7 +92,8 @@ ul {
   list-style: none;
 }
 
-i {
+i,
+img {
   cursor: pointer;
   transition: all 0.5s ease;
 }
@@ -762,6 +763,77 @@ header nav .navbar-icon .fa-user {
   .index_video iframe {
     max-height: 300px;
   }
+}
+
+.current_product .product_content .nav .nav-item .nav-link {
+  width: 150px;
+  padding: 10px;
+  font-size: 20px;
+  color: #909090;
+}
+.current_product .product_content .nav .nav-item .nav-link:hover {
+  color: black;
+}
+.current_product .product_content .nav .nav-item .active {
+  color: white;
+  background-color: #ff7e22;
+}
+.current_product .product_content .tab-content .tab-pane .row .product_item .item_img {
+  position: relative;
+  padding: 20px;
+  background-color: #ebeeef;
+  overflow: hidden;
+}
+.current_product .product_content .tab-content .tab-pane .row .product_item .item_img img {
+  width: 100%;
+}
+.current_product .product_content .tab-content .tab-pane .row .product_item .item_img .item_icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.current_product .product_content .tab-content .tab-pane .row .product_item .item_img .item_icon i {
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+  border-radius: 50%;
+  color: #909090;
+  background-color: white;
+  font-size: 14px;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.1);
+  display: block;
+  transform: translateX(60px);
+}
+.current_product .product_content .tab-content .tab-pane .row .product_item .item_img .item_icon .fa-heart {
+  margin-bottom: 10px;
+}
+.current_product .product_content .tab-content .tab-pane .row .product_item .item_img .item_icon .fa-heart:hover {
+  color: white;
+  background-color: rgb(248, 52, 52);
+}
+.current_product .product_content .tab-content .tab-pane .row .product_item .item_img .item_icon .fa-image:hover {
+  color: white;
+  background-color: #ff7e22;
+}
+.current_product .product_content .tab-content .tab-pane .row .product_item .item_img .item_price {
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+  transition: all 0.5s ease;
+}
+.current_product .product_content .tab-content .tab-pane .row .product_item .item_info .info_star i {
+  color: yellow;
+}
+.current_product .product_content .tab-content .tab-pane .row .product_item:hover .item_icon i {
+  transform: translateX(0);
+}
+.current_product .product_content .tab-content .tab-pane .row .product_item:hover .item_price {
+  transform: translateY(-20px);
 }
 
 footer {

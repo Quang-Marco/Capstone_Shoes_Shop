@@ -27,7 +27,8 @@ ul {
   list-style: none;
 }
 
-i {
+i,
+img {
   cursor: pointer;
   transition: $transition;
 }
