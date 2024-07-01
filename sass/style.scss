@@ -215,13 +215,13 @@ header {
 }
 
 /**=== Banner (devCong) ===**/
-
 .banner {
   background-color: $main-color;
   // height: 80vh;
   #homeSlider {
     .carousel-inner {
       .carousel-item {
+        // height: 80vh;
         background-repeat: no-repeat;
         background-size: contain;
         // @media screen and (min-width: 320px) {
@@ -319,22 +319,6 @@ header {
             h2 {
               color: $violetBlue;
             }
-          }
-        }
-      }
-      // =============== responsive carousel item ================
-      // responsive carousel item
-      @media screen and (min-width: 992px) {
-        min-height: 558px;
-      }
-      @media screen and (max-width: 991.98px) {
-        background-size: cover;
-
-        .carousel-caption {
-          margin-left: 20px !important;
-          h2 {
-            &.nikeFuturaND {
-              font-size: 95px !important;
             button {
               @include styleButton($white, $violetBlue);
               &:hover {
@@ -407,6 +391,10 @@ header {
           }
         }
         // =============== responsive carousel item ================
+        // responsive carousel item
+        @media screen and (min-width: 992px) {
+          height: 558px;
+        }
         @media screen and (max-width: 991.98px) {
           background-size: cover;
 
@@ -449,6 +437,8 @@ header {
                   margin-left: 30px;
                 }
               }
+              .carousel-caption {
+              }
             }
           }
         }
@@ -466,8 +456,15 @@ header {
                   display: none;
                 }
               }
+              .carousel-caption {
+                h2 {
+                }
+              }
             }
           }
+        }
+
+        @media screen and (max-width: 575.98px) {
         }
 
         @media screen and (max-width: 600px) {
@@ -480,6 +477,14 @@ header {
                   margin-left: 0 !important;
                   margin-top: 5vw !important;
                 }
+                img {
+                }
+              }
+              .carousel-caption {
+                .subTitle {
+                }
+                h2 {
+                }
               }
             }
           }
@@ -491,6 +496,14 @@ header {
               .carousel-pic {
                 .watermark {
                   display: none;
+                }
+                img {
+                }
+              }
+              .carousel-caption {
+                .subTitle {
+                }
+                h2 {
                 }
               }
             }
