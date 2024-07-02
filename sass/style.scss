@@ -460,7 +460,7 @@ header {
     }
     .new_arrivals_img {
       position: relative;
-      height: 620px;
+      height: 580px;
       overflow: hidden;
       @media screen and (max-width: 1200px) {
         height: 500px;
@@ -523,17 +523,25 @@ header {
     .nav {
       .nav-item {
         .nav-link {
-          width: 150px;
-          padding: 10px;
-          font-size: 20px;
+          padding: 1vw 2vw;
+          font-size: 1.5vw;
           color: #909090;
           &:hover {
             color: black;
+          }
+          @media screen and (max-width: 991.98px) {
+            font-size: 2.5vw;
+          }
+          @media screen and (max-width: 991.98px) {
+            font-size: 4vw;
           }
         }
         .active {
           color: white;
           background-color: $highlight-color;
+          &:hover {
+            color: white;
+          }
         }
       }
     }
@@ -569,7 +577,7 @@ header {
                   font-size: 14px;
                   box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.1);
                   display: block;
-                  transform: translateX(60px);
+                  transform: translateX(65px);
                 }
                 .fa-heart {
                   margin-bottom: 10px;
@@ -595,7 +603,7 @@ header {
             .item_info {
               .info_star {
                 i {
-                  color: yellow;
+                  color: rgb(253, 253, 37);
                 }
               }
             }

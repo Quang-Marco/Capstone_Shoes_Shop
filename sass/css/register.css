@@ -312,18 +312,18 @@ h6 {
 .register .container form .mb-3 .form-control::placeholder {
   color: white;
 }
-.register .container .remember_login {
+.register .container form .remember_login {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.register .container .remember_login .form-check input {
+.register .container form .remember_login .form-check input {
   cursor: pointer;
 }
-.register .container .remember_login .login a {
+.register .container form .remember_login .login a {
   color: rgb(6, 246, 74);
   font-size: 18px;
 }
-.register .container .remember_login .login a:hover {
+.register .container form .remember_login .login a:hover {
   color: rgb(220, 53, 69);
 }/*# sourceMappingURL=register.css.map */
