@@ -326,4 +326,98 @@ h6 {
 }
 .register .container form .remember_login .login a:hover {
   color: rgb(220, 53, 69);
+}
+
+.sign_in {
+  display: none;
+  color: white;
+  opacity: 0.8;
+}
+.sign_in .container h2 {
+  font-size: 60px;
+}
+@media screen and (max-width: 768px) {
+  .sign_in .container h2 {
+    font-size: 48px;
+  }
+}
+.sign_in .container form .mb-3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px;
+  border-bottom: 1px solid white;
+}
+.sign_in .container form .mb-3 i {
+  font-size: 20px;
+  cursor: none;
+}
+.sign_in .container form .mb-3 .form-control {
+  color: white;
+  background: transparent;
+  border: none;
+  fill: white;
+}
+.sign_in .container form .mb-3 .form-control::-moz-placeholder {
+  color: white;
+}
+.sign_in .container form .mb-3 .form-control::placeholder {
+  color: white;
+}
+.sign_in .container form .remember_forgot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sign_in .container form .remember_forgot .form-check input {
+  cursor: pointer;
+}
+.sign_in .container form .remember_forgot .forgot a {
+  color: white;
+}
+.sign_in .container form .remember_forgot .forgot a:hover {
+  color: rgb(220, 53, 69);
+}
+.sign_in .container form .or span {
+  display: inline-block;
+  width: 50px;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50%;
+}
+.sign_in .container form .social .col-6 {
+  display: flex;
+  justify-content: flex-start;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.sign_in .container form .social .col-6:hover {
+  opacity: 0.8;
+}
+.sign_in .container form .social i {
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-right: 0.5px solid white;
+}
+.sign_in .container form .social span {
+  display: inline-block;
+  width: 40px;
+  width: 100%;
+  line-height: 40px;
+}
+.sign_in .container form .social .facebook i {
+  background-color: #3b5998;
+}
+.sign_in .container form .social .facebook span {
+  background-color: #3b5998;
+}
+.sign_in .container form .social .twitter i {
+  background-color: #1da1f2;
+}
+.sign_in .container form .social .twitter span {
+  background-color: #1da1f2;
 }/*# sourceMappingURL=register.css.map */
