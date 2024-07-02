@@ -33,6 +33,12 @@
       referrerpolicy="no-referrer"
     />
 
+    <!-- Owl Carousel CSS -->
+    <link
+      rel="stylesheet"
+      href="src/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css"
+    />
+
     <!-- Animate CSS -->
     <link
       rel="stylesheet"
@@ -71,13 +77,22 @@
                     </button>
                     <ul class="dropdown-menu">
                       <li>
-                        <a class="dropdown-item" href="#">New Arrivals</a>
+                        <a class="dropdown-item" href="#new_release"
+                          >New Releases</a
+                        >
                       </li>
                       <li>
-                        <a class="dropdown-item" href="#">New Releases</a>
+                        <a class="dropdown-item" href="#new_arrivals"
+                          >New Arrivals</a
+                        >
                       </li>
                       <li>
                         <a class="dropdown-item" href="#">Latest Shoes</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#current_product"
+                          >Current Product</a
+                        >
                       </li>
                     </ul>
                   </div>
@@ -528,8 +543,118 @@
       </div>
     </section>
 
+    <!-- CAROUSEL PRODUCT -->
+    <section class="new_release py-md-4" id="new_release">
+      <h2 class="title text-center py-5">NEW RELEASE</h2>
+      <div class="owl-carousel owl-theme">
+        <div class="carousel_item">
+          <img src="public/image/air-force-1-07-shoes-WrLlWX.jpg" alt="" />
+          <div class="item_icon">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-image"></i>
+          </div>
+          <div class="item_add">
+            <h6>QUICK ADD</h6>
+          </div>
+        </div>
+        <div class="carousel_item">
+          <img src="public/image/court-royale-2-low-shoe-fjdwrF.jpg" alt="" />
+          <div class="item_icon">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-image"></i>
+          </div>
+          <div class="item_add">
+            <h6>QUICK ADD</h6>
+          </div>
+        </div>
+        <div class="carousel_item">
+          <img src="public/image/air-max-dn-shoes-FtLNfm.jpg" alt="" />
+          <div class="item_icon">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-image"></i>
+          </div>
+          <div class="item_add">
+            <h6>QUICK ADD</h6>
+          </div>
+        </div>
+        <div class="carousel_item">
+          <img src="public/image/killshot-2-leather-shoes-DqWZ4j.jpg" alt="" />
+          <div class="item_icon">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-image"></i>
+          </div>
+          <div class="item_add">
+            <h6>QUICK ADD</h6>
+          </div>
+        </div>
+        <div class="carousel_item">
+          <img src="public/image/motiva-walking-shoes-dCcsVX.jpg" alt="" />
+          <div class="item_icon">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-image"></i>
+          </div>
+          <div class="item_add">
+            <h6>QUICK ADD</h6>
+          </div>
+        </div>
+        <div class="carousel_item">
+          <img src="public/image/initiator-running-shoe-NRLxhm.jpg" alt="" />
+          <div class="item_icon">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-image"></i>
+          </div>
+          <div class="item_add">
+            <h6>QUICK ADD</h6>
+          </div>
+        </div>
+        <div class="carousel_item">
+          <img
+            src="public/image/free-metcon-6-workout-shoes-5L4dkH.jpg"
+            alt=""
+          />
+          <div class="item_icon">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-image"></i>
+          </div>
+          <div class="item_add">
+            <h6>QUICK ADD</h6>
+          </div>
+        </div>
+        <div class="carousel_item">
+          <img src="public/image/v2k-run-shoes-zJV8TV.jpg" alt="" />
+          <div class="item_icon">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-image"></i>
+          </div>
+          <div class="item_add">
+            <h6>QUICK ADD</h6>
+          </div>
+        </div>
+        <div class="carousel_item">
+          <img src="public/image/p-6000-shoes-QcQbpx.jpg" alt="" />
+          <div class="item_icon">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-image"></i>
+          </div>
+          <div class="item_add">
+            <h6>QUICK ADD</h6>
+          </div>
+        </div>
+        <div class="carousel_item">
+          <img src="public/image/p-6000-shoes-sbwFpl.jpg" alt="" />
+          <div class="item_icon">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-image"></i>
+          </div>
+          <div class="item_add">
+            <h6>QUICK ADD</h6>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- NEW ARRIVALS -->
-    <section class="new_arrivals">
+    <section class="new_arrivals" id="new_arrivals">
       <h2 class="title py-5 text-center">NEW ARRIVALS</h2>
       <div class="row gx-0">
         <div class="col-sm-4 col-12 new_arrivals_img">
@@ -540,10 +665,10 @@
             <h2 class="title">NIKE</h2>
             <h2 class="title">AIR</h2>
             <h2 class="title">JORDAN</h2>
-            <h3 class="pt-4">BESTSELLER</h3>
+            <h3 class="pt-4">BEST SELLER</h3>
           </div>
           <div class="box_view_more">
-            <a href="#">
+            <a href="detail.html">
               <h2 class="title">VIEW</h2>
               <h2 class="title">MORE</h2>
             </a>
@@ -562,7 +687,7 @@
             <h3 class="pt-4">NEW SESSION</h3>
           </div>
           <div class="box_view_more">
-            <a href="#">
+            <a href="detail.html">
               <h2 class="title">VIEW</h2>
               <h2 class="title">MORE</h2>
             </a>
@@ -581,7 +706,7 @@
             <h3 class="pt-4">NEW ARRIVAL</h3>
           </div>
           <div class="box_view_more">
-            <a href="#">
+            <a href="detail.html">
               <h2 class="title">VIEW</h2>
               <h2 class="title">MORE</h2>
             </a>
@@ -603,7 +728,7 @@
             <h3 class="pt-4">BLACK FRIDAY</h3>
           </div>
           <div class="box_view_more">
-            <a href="#">
+            <a href="detail.html">
               <h2 class="title">VIEW</h2>
               <h2 class="title">MORE</h2>
             </a>
@@ -618,7 +743,7 @@
     </section>
 
     <!-- VIDEO -->
-    <section class="index_video pt-5">
+    <section class="index_video pt-5 my-md-5">
       <!-- <video src="public/video/Adidas.mp4" autoplay controls></video> -->
       <iframe
         width="100%"
@@ -633,7 +758,7 @@
     </section>
 
     <!-- CURRENT PRODUCT -->
-    <section class="current_product">
+    <section class="current_product" id="current_product">
       <h2 class="title text-center py-5">CURRENT PRODUCT</h2>
       <div class="product_content">
         <ul
@@ -720,547 +845,8 @@
             aria-labelledby="pills-all-tab"
             tabindex="0"
           >
-            <div class="row gy-4">
-              <!-- Vans Black -->
-              <div
-                class="product_item col-12 col-md-6 col-lg-4 col-xl-3 animate__animated animate__zoomIn"
-              >
-                <div class="item_img">
-                  <img
-                    src="https://shop.cyberlearn.vn/images/vans-black-black.png"
-                    alt=""
-                  />
-                  <div class="item_icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-regular fa-image"></i>
-                  </div>
-                  <div class="item_price">
-                    <h4 class="mb-0">200💲</h4>
-                  </div>
-                </div>
-                <div class="item_info mt-4 ps-3">
-                  <a href="detail.html?id=1">
-                    <h4>Vans Black</h4>
-                  </a>
-                  <div class="info_star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half-stroke"></i>
-                  </div>
-                </div>
-              </div>
-              <!-- Vans Old School -->
-              <div
-                class="product_item col-12 col-md-6 col-lg-4 col-xl-3 animate__animated animate__zoomIn"
-              >
-                <div class="item_img">
-                  <img
-                    src="https://shop.cyberlearn.vn/images/van-old-school.png"
-                    alt=""
-                  />
-                  <div class="item_icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-regular fa-image"></i>
-                  </div>
-                  <div class="item_price">
-                    <h4 class="mb-0">200💲</h4>
-                  </div>
-                </div>
-                <div class="item_info mt-4 ps-3">
-                  <a href="detail.html?id=1">
-                    <h4>Vans Old School</h4>
-                  </a>
-                  <div class="info_star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half-stroke"></i>
-                  </div>
-                </div>
-              </div>
-              <!-- Converse Chuck Taylor -->
-              <div
-                class="product_item col-12 col-md-6 col-lg-4 col-xl-3 animate__animated animate__zoomIn"
-              >
-                <div class="item_img">
-                  <img
-                    src="https://shop.cyberlearn.vn/images/converse-chuck-taylor.png"
-                    alt=""
-                  />
-                  <div class="item_icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-regular fa-image"></i>
-                  </div>
-                  <div class="item_price">
-                    <h4 class="mb-0">250💲</h4>
-                  </div>
-                </div>
-                <div class="item_info mt-4 ps-3">
-                  <a href="detail.html?id=1">
-                    <h4>Converse Chuck Taylor</h4>
-                  </a>
-                  <div class="info_star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half-stroke"></i>
-                  </div>
-                </div>
-              </div>
-              <!-- Nike Adapt BB -->
-              <div
-                class="product_item col-12 col-md-6 col-lg-4 col-xl-3 animate__animated animate__zoomIn"
-              >
-                <div class="item_img">
-                  <img
-                    src="https://shop.cyberlearn.vn/images/nike-adapt-bb.png"
-                    alt=""
-                  />
-                  <div class="item_icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-regular fa-image"></i>
-                  </div>
-                  <div class="item_price">
-                    <h4 class="mb-0">350💲</h4>
-                  </div>
-                </div>
-                <div class="item_info mt-4 ps-3">
-                  <a href="detail.html?id=1">
-                    <h4>Nike Adapt BB</h4>
-                  </a>
-                  <div class="info_star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                </div>
-              </div>
-              <!-- Nike Air Max 97 -->
-              <div
-                class="product_item col-12 col-md-6 col-lg-4 col-xl-3 animate__animated animate__zoomIn"
-              >
-                <div class="item_img">
-                  <img
-                    src="https://shop.cyberlearn.vn/images/nike-air-max-97.png"
-                    alt=""
-                  />
-                  <div class="item_icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-regular fa-image"></i>
-                  </div>
-                  <div class="item_price">
-                    <h4 class="mb-0">350💲</h4>
-                  </div>
-                </div>
-                <div class="item_info mt-4 ps-3">
-                  <a href="detail.html?id=1">
-                    <h4>Nike Air Max 97</h4>
-                  </a>
-                  <div class="info_star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                </div>
-              </div>
-              <!-- Nike Air Max 97 Blue -->
-              <div
-                class="product_item col-12 col-md-6 col-lg-4 col-xl-3 animate__animated animate__zoomIn"
-              >
-                <div class="item_img">
-                  <img
-                    src="https://shop.cyberlearn.vn/images/nike-air-max-97-blue.png"
-                    alt=""
-                  />
-                  <div class="item_icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-regular fa-image"></i>
-                  </div>
-                  <div class="item_price">
-                    <h4 class="mb-0">350💲</h4>
-                  </div>
-                </div>
-                <div class="item_info mt-4 ps-3">
-                  <a href="detail.html?id=1">
-                    <h4>Nike Air Max 97 Blue</h4>
-                  </a>
-                  <div class="info_star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                </div>
-              </div>
-              <!-- Nike Flyknit -->
-              <div
-                class="product_item col-12 col-md-6 col-lg-4 col-xl-3 animate__animated animate__zoomIn"
-              >
-                <div class="item_img">
-                  <img
-                    src="https://shop.cyberlearn.vn/images/nike-flyknit.png"
-                    alt=""
-                  />
-                  <div class="item_icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-regular fa-image"></i>
-                  </div>
-                  <div class="item_price">
-                    <h4 class="mb-0">250💲</h4>
-                  </div>
-                </div>
-                <div class="item_info mt-4 ps-3">
-                  <a href="detail.html?id=1">
-                    <h4>Nike Flyknit</h4>
-                  </a>
-                  <div class="info_star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half-stroke"></i>
-                  </div>
-                </div>
-              </div>
-              <!-- Nike React Element -->
-              <div
-                class="product_item col-12 col-md-6 col-lg-4 col-xl-3 animate__animated animate__zoomIn"
-              >
-                <div class="item_img">
-                  <img
-                    src="https://shop.cyberlearn.vn/images/nike-react-element.png"
-                    alt=""
-                  />
-                  <div class="item_icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-regular fa-image"></i>
-                  </div>
-                  <div class="item_price">
-                    <h4 class="mb-0">280💲</h4>
-                  </div>
-                </div>
-                <div class="item_info mt-4 ps-3">
-                  <a href="detail.html?id=1">
-                    <h4>Nike React Element</h4>
-                  </a>
-                  <div class="info_star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                </div>
-              </div>
-              <!-- Nike Shox TL -->
-              <div
-                class="product_item col-12 col-md-6 col-lg-4 col-xl-3 animate__animated animate__zoomIn"
-              >
-                <div class="item_img">
-                  <img
-                    src="https://shop.cyberlearn.vn/images/nike-shox-tl.png"
-                    alt=""
-                  />
-                  <div class="item_icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-regular fa-image"></i>
-                  </div>
-                  <div class="item_price">
-                    <h4 class="mb-0">280💲</h4>
-                  </div>
-                </div>
-                <div class="item_info mt-4 ps-3">
-                  <a href="detail.html?id=1">
-                    <h4>Nike Shox TL</h4>
-                  </a>
-                  <div class="info_star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                </div>
-              </div>
-              <!-- Nike SP Dunk -->
-              <div
-                class="product_item col-12 col-md-6 col-lg-4 col-xl-3 animate__animated animate__zoomIn"
-              >
-                <div class="item_img">
-                  <img
-                    src="https://shop.cyberlearn.vn/images/nike-sp-dunk.png"
-                    alt=""
-                  />
-                  <div class="item_icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-regular fa-image"></i>
-                  </div>
-                  <div class="item_price">
-                    <h4 class="mb-0">350💲</h4>
-                  </div>
-                </div>
-                <div class="item_info mt-4 ps-3">
-                  <a href="detail.html?id=11">
-                    <h4>Nike SP Dunk</h4>
-                  </a>
-                  <div class="info_star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                </div>
-              </div>
-              <!-- Adidas Prophere -->
-              <div
-                class="product_item col-12 col-md-6 col-lg-4 col-xl-3 animate__animated animate__zoomIn"
-              >
-                <div class="item_img">
-                  <img
-                    src="https://shop.cyberlearn.vn/images/adidas-prophere.png"
-                    alt=""
-                  />
-                  <div class="item_icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-regular fa-image"></i>
-                  </div>
-                  <div class="item_price">
-                    <h4 class="mb-0">350💲</h4>
-                  </div>
-                </div>
-                <div class="item_info mt-4 ps-3">
-                  <a href="detail.html?id=12">
-                    <h4>Adidas Prophere</h4>
-                  </a>
-                  <div class="info_star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                </div>
-              </div>
-              <!-- Adidas Prophere Black White -->
-              <div
-                class="product_item col-12 col-md-6 col-lg-4 col-xl-3 animate__animated animate__zoomIn"
-              >
-                <div class="item_img">
-                  <img
-                    src="https://shop.cyberlearn.vn/images/adidas-prophere-black-white.png"
-                    alt=""
-                  />
-                  <div class="item_icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-regular fa-image"></i>
-                  </div>
-                  <div class="item_price">
-                    <h4 class="mb-0">350💲</h4>
-                  </div>
-                </div>
-                <div class="item_info mt-4 ps-3">
-                  <a href="detail.html?id=13">
-                    <h4>Adidas Prophere Black White</h4>
-                  </a>
-                  <div class="info_star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                </div>
-              </div>
-              <!-- Adidas Prophere Customize -->
-              <div
-                class="product_item col-12 col-md-6 col-lg-4 col-xl-3 animate__animated animate__zoomIn"
-              >
-                <div class="item_img">
-                  <img
-                    src="https://shop.cyberlearn.vn/images/adidas-prophere-customize.png"
-                    alt=""
-                  />
-                  <div class="item_icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-regular fa-image"></i>
-                  </div>
-                  <div class="item_price">
-                    <h4 class="mb-0">350💲</h4>
-                  </div>
-                </div>
-                <div class="item_info mt-4 ps-3">
-                  <a href="detail.html?id=14">
-                    <h4>Adidas Prophere Customize</h4>
-                  </a>
-                  <div class="info_star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                </div>
-              </div>
-              <!-- Adidas Super Star Red -->
-              <div
-                class="product_item col-12 col-md-6 col-lg-4 col-xl-3 animate__animated animate__zoomIn"
-              >
-                <div class="item_img">
-                  <img
-                    src="https://shop.cyberlearn.vn/images/adidas-super-star-red.png"
-                    alt=""
-                  />
-                  <div class="item_icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-regular fa-image"></i>
-                  </div>
-                  <div class="item_price">
-                    <h4 class="mb-0">350💲</h4>
-                  </div>
-                </div>
-                <div class="item_info mt-4 ps-3">
-                  <a href="detail.html?id=15">
-                    <h4>Adidas Super Star Red</h4>
-                  </a>
-                  <div class="info_star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                </div>
-              </div>
-              <!-- Adidas Swift Run -->
-              <div
-                class="product_item col-12 col-md-6 col-lg-4 col-xl-3 animate__animated animate__zoomIn"
-              >
-                <div class="item_img">
-                  <img
-                    src="https://shop.cyberlearn.vn/images/adidas-swift-run.png"
-                    alt=""
-                  />
-                  <div class="item_icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-regular fa-image"></i>
-                  </div>
-                  <div class="item_price">
-                    <h4 class="mb-0">350💲</h4>
-                  </div>
-                </div>
-                <div class="item_info mt-4 ps-3">
-                  <a href="detail.html?id=16">
-                    <h4>Adidas Swift Run</h4>
-                  </a>
-                  <div class="info_star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                </div>
-              </div>
-              <!-- Adidas Tenisky Super Star -->
-              <div
-                class="product_item col-12 col-md-6 col-lg-4 col-xl-3 animate__animated animate__zoomIn"
-              >
-                <div class="item_img">
-                  <img
-                    src="https://shop.cyberlearn.vn/images/adidas-tenisky-super-star.png"
-                    alt=""
-                  />
-                  <div class="item_icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-regular fa-image"></i>
-                  </div>
-                  <div class="item_price">
-                    <h4 class="mb-0">350💲</h4>
-                  </div>
-                </div>
-                <div class="item_info mt-4 ps-3">
-                  <a href="detail.html?id=17">
-                    <h4>Adidas Tenisky Super Star</h4>
-                  </a>
-                  <div class="info_star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                </div>
-              </div>
-              <!-- Adidas Ultraboost 4 -->
-              <div
-                class="product_item col-12 col-md-6 col-lg-4 col-xl-3 animate__animated animate__zoomIn"
-              >
-                <div class="item_img">
-                  <img
-                    src="https://shop.cyberlearn.vn/images/adidas-ultraboost-4.png"
-                    alt=""
-                  />
-                  <div class="item_icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-regular fa-image"></i>
-                  </div>
-                  <div class="item_price">
-                    <h4 class="mb-0">350💲</h4>
-                  </div>
-                </div>
-                <div class="item_info mt-4 ps-3">
-                  <a href="detail.html?id=18">
-                    <h4>Adidas Ultraboost 4</h4>
-                  </a>
-                  <div class="info_star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                </div>
-              </div>
-              <!-- Adidas Yeezy 350 -->
-              <div
-                class="product_item col-12 col-md-6 col-lg-4 col-xl-3 animate__animated animate__zoomIn"
-              >
-                <div class="item_img">
-                  <img
-                    src="https://shop.cyberlearn.vn/images/adidas-yeezy-350.png"
-                    alt=""
-                  />
-                  <div class="item_icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-regular fa-image"></i>
-                  </div>
-                  <div class="item_price">
-                    <h4 class="mb-0">350💲</h4>
-                  </div>
-                </div>
-                <div class="item_info mt-4 ps-3">
-                  <a href="detail.html?id=19">
-                    <h4>Adidas Yeezy 350</h4>
-                  </a>
-                  <div class="info_star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                </div>
-              </div>
+            <div class="container">
+              <div class="row gy-5"></div>
             </div>
           </div>
           <div
@@ -1270,218 +856,7 @@
             aria-labelledby="pills-nike-tab"
             tabindex="0"
           >
-            <div class="row gy-4">
-              <!-- Nike Adapt BB -->
-              <div
-                class="product_item col-12 col-md-6 col-lg-4 col-xl-3 animate__animated animate__zoomIn"
-              >
-                <div class="item_img">
-                  <img
-                    src="https://shop.cyberlearn.vn/images/nike-adapt-bb.png"
-                    alt=""
-                  />
-                  <div class="item_icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-regular fa-image"></i>
-                  </div>
-                  <div class="item_price">
-                    <h4 class="mb-0">350💲</h4>
-                  </div>
-                </div>
-                <div class="item_info mt-4 ps-3">
-                  <a href="detail.html?id=1">
-                    <h4>Nike Adapt BB</h4>
-                  </a>
-                  <div class="info_star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                </div>
-              </div>
-              <!-- Nike Air Max 97 -->
-              <div
-                class="product_item col-12 col-md-6 col-lg-4 col-xl-3 animate__animated animate__zoomIn"
-              >
-                <div class="item_img">
-                  <img
-                    src="https://shop.cyberlearn.vn/images/nike-air-max-97.png"
-                    alt=""
-                  />
-                  <div class="item_icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-regular fa-image"></i>
-                  </div>
-                  <div class="item_price">
-                    <h4 class="mb-0">350💲</h4>
-                  </div>
-                </div>
-                <div class="item_info mt-4 ps-3">
-                  <a href="detail.html?id=1">
-                    <h4>Nike Air Max 97</h4>
-                  </a>
-                  <div class="info_star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                </div>
-              </div>
-              <!-- Nike Air Max 97 Blue -->
-              <div
-                class="product_item col-12 col-md-6 col-lg-4 col-xl-3 animate__animated animate__zoomIn"
-              >
-                <div class="item_img">
-                  <img
-                    src="https://shop.cyberlearn.vn/images/nike-air-max-97-blue.png"
-                    alt=""
-                  />
-                  <div class="item_icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-regular fa-image"></i>
-                  </div>
-                  <div class="item_price">
-                    <h4 class="mb-0">350💲</h4>
-                  </div>
-                </div>
-                <div class="item_info mt-4 ps-3">
-                  <a href="detail.html?id=1">
-                    <h4>Nike Air Max 97 Blue</h4>
-                  </a>
-                  <div class="info_star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                </div>
-              </div>
-              <!-- Nike Flyknit -->
-              <div
-                class="product_item col-12 col-md-6 col-lg-4 col-xl-3 animate__animated animate__zoomIn"
-              >
-                <div class="item_img">
-                  <img
-                    src="https://shop.cyberlearn.vn/images/nike-flyknit.png"
-                    alt=""
-                  />
-                  <div class="item_icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-regular fa-image"></i>
-                  </div>
-                  <div class="item_price">
-                    <h4 class="mb-0">250💲</h4>
-                  </div>
-                </div>
-                <div class="item_info mt-4 ps-3">
-                  <a href="detail.html?id=1">
-                    <h4>Nike Flyknit</h4>
-                  </a>
-                  <div class="info_star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half-stroke"></i>
-                  </div>
-                </div>
-              </div>
-              <!-- Nike React Element -->
-              <div
-                class="product_item col-12 col-md-6 col-lg-4 col-xl-3 animate__animated animate__zoomIn"
-              >
-                <div class="item_img">
-                  <img
-                    src="https://shop.cyberlearn.vn/images/nike-react-element.png"
-                    alt=""
-                  />
-                  <div class="item_icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-regular fa-image"></i>
-                  </div>
-                  <div class="item_price">
-                    <h4 class="mb-0">280💲</h4>
-                  </div>
-                </div>
-                <div class="item_info mt-4 ps-3">
-                  <a href="detail.html?id=1">
-                    <h4>Nike React Element</h4>
-                  </a>
-                  <div class="info_star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                </div>
-              </div>
-              <!-- Nike Shox TL -->
-              <div
-                class="product_item col-12 col-md-6 col-lg-4 col-xl-3 animate__animated animate__zoomIn"
-              >
-                <div class="item_img">
-                  <img
-                    src="https://shop.cyberlearn.vn/images/nike-shox-tl.png"
-                    alt=""
-                  />
-                  <div class="item_icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-regular fa-image"></i>
-                  </div>
-                  <div class="item_price">
-                    <h4 class="mb-0">280💲</h4>
-                  </div>
-                </div>
-                <div class="item_info mt-4 ps-3">
-                  <a href="detail.html?id=1">
-                    <h4>Nike Shox TL</h4>
-                  </a>
-                  <div class="info_star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                </div>
-              </div>
-              <!-- Nike SP Dunk -->
-              <div
-                class="product_item col-12 col-md-6 col-lg-4 col-xl-3 animate__animated animate__zoomIn"
-              >
-                <div class="item_img">
-                  <img
-                    src="https://shop.cyberlearn.vn/images/nike-sp-dunk.png"
-                    alt=""
-                  />
-                  <div class="item_icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-regular fa-image"></i>
-                  </div>
-                  <div class="item_price">
-                    <h4 class="mb-0">350💲</h4>
-                  </div>
-                </div>
-                <div class="item_info mt-4 ps-3">
-                  <a href="detail.html?id=11">
-                    <h4>Nike SP Dunk</h4>
-                  </a>
-                  <div class="info_star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <div class="row gy-5"></div>
           </div>
           <div
             class="tab-pane fade"
@@ -1490,248 +865,7 @@
             aria-labelledby="pills-adidas-tab"
             tabindex="0"
           >
-            <div class="row gy-4">
-              <!-- Adidas Prophere -->
-              <div
-                class="product_item col-12 col-md-6 col-lg-4 col-xl-3 animate__animated animate__zoomIn"
-              >
-                <div class="item_img">
-                  <img
-                    src="https://shop.cyberlearn.vn/images/adidas-prophere.png"
-                    alt=""
-                  />
-                  <div class="item_icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-regular fa-image"></i>
-                  </div>
-                  <div class="item_price">
-                    <h4 class="mb-0">350💲</h4>
-                  </div>
-                </div>
-                <div class="item_info mt-4 ps-3">
-                  <a href="detail.html?id=12">
-                    <h4>Adidas Prophere</h4>
-                  </a>
-                  <div class="info_star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                </div>
-              </div>
-              <!-- Adidas Prophere Black White -->
-              <div
-                class="product_item col-12 col-md-6 col-lg-4 col-xl-3 animate__animated animate__zoomIn"
-              >
-                <div class="item_img">
-                  <img
-                    src="https://shop.cyberlearn.vn/images/adidas-prophere-black-white.png"
-                    alt=""
-                  />
-                  <div class="item_icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-regular fa-image"></i>
-                  </div>
-                  <div class="item_price">
-                    <h4 class="mb-0">350💲</h4>
-                  </div>
-                </div>
-                <div class="item_info mt-4 ps-3">
-                  <a href="detail.html?id=13">
-                    <h4>Adidas Prophere Black White</h4>
-                  </a>
-                  <div class="info_star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                </div>
-              </div>
-              <!-- Adidas Prophere Customize -->
-              <div
-                class="product_item col-12 col-md-6 col-lg-4 col-xl-3 animate__animated animate__zoomIn"
-              >
-                <div class="item_img">
-                  <img
-                    src="https://shop.cyberlearn.vn/images/adidas-prophere-customize.png"
-                    alt=""
-                  />
-                  <div class="item_icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-regular fa-image"></i>
-                  </div>
-                  <div class="item_price">
-                    <h4 class="mb-0">350💲</h4>
-                  </div>
-                </div>
-                <div class="item_info mt-4 ps-3">
-                  <a href="detail.html?id=14">
-                    <h4>Adidas Prophere Customize</h4>
-                  </a>
-                  <div class="info_star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                </div>
-              </div>
-              <!-- Adidas Super Star Red -->
-              <div
-                class="product_item col-12 col-md-6 col-lg-4 col-xl-3 animate__animated animate__zoomIn"
-              >
-                <div class="item_img">
-                  <img
-                    src="https://shop.cyberlearn.vn/images/adidas-super-star-red.png"
-                    alt=""
-                  />
-                  <div class="item_icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-regular fa-image"></i>
-                  </div>
-                  <div class="item_price">
-                    <h4 class="mb-0">350💲</h4>
-                  </div>
-                </div>
-                <div class="item_info mt-4 ps-3">
-                  <a href="detail.html?id=15">
-                    <h4>Adidas Super Star Red</h4>
-                  </a>
-                  <div class="info_star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                </div>
-              </div>
-              <!-- Adidas Swift Run -->
-              <div
-                class="product_item col-12 col-md-6 col-lg-4 col-xl-3 animate__animated animate__zoomIn"
-              >
-                <div class="item_img">
-                  <img
-                    src="https://shop.cyberlearn.vn/images/adidas-swift-run.png"
-                    alt=""
-                  />
-                  <div class="item_icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-regular fa-image"></i>
-                  </div>
-                  <div class="item_price">
-                    <h4 class="mb-0">350💲</h4>
-                  </div>
-                </div>
-                <div class="item_info mt-4 ps-3">
-                  <a href="detail.html?id=16">
-                    <h4>Adidas Swift Run</h4>
-                  </a>
-                  <div class="info_star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                </div>
-              </div>
-              <!-- Adidas Tenisky Super Star -->
-              <div
-                class="product_item col-12 col-md-6 col-lg-4 col-xl-3 animate__animated animate__zoomIn"
-              >
-                <div class="item_img">
-                  <img
-                    src="https://shop.cyberlearn.vn/images/adidas-tenisky-super-star.png"
-                    alt=""
-                  />
-                  <div class="item_icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-regular fa-image"></i>
-                  </div>
-                  <div class="item_price">
-                    <h4 class="mb-0">350💲</h4>
-                  </div>
-                </div>
-                <div class="item_info mt-4 ps-3">
-                  <a href="detail.html?id=17">
-                    <h4>Adidas Tenisky Super Star</h4>
-                  </a>
-                  <div class="info_star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                </div>
-              </div>
-              <!-- Adidas Ultraboost 4 -->
-              <div
-                class="product_item col-12 col-md-6 col-lg-4 col-xl-3 animate__animated animate__zoomIn"
-              >
-                <div class="item_img">
-                  <img
-                    src="https://shop.cyberlearn.vn/images/adidas-ultraboost-4.png"
-                    alt=""
-                  />
-                  <div class="item_icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-regular fa-image"></i>
-                  </div>
-                  <div class="item_price">
-                    <h4 class="mb-0">350💲</h4>
-                  </div>
-                </div>
-                <div class="item_info mt-4 ps-3">
-                  <a href="detail.html?id=18">
-                    <h4>Adidas Ultraboost 4</h4>
-                  </a>
-                  <div class="info_star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                </div>
-              </div>
-              <!-- Adidas Yeezy 350 -->
-              <div
-                class="product_item col-12 col-md-6 col-lg-4 col-xl-3 animate__animated animate__zoomIn"
-              >
-                <div class="item_img">
-                  <img
-                    src="https://shop.cyberlearn.vn/images/adidas-yeezy-350.png"
-                    alt=""
-                  />
-                  <div class="item_icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-regular fa-image"></i>
-                  </div>
-                  <div class="item_price">
-                    <h4 class="mb-0">350💲</h4>
-                  </div>
-                </div>
-                <div class="item_info mt-4 ps-3">
-                  <a href="detail.html?id=19">
-                    <h4>Adidas Yeezy 350</h4>
-                  </a>
-                  <div class="info_star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <div class="row gy-5"></div>
           </div>
           <div
             class="tab-pane fade"
@@ -1740,38 +874,7 @@
             aria-labelledby="pills-converse-tab"
             tabindex="0"
           >
-            <div class="row gy-4">
-              <!-- Converse Chuck Taylor -->
-              <div
-                class="product_item col-12 col-md-6 col-lg-4 col-xl-3 animate__animated animate__zoomIn"
-              >
-                <div class="item_img">
-                  <img
-                    src="https://shop.cyberlearn.vn/images/converse-chuck-taylor.png"
-                    alt=""
-                  />
-                  <div class="item_icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-regular fa-image"></i>
-                  </div>
-                  <div class="item_price">
-                    <h4 class="mb-0">250💲</h4>
-                  </div>
-                </div>
-                <div class="item_info mt-4 ps-3">
-                  <a href="detail.html?id=1">
-                    <h4>Converse Chuck Taylor</h4>
-                  </a>
-                  <div class="info_star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half-stroke"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <div class="row gy-5"></div>
           </div>
           <div
             class="tab-pane fade"
@@ -1780,75 +883,14 @@
             aria-labelledby="pills-vans-tab"
             tabindex="0"
           >
-            <div class="row gy-4">
-              <!-- Vans Black -->
-              <div
-                class="product_item col-12 col-md-6 col-lg-4 col-xl-3 animate__animated animate__zoomIn"
-              >
-                <div class="item_img">
-                  <img
-                    src="https://shop.cyberlearn.vn/images/vans-black-black.png"
-                    alt=""
-                  />
-                  <div class="item_icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-regular fa-image"></i>
-                  </div>
-                  <div class="item_price">
-                    <h4 class="mb-0">200💲</h4>
-                  </div>
-                </div>
-                <div class="item_info mt-4 ps-3">
-                  <a href="detail.html?id=1">
-                    <h4>Vans Black</h4>
-                  </a>
-                  <div class="info_star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half-stroke"></i>
-                  </div>
-                </div>
-              </div>
-              <!-- Vans Old School -->
-              <div
-                class="product_item col-12 col-md-6 col-lg-4 col-xl-3 animate__animated animate__zoomIn"
-              >
-                <div class="item_img">
-                  <img
-                    src="https://shop.cyberlearn.vn/images/van-old-school.png"
-                    alt=""
-                  />
-                  <div class="item_icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-regular fa-image"></i>
-                  </div>
-                  <div class="item_price">
-                    <h4 class="mb-0">200💲</h4>
-                  </div>
-                </div>
-                <div class="item_info mt-4 ps-3">
-                  <a href="detail.html?id=1">
-                    <h4>Vans Old School</h4>
-                  </a>
-                  <div class="info_star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half-stroke"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <div class="row gy-5"></div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- FOOTER  -->
-    <footer class="bg-black mt-lg-5">
+    <footer class="bg-black mt-5">
       <div class="container">
         <div class="footer_top row">
           <div
@@ -1943,6 +985,39 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- jQuery 3.7.1 -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="src/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 10,
+          autoplay: true,
+          autoplayTimeout: 2000,
+          autoplayHoverPause: true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 3,
+            },
+            1000: {
+              items: 5,
+            },
+          },
+        });
+      });
+    </script>
+
     <!-- Axios -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js"
@@ -1967,14 +1042,6 @@
     <script>
       new WOW().init();
     </script> -->
-
-    <!-- jQuery 3.7.1 -->
-    <!-- <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script> -->
 
     <!-- Index JS -->
     <script src="src/controllers/index.js"></script>
