@@ -1,78 +1,8 @@
-.fs-xs {
-  font-size: 10px !important;
-}
-
-.fs-sm {
-  font-size: 12px !important;
-}
-
-.fs-base {
-  font-size: 16px !important;
-}
-
-.fs-lg {
-  font-size: 20px !important;
-}
-
-.fs-xl {
-  font-size: 24px !important;
-}
-
-.fs-xxl {
-  font-size: 28px !important;
-}
-
-.fs-slide {
-  font-size: 100px !important;
-}
-
-.fs-slide-lg {
-  font-size: 150px !important;
-}
-
-.fs-slide-sm {
-  font-size: 80px !important;
-}
-
-.ms-n4 {
-  margin-left: -2.5rem !important;
-}
-
-.ms-n5 {
-  margin-left: -3rem !important;
-}
-
-.ms-n6 {
-  margin-left: -4rem !important;
-}
-
-.ms-n7 {
-  margin-left: -6rem !important;
-}
-
-.mt-6 {
-  margin-top: 4rem !important;
-}
-
-.mt-7 {
-  margin-top: 5rem !important;
-}
-
-.text-right {
-  text-align: right !important;
-}
-
-.text-left {
-  text-align: left !important;
-}
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "Helvetica Now Text", Helvetica, Arial, sans-serif;
-  font-style: normal;
-  font-weight: 400;
 }
 
 body::-webkit-scrollbar {
@@ -82,6 +12,7 @@ body::-webkit-scrollbar {
 a {
   text-decoration: none;
   color: black;
+  transition: all 0.5s ease;
 }
 a:hover {
   color: #ff7e22;
@@ -129,13 +60,43 @@ h4,
 h5,
 h6 {
   font-family: "Helvetica Now Text Medium", Helvetica, Arial, sans-serif;
-  font-style: normal;
-  font-weight: 400;
 }
 
 .nikeFuturaND {
   font-family: "Nike Futura ND";
   font-style: italic;
+}
+
+.ms-n4 {
+  margin-left: -2.5rem !important;
+}
+
+.ms-n5 {
+  margin-left: -3rem !important;
+}
+
+.ms-n6 {
+  margin-left: -4rem !important;
+}
+
+.ms-n7 {
+  margin-left: -6rem !important;
+}
+
+.mt-6 {
+  margin-top: 4rem !important;
+}
+
+.mt-7 {
+  margin-top: 5rem !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.text-left {
+  text-align: left !important;
 }
 
 .fs-xs {
@@ -174,36 +135,16 @@ h6 {
   font-size: 80px !important;
 }
 
-.ms-n4 {
-  margin-left: -2.5rem !important;
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
-.ms-n5 {
-  margin-left: -3rem !important;
-}
-
-.ms-n6 {
-  margin-left: -4rem !important;
-}
-
-.ms-n7 {
-  margin-left: -6rem !important;
-}
-
-.mt-6 {
-  margin-top: 4rem !important;
-}
-
-.mt-7 {
-  margin-top: 5rem !important;
-}
-
-.text-right {
-  text-align: right !important;
-}
-
-.text-left {
-  text-align: left !important;
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 @keyframes picRotate {
@@ -227,20 +168,20 @@ h6 {
   0% {
     transform: translateX(0);
   }
-  20% {
+  10% {
     transform: translateX(10px);
   }
-  40% {
+  20% {
     transform: translateX(-8px);
   }
-  60% {
+  40% {
     transform: translateX(6px);
   }
-  80% {
+  50% {
     transform: translateX(-4px);
   }
-  90% {
-    transform: translateX(2px);
+  60% {
+    transform: translateX(4px);
   }
   100% {
     transform: translateX(0);
@@ -514,6 +455,13 @@ header nav .navbar-icon .fa-user {
 }
 .banner #homeSlider .carousel-inner .carousel-item .carousel-caption button {
   border: solid 1px transparent;
+  padding: 6px 50px;
+  margin: 15px 10px 15px 0;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 0.5s;
+  cursor: pointer;
 }
 .banner #homeSlider .carousel-inner .carousel-item .carousel-caption.iOrange h2 {
   color: #ff7e22;
@@ -522,24 +470,12 @@ header nav .navbar-icon .fa-user {
   color: #b50c0c !important;
 }
 .banner #homeSlider .carousel-inner .carousel-item .carousel-caption.iOrange button {
-  padding: 6px 50px;
-  margin: 15px 10px 15px 0;
-  border-radius: 30px;
-  background-color: #de411d;
-  background-image: none;
-  background-size: 200%;
-  background-position: left center;
   color: #fff;
-  text-transform: uppercase;
-  font-weight: 600;
   font-size: 20px;
-  transition: all 0.5s;
-  cursor: pointer;
+  background-color: #de411d;
 }
 .banner #homeSlider .carousel-inner .carousel-item .carousel-caption.iOrange button:hover {
   color: #de411d;
-  background-color: #fff;
-  background-position: right center;
 }
 .banner #homeSlider .carousel-inner .carousel-item .carousel-caption.iOrange button:hover {
   box-shadow: #fca356 -10px 0px 30px, #fca356 10px 0px 30px;
@@ -549,24 +485,12 @@ header nav .navbar-icon .fa-user {
   color: #205d92;
 }
 .banner #homeSlider .carousel-inner .carousel-item .carousel-caption.iBlue button {
-  padding: 6px 50px;
-  margin: 15px 10px 15px 0;
-  border-radius: 30px;
-  background-color: #205d92;
-  background-image: none;
-  background-size: 200%;
-  background-position: left center;
   color: #fff;
-  text-transform: uppercase;
-  font-weight: 600;
   font-size: 20px;
-  transition: all 0.5s;
-  cursor: pointer;
+  background-color: #205d92;
 }
 .banner #homeSlider .carousel-inner .carousel-item .carousel-caption.iBlue button:hover {
   color: #205d92;
-  background-color: #fff;
-  background-position: right center;
 }
 .banner #homeSlider .carousel-inner .carousel-item .carousel-caption.iBlue button:hover {
   box-shadow: #15bff1 -10px 0px 30px, #15bff1 10px 0px 30px;
@@ -576,24 +500,12 @@ header nav .navbar-icon .fa-user {
   color: #790f1a;
 }
 .banner #homeSlider .carousel-inner .carousel-item .carousel-caption.iRed button {
-  padding: 6px 50px;
-  margin: 15px 10px 15px 0;
-  border-radius: 30px;
-  background-color: #790f1a;
-  background-image: none;
-  background-size: 200%;
-  background-position: left center;
   color: #fff;
-  text-transform: uppercase;
-  font-weight: 600;
   font-size: 20px;
-  transition: all 0.5s;
-  cursor: pointer;
+  background-color: #790f1a;
 }
 .banner #homeSlider .carousel-inner .carousel-item .carousel-caption.iRed button:hover {
   color: #790f1a;
-  background-color: #fff;
-  background-position: right center;
 }
 .banner #homeSlider .carousel-inner .carousel-item .carousel-caption.iRed button:hover {
   box-shadow: #e54757 -10px 0px 30px, #e54757 10px 0px 30px;
@@ -603,24 +515,12 @@ header nav .navbar-icon .fa-user {
   color: #3f3f90;
 }
 .banner #homeSlider .carousel-inner .carousel-item .carousel-caption.iVioletBlue button {
-  padding: 6px 50px;
-  margin: 15px 10px 15px 0;
-  border-radius: 30px;
-  background-color: #3f3f90;
-  background-image: none;
-  background-size: 200%;
-  background-position: left center;
   color: #fff;
-  text-transform: uppercase;
-  font-weight: 600;
   font-size: 20px;
-  transition: all 0.5s;
-  cursor: pointer;
+  background-color: #3f3f90;
 }
 .banner #homeSlider .carousel-inner .carousel-item .carousel-caption.iVioletBlue button:hover {
   color: #3f3f90;
-  background-color: #fff;
-  background-position: right center;
 }
 .banner #homeSlider .carousel-inner .carousel-item .carousel-caption.iVioletBlue button:hover {
   box-shadow: #7e65d8 -10px 0px 30px, #7e65d8 10px 0px 30px;
@@ -745,6 +645,52 @@ header nav .navbar-icon .fa-user {
 }
 .banner #homeSlider:hover .carousel_arrow {
   display: flex;
+}
+
+/**=== our services ===**/
+.services h3 {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0 auto 50px;
+  text-align: center;
+  letter-spacing: 3px;
+}
+.services .service_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.services .service_item:hover .service_icon img {
+  animation: leftRight 2s infinite;
+}
+.services .service_item .service_icon img {
+  width: 85%;
+  margin-bottom: 20px;
+}
+.services .service_item .service_content {
+  text-align: center;
+}
+.services .service_item .service_content h4 {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.services .service_item .service_content p {
+  color: #999;
+  font-size: 14px;
+  margin: 0;
+}
+.services .service_item .service_content a {
+  font-size: 11px;
+  font-weight: 600;
+  color: #999;
+}
+.services .service_item .service_content a:hover {
+  color: #ff7e22;
 }
 
 /**=== end devCong ===**/
