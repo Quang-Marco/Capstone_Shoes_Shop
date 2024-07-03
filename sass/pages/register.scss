@@ -186,6 +186,15 @@
           }
         }
       }
+      .text-right {
+        a {
+          color: rgb(6, 246, 74);
+          font-size: 18px;
+          &:hover {
+            color: rgb(220, 53, 69);
+          }
+        }
+      }
     }
   }
 }

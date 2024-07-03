@@ -70,22 +70,17 @@
                 <li class="nav-item">
                   <!-- <a class="nav-link" href="#">New & Featured</a> -->
                   <div class="dropdown">
-                    <button
-                      class="btn btn-close-white w-100"
-                      type="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Featured
-                    </button>
+                    <button class="btn w-100" type="button">Featured</button>
                     <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="#new_release"
+                          >New Releases</a
+                        >
+                      </li>
                       <li>
                         <a class="dropdown-item" href="#new_arrivals"
                           >New Arrivals</a
                         >
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">New Releases</a>
                       </li>
                       <li>
                         <a class="dropdown-item" href="#">Latest Shoes</a>
@@ -101,14 +96,7 @@
                 <li class="nav-item">
                   <!-- <a class="nav-link" href="#">Men</a> -->
                   <div class="dropdown">
-                    <button
-                      class="btn btn-close-white w-100"
-                      type="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Men
-                    </button>
+                    <button class="btn w-100" type="button">Men</button>
                     <ul class="dropdown-menu">
                       <li>
                         <a class="dropdown-item" href="#pills-all">All Shoes</a>
@@ -134,14 +122,7 @@
                 <li class="nav-item">
                   <!-- <a class="nav-link" href="#">Women</a> -->
                   <div class="dropdown">
-                    <button
-                      class="btn btn-close-white w-100"
-                      type="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Women
-                    </button>
+                    <button class="btn w-100" type="button">Women</button>
                     <ul class="dropdown-menu">
                       <li>
                         <a class="dropdown-item" href="#pills-all">All Shoes</a>
@@ -167,14 +148,7 @@
                 <li class="nav-item">
                   <!-- <a class="nav-link" href="#">Kids</a> -->
                   <div class="dropdown">
-                    <button
-                      class="btn btn-close-white w-100"
-                      type="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Kids
-                    </button>
+                    <button class="btn w-100" type="button">Kids</button>
                     <ul class="dropdown-menu">
                       <li>
                         <a class="dropdown-item" href="#pills-all">All Shoes</a>
@@ -203,14 +177,7 @@
                 <li class="nav-item">
                   <!-- <a class="nav-link" href="#">Brands</a> -->
                   <div class="dropdown">
-                    <button
-                      class="btn btn-close-white w-100"
-                      type="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Brands
-                    </button>
+                    <button class="btn w-100" type="button">Brands</button>
                     <ul class="dropdown-menu">
                       <li>
                         <a class="dropdown-item" href="#pills-nike">Nike</a>
@@ -232,14 +199,7 @@
                 <li class="nav-item">
                   <!-- <a class="nav-link" href="#">Sale Off</a> -->
                   <div class="dropdown">
-                    <button
-                      class="btn btn-close-white w-100"
-                      type="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Sale Off
-                    </button>
+                    <button class="btn w-100" type="button">Sale Off</button>
                     <ul class="dropdown-menu">
                       <li>
                         <a class="dropdown-item" href="#">All Sale</a>
@@ -274,8 +234,111 @@
               <i class="fa-solid fa-magnifying-glass position-absolute"></i>
             </form>
             <div class="navbar-icon ms-lg-3 ms-md-2 ms-sm-1 ms-0">
-              <a href="register.html"><i class="fa-regular fa-user"></i></a>
+              <div class="dropdown d-inline-block">
+                <a
+                  href=""
+                  role="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <i class="fa-regular fa-user"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href=""
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                      >Sign In</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="register.html">Sign Up</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header border-bottom-0">
+                      <h4 class="modal-title" id="exampleModalLabel">LOGIN</h4>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <form class="col" action="#">
+                        <div class="mb-3">
+                          <i class="fa-regular fa-envelope me-2"></i>
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="email"
+                            aria-describedby="helpId"
+                            placeholder="Email"
+                          />
+                        </div>
+                        <div class="mb-3">
+                          <i class="fa-solid fa-lock me-2"></i>
+                          <input
+                            type="password"
+                            class="form-control"
+                            id="password"
+                            aria-describedby="helpId"
+                            placeholder="Password"
+                          />
+                        </div>
+                        <div class="remember_forgot py-4">
+                          <div class="form-check mb-0">
+                            <input class="form-check-input" type="checkbox" />
+                            <label class="form-check-label" for="">
+                              Remember me
+                            </label>
+                          </div>
+                          <div class="forgot">
+                            <a href="#">Forgot password?</a>
+                          </div>
+                        </div>
+                        <button type="button" class="btn btn-danger w-100 py-3">
+                          Sign In
+                        </button>
+                        <div class="or text-center my-4">
+                          <span class="bg-danger">OR</span>
+                        </div>
+                        <div class="row social">
+                          <div class="col-6 facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <span class="d-inline-block ps-2">Facebook</span>
+                          </div>
+                          <div class="col-6 twitter">
+                            <i class="fa-brands fa-twitter"></i>
+                            <span class="d-inline-block ps-2">Twitter</span>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer border-top-0">
+                      No account yet?<a href="register.html">Register</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <i class="fa-solid fa-cart-shopping"></i>
+              <button id="btn-dark">
+                <i class="fa-regular fa-moon"></i>
+                <i class="fa-regular fa-sun"></i>
+              </button>
             </div>
             <button
               class="navbar-toggler ms-1"
@@ -646,39 +709,39 @@
     <!-- our services -->
     <section class="services py-5">
       <div class="container">
-        <!-- <h3 class="title">Our Services</h3> -->
+        <h3 class="title text-center py-5">OUR SERVICES</h3>
         <div class="row">
           <!-- item -->
           <div class="col-md-4 service_item">
             <div class="service_icon">
-              <img src="./public/image/ship.webp" alt="" />
+              <i class="fa-solid fa-truck-fast"></i>
             </div>
             <div class="service_content">
               <h4>FREE SHIPPING</h4>
               <p>Free shipping order above $200</p>
-              <a href="#url">Lear more ›</a>
+              <a href="#url">Learn more ›</a>
             </div>
           </div>
           <!-- item -->
           <div class="col-md-4 service_item">
             <div class="service_icon">
-              <img src="./public/image/support.webp" alt="" />
+              <i class="fa-solid fa-phone"></i>
             </div>
             <div class="service_content">
               <h4>SUPPORT 24/7</h4>
               <p>Contact us 24 hours a day, 7 days a week</p>
-              <a href="#url">Lear more ›</a>
+              <a href="#url">Learn more ›</a>
             </div>
           </div>
           <!-- item -->
           <div class="col-md-4 service_item">
             <div class="service_icon">
-              <img src="./public/image/return.webp" alt="" />
+              <i class="fa-solid fa-rotate"></i>
             </div>
             <div class="service_content">
               <h4>7 DAYS RETURN</h4>
               <p>Return it within 7 days for an exchange.</p>
-              <a href="#url">Lear more ›</a>
+              <a href="#url">Learn more ›</a>
             </div>
           </div>
         </div>
@@ -808,7 +871,7 @@
     </section>
 
     <!-- FOOTER  -->
-    <footer class="bg-black mt-5">
+    <footer class="bg-black mt-md-5">
       <div class="container">
         <div class="footer_top row">
           <div
@@ -968,6 +1031,9 @@
     </script>
     <script async src="https://static.addtoany.com/menu/page.js"></script>
     <!-- AddToAny END -->
+
+    <!-- Style JS -->
+    <script src="src/style.js"></script>
 
     <!-- Detail JS -->
     <script src="src/controllers/detail.js"></script>

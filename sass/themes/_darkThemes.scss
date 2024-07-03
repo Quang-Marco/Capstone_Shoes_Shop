@@ -1,0 +1,161 @@
+// Dark theme
+body.dark-theme {
+  background-color: rgb(35, 35, 35);
+  .title {
+    color: white;
+  }
+  header {
+    .dropdown-menu {
+      .dropdown-item {
+        &:hover {
+          color: white;
+          background-color: $highlight-color;
+        }
+      }
+    }
+    .navbar-brand {
+      span {
+        color: $highlight-color;
+      }
+    }
+    .navbar-collapse {
+      .navbar-nav {
+        .nav-item {
+          .dropdown {
+            button {
+              color: white;
+              &::before {
+                background-color: $highlight-color;
+              }
+              &:hover {
+                color: $highlight-color;
+              }
+            }
+          }
+        }
+      }
+    }
+    form {
+    }
+    .navbar-icon {
+      i {
+        color: white;
+        &:hover {
+          color: $highlight-color;
+        }
+      }
+      .dropdown {
+        .fa-user {
+          transition: $transition;
+        }
+      }
+      #btn-dark {
+        .fa-moon {
+          display: none;
+        }
+        .fa-sun {
+          display: inline-block;
+        }
+      }
+    }
+  }
+  .banner {
+    background-color: rgb(35, 35, 35);
+  }
+  .new_arrivals {
+    .row {
+      .new_arrivals_box {
+        .box_content {
+          h3 {
+            color: white;
+            &::after {
+              background-color: white;
+            }
+          }
+        }
+        .box_view_more {
+          a {
+            h2 {
+              transition: $transition;
+            }
+            &:hover h2 {
+              color: $highlight-color;
+            }
+          }
+        }
+      }
+    }
+  }
+  .current_product {
+    .product_content {
+      .nav {
+        .nav-item {
+          .nav-link {
+            &:hover {
+              color: white;
+            }
+          }
+          .active {
+            color: black;
+          }
+        }
+      }
+      .tab-content {
+        .tab-pane {
+          .row {
+            .product_item {
+              .item_info {
+                h4 {
+                  color: white;
+                  transition: $transition;
+                  &:hover {
+                    color: $highlight-color;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .services {
+    .row {
+      .service_item {
+        .service_icon {
+          i {
+            color: white;
+          }
+        }
+        .service_content {
+          color: white;
+          p {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+  footer {
+    background-color: rgb(35, 35, 35) !important;
+  }
+  .product_detail {
+    .row {
+      .product_info {
+        color: white;
+        a {
+          color: white;
+          i {
+            transition: none;
+          }
+          &:hover {
+            color: $highlight-color;
+          }
+        }
+      }
+      .tab-content {
+        color: white;
+      }
+    }
+  }
+}
