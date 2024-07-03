@@ -159,6 +159,14 @@ header {
           }
           button {
             border: solid 1px transparent;
+            padding: 6px 50px;
+            margin: 15px 10px 15px 0;
+            border-radius: 30px;
+            text-transform: uppercase;
+            font-weight: 600;
+            //   border: none;
+            transition: all 0.5s;
+            cursor: pointer;
           }
 
           &.iOrange {
@@ -171,7 +179,7 @@ header {
             p {
             }
             button {
-              @include styleButton($white, $orange-bold);
+              @include styleBtnBanner($white, $orange-bold);
               &:hover {
                 box-shadow: $orange-light -10px 0px 30px,
                   $orange-light 10px 0px 30px;
@@ -184,7 +192,7 @@ header {
               color: $blue-dark;
             }
             button {
-              @include styleButton($white, $blue-dark);
+              @include styleBtnBanner($white, $blue-dark);
               &:hover {
                 box-shadow: $cyan -10px 0px 30px, $cyan 10px 0px 30px;
                 border-color: $cyan;
@@ -196,7 +204,7 @@ header {
               color: $red-dark;
             }
             button {
-              @include styleButton($white, $red-dark);
+              @include styleBtnBanner($white, $red-dark);
               &:hover {
                 box-shadow: $red-light -10px 0px 30px, $red-light 10px 0px 30px;
                 border-color: $red-light;
@@ -208,7 +216,7 @@ header {
               color: $violetBlue;
             }
             button {
-              @include styleButton($white, $violetBlue);
+              @include styleBtnBanner($white, $violetBlue);
               &:hover {
                 box-shadow: $violetBlue-light -10px 0px 30px,
                   $violetBlue-light 10px 0px 30px;
@@ -413,9 +421,64 @@ header {
     }
   }
 }
+
+/**=== our services ===**/
+.services {
+  h3 {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0 auto 50px;
+    text-align: center;
+    letter-spacing: 3px;
+  }
+  .service_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    &:hover {
+      .service_icon {
+        img {
+          animation: leftRight 2s infinite;
+        }
+      }
+    }
+    .service_icon {
+      img {
+        width: 85%;
+        margin-bottom: 20px;
+      }
+    }
+    .service_content {
+      text-align: center;
+      h4 {
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+      p {
+        color: #999;
+        font-size: 14px;
+        margin: 0;
+      }
+      a {
+        font-size: 11px;
+        font-weight: 600;
+        color: #999;
+        &:hover {
+          color: $highlight-color;
+        }
+      }
+    }
+  }
+}
 /**=== end devCong ===**/
 
-.new_release {
+.new_release,
+.related_products {
   .owl-carousel {
     .carousel_item {
       position: relative;

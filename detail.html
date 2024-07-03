@@ -33,6 +33,12 @@
       referrerpolicy="no-referrer"
     />
 
+    <!-- Owl Carousel CSS -->
+    <link
+      rel="stylesheet"
+      href="src/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css"
+    />
+
     <!-- Animate CSS -->
     <link
       rel="stylesheet"
@@ -301,8 +307,508 @@
       </div>
     </section>
 
+    <!-- Product Detail -->
+    <section class="product_detail pt-5 mt-3">
+      <div class="container">
+        <div class="row">
+          <!-- product image -->
+          <div class="col-lg-5 col-xl-6 product_image pe-xl-4">
+            <img src="./public/image/adidas-prophere-black-white.png" alt="" />
+          </div>
+
+          <!-- product info -->
+          <div class="col-lg-7 col-xl-6 product_info">
+            <h2>adidas prophere black white</h2>
+            <div class="product_metaInfo d-flex">
+              <div class="sku">SKU: <span>ADI-13</span></div>
+              <div class="instock">100 in stock</div>
+              <div class="review_star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i>
+                <a href="#pills-review-tab" title="View all reviews"
+                  >(3 reviews)</a
+                >
+              </div>
+              <div class="social">
+                <a class="a2a_dd" href="./"
+                  ><i class="fa-solid fa-share-nodes"></i> Share</a
+                >
+              </div>
+            </div>
+
+            <div class="price">$350.00</div>
+            <p class="short_description">
+              about this shoe:Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua.
+            </p>
+            <label for="">Size: <span id="selectedSize">33</span></label>
+            <div class="size d-flex">
+              <button type="button" class="size_item">31</button>
+              <button type="button" class="size_item">32</button>
+              <button type="button" class="size_item selected">33</button>
+              <button type="button" class="size_item">34</button>
+              <button type="button" class="size_item">35</button>
+            </div>
+
+            <label for="quantity">Quantity:</label>
+            <form action="" id="actionCart" class="d-flex flex-wrap py-1 mb-3">
+              <div class="inputGroup">
+                <span class="decrease">-</span>
+                <input
+                  type="number"
+                  id="quantity"
+                  class=""
+                  step="1"
+                  min="1"
+                  max="91"
+                  name="quantity"
+                  value="1"
+                  title="Qty"
+                  size="4"
+                  placeholder=""
+                  inputmode="numeric"
+                  autocomplete="off"
+                />
+                <span class="increase">+</span>
+              </div>
+
+              <button type="button" class="add_to_cart">add to cart</button>
+              <button type="button" class="add_compare" title="Add to compare">
+                <i class="fa-solid fa-code-compare"></i>
+              </button>
+              <button
+                type="button"
+                class="add_wish_list"
+                title="Add to wishlist"
+              >
+                <i class="fa-solid fa-heart"></i>
+              </button>
+            </form>
+            <p class="meta_title categories">
+              Categories: <span><a href="#url">Adidas</a></span>
+            </p>
+            <p class="meta_title tags">
+              Tags:
+              <span><a href="#url">adidas-prophere-black-white</a></span>
+            </p>
+            <div class="payment_info">
+              <h6 class="fs-sm">guaranteed Safe checkout:</h6>
+              <img src="./public/image/payment_info.png" alt="" />
+              <ul>
+                <li>
+                  <i class="fa-regular fa-clock"></i> Orders ship within 5 to 10
+                  business days.
+                </li>
+                <li>
+                  <i class="fa-solid fa-truck-fast"></i> Hoorey ! This item
+                  ships free to the US
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- tabs product description  -->
+        <div class="row py-5">
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="pills-description-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-description"
+                type="button"
+                role="tab"
+                aria-controls="pills-description"
+                aria-selected="true"
+              >
+                Description
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-review-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-review"
+                type="button"
+                role="tab"
+                aria-controls="pills-review"
+                aria-selected="false"
+              >
+                Reviews (<span>3</span>)
+              </button>
+            </li>
+          </ul>
+          <!-- tab content -->
+          <div class="tab-content mt-4" id="pills-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="pills-description"
+              role="tabpanel"
+              aria-labelledby="pills-description-tab"
+              tabindex="0"
+            >
+              <p>
+                About this shoe: Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+              </p>
+              <div>
+                <img
+                  alt=""
+                  src="https://cdn.shopify.com/s/files/1/0256/4594/0810/files/image_des.png?v=1615432854"
+                />
+                <ul class="p-0 mt-4">
+                  <li>MACHINE WASH AT MAX.TEMP. 30° C - NORMAL PROCESS</li>
+                  <li>DO NOT BLEACH</li>
+                  <li>DO NOT TUMBLE DRY</li>
+                  <li>IRON AT MAX. TEMP. OF 110° C WITHOUT STEAM</li>
+                  <li>DO NOT DRY CLEAN</li>
+                </ul>
+                <br />
+                <h4>Sample Ordered Lista</h4>
+                <ol class="style_type_2">
+                  <li>Comodous in tempor ullamcorper miaculis</li>
+                  <li>Pellentesque vitae neque mollis urna mattis laoreet.</li>
+                  <li>Divamus sit amet purus justo.</li>
+                  <li>
+                    Proin molestie egestas orci ac suscipit risus posuere
+                    loremous
+                  </li>
+                </ol>
+                <br />
+                <h4>Sample Paragraph Text</h4>
+                <p class="des des_2">
+                  Faded short sleeves t-shirt with high neckline. Soft and
+                  stretchy material for a comfortable fit. Accessorize with a
+                  straw hat and you're ready for summer!Faded short sleeves
+                  t-shirt with high neckline. Soft and stretchy material for a
+                  comfortable fit. Accessorize with a straw hat and you're ready
+                  for summe!Aenean massa. Cum sociis natoque penatibus et magnis
+                  dis parturient montes, nascetur ridicu lus mus. Donec quam
+                  felis, ultri cies nec, pellentesque eu, pretium quis, sem.
+                  Nulla consequat massa quis enim.
+                </p>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-review"
+              role="tabpanel"
+              aria-labelledby="pills-review-tab"
+              tabindex="0"
+            >
+              <div class="row mt-4">
+                <!-- list comments -->
+                <div class="col-md-6">
+                  <ul class="comments pe-md-3 ps-0">
+                    <!-- item -->
+                    <li class="comment_item">
+                      <img src="./public/image/avatar.jpeg" alt="" />
+                      <div class="comment_text">
+                        <p class="comment_meta">
+                          <strong>Jane Doe</strong> – February 19
+                        </p>
+                        <div class="star-rating">
+                          <i class="fa-regular fa-star selected"></i>
+                          <i class="fa-regular fa-star selected"></i>
+                          <i class="fa-regular fa-star selected"></i>
+                          <i class="fa-regular fa-star"></i>
+                          <i class="fa-regular fa-star"></i>
+                        </div>
+                        <p class="comment_content">
+                          Lorem ipsum dolor sit amet consectetur, adipisicing
+                          elit. Animi non molestiae ex quisquam officiis nostrum
+                          dolores amet consectetur
+                        </p>
+                      </div>
+                    </li>
+                    <!-- item -->
+                    <li class="comment_item">
+                      <img src="./public/image/avatar.jpeg" alt="" />
+                      <div class="comment_text">
+                        <p class="comment_meta">
+                          <strong>Jane Doe</strong> – February 19
+                        </p>
+                        <div class="star-rating">
+                          <i class="fa-regular fa-star selected"></i>
+                          <i class="fa-regular fa-star selected"></i>
+                          <i class="fa-regular fa-star selected"></i>
+                          <i class="fa-regular fa-star selected"></i>
+                          <i class="fa-regular fa-star"></i>
+                        </div>
+                        <p class="comment_content">
+                          Lorem ipsum dolor sit amet consectetur, adipisicing
+                          elit. Animi non molestiae ex quisquam officiis nostrum
+                          dolores amet consectetur
+                        </p>
+                      </div>
+                    </li>
+                    <!-- item -->
+                    <li class="comment_item">
+                      <img src="./public/image/avatar.jpeg" alt="" />
+                      <div class="comment_text">
+                        <p class="comment_meta">
+                          <strong>Jane Doe</strong> – February 19
+                        </p>
+                        <div class="star-rating">
+                          <i class="fa-regular fa-star selected"></i>
+                          <i class="fa-regular fa-star selected"></i>
+                          <i class="fa-regular fa-star"></i>
+                          <i class="fa-regular fa-star"></i>
+                          <i class="fa-regular fa-star"></i>
+                        </div>
+                        <p class="comment_content">
+                          Lorem ipsum dolor sit amet consectetur, adipisicing
+                          elit. Animi non molestiae ex quisquam officiis nostrum
+                          dolores amet consectetur
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <!-- form add review -->
+                <div class="col-md-6">
+                  <form action="">
+                    <h4>ADD A REVIEW</h4>
+                    <p>
+                      Your email address will not be published. Required fields
+                      are marked <span class="required">*</span>
+                    </p>
+                    <h5>Your rating <span class="required">*</span></h5>
+                    <div id="select-rating" class="mb-3">
+                      <!-- <i class="fa-solid fa-star"></i> -->
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                    <!-- fill review -->
+                    <div class="mb-3">
+                      <label for="" class="form-label"
+                        >Your review <span class="required">*</span></label
+                      >
+                      <textarea
+                        class="form-control"
+                        name=""
+                        id=""
+                        rows="3"
+                      ></textarea>
+                    </div>
+                    <!-- Name field -->
+                    <div class="mb-3">
+                      <label for="reviewName" class="form-label"
+                        >Name <span class="required">*</span></label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        name=""
+                        id="reviewName"
+                        placeholder=""
+                      />
+                    </div>
+
+                    <!-- email field -->
+                    <div class="mb-3">
+                      <label for="reviewEmail" class="form-label"
+                        >Email <span class="required">*</span></label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        name=""
+                        id="reviewEmail"
+                        placeholder=""
+                      />
+                    </div>
+                    <button type="button">submit</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- our services -->
+    <section class="services py-5">
+      <div class="container">
+        <!-- <h3 class="title">Our Services</h3> -->
+        <div class="row">
+          <!-- item -->
+          <div class="col-md-4 service_item">
+            <div class="service_icon">
+              <img src="./public/image/ship.webp" alt="" />
+            </div>
+            <div class="service_content">
+              <h4>FREE SHIPPING</h4>
+              <p>Free shipping order above $200</p>
+              <a href="#url">Lear more ›</a>
+            </div>
+          </div>
+          <!-- item -->
+          <div class="col-md-4 service_item">
+            <div class="service_icon">
+              <img src="./public/image/support.webp" alt="" />
+            </div>
+            <div class="service_content">
+              <h4>SUPPORT 24/7</h4>
+              <p>Contact us 24 hours a day, 7 days a week</p>
+              <a href="#url">Lear more ›</a>
+            </div>
+          </div>
+          <!-- item -->
+          <div class="col-md-4 service_item">
+            <div class="service_icon">
+              <img src="./public/image/return.webp" alt="" />
+            </div>
+            <div class="service_content">
+              <h4>7 DAYS RETURN</h4>
+              <p>Return it within 7 days for an exchange.</p>
+              <a href="#url">Lear more ›</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RELATED PRODUCT -->
+    <section class="related_products">
+      <!-- copy NEW RELEASE trang chủ -->
+      <h2 class="title text-center pt-3 pb-5">
+        Related products you may like...
+      </h2>
+      <div class="owl-carousel owl-theme">
+        <div class="carousel_item">
+          <img src="public/image/air-force-1-07-shoes-WrLlWX.jpg" alt="" />
+          <div class="item_icon">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-image"></i>
+          </div>
+          <div class="item_add">
+            <h6>QUICK ADD</h6>
+          </div>
+        </div>
+
+        <div class="carousel_item">
+          <img src="public/image/court-royale-2-low-shoe-fjdwrF.jpg" alt="" />
+          <div class="item_icon">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-image"></i>
+          </div>
+          <div class="item_add">
+            <h6>QUICK ADD</h6>
+          </div>
+        </div>
+
+        <div class="carousel_item">
+          <img src="public/image/killshot-2-leather-shoes-DqWZ4j.jpg" alt="" />
+          <div class="item_icon">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-image"></i>
+          </div>
+          <div class="item_add">
+            <h6>QUICK ADD</h6>
+          </div>
+        </div>
+
+        <div class="carousel_item">
+          <img src="public/image/air-max-dn-shoes-FtLNfm.jpg" alt="" />
+          <div class="item_icon">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-image"></i>
+          </div>
+          <div class="item_add">
+            <h6>QUICK ADD</h6>
+          </div>
+        </div>
+
+        <div class="carousel_item">
+          <img src="public/image/motiva-walking-shoes-dCcsVX.jpg" alt="" />
+          <div class="item_icon">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-image"></i>
+          </div>
+          <div class="item_add">
+            <h6>QUICK ADD</h6>
+          </div>
+        </div>
+
+        <div class="carousel_item">
+          <img src="public/image/initiator-running-shoe-NRLxhm.jpg" alt="" />
+          <div class="item_icon">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-image"></i>
+          </div>
+          <div class="item_add">
+            <h6>QUICK ADD</h6>
+          </div>
+        </div>
+
+        <div class="carousel_item">
+          <img
+            src="public/image/free-metcon-6-workout-shoes-5L4dkH.jpg"
+            alt=""
+          />
+          <div class="item_icon">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-image"></i>
+          </div>
+          <div class="item_add">
+            <h6>QUICK ADD</h6>
+          </div>
+        </div>
+
+        <div class="carousel_item">
+          <img src="public/image/v2k-run-shoes-zJV8TV.jpg" alt="" />
+          <div class="item_icon">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-image"></i>
+          </div>
+          <div class="item_add">
+            <h6>QUICK ADD</h6>
+          </div>
+        </div>
+
+        <div class="carousel_item">
+          <img src="public/image/p-6000-shoes-QcQbpx.jpg" alt="" />
+          <div class="item_icon">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-image"></i>
+          </div>
+          <div class="item_add">
+            <h6>QUICK ADD</h6>
+          </div>
+        </div>
+
+        <div class="carousel_item">
+          <img src="public/image/p-6000-shoes-sbwFpl.jpg" alt="" />
+          <div class="item_icon">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-image"></i>
+          </div>
+          <div class="item_add">
+            <h6>QUICK ADD</h6>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- FOOTER  -->
-    <footer class="bg-black mt-lg-5">
+    <footer class="bg-black mt-5">
       <div class="container">
         <div class="footer_top row">
           <div
@@ -397,6 +903,39 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- jQuery 3.7.1 -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="src/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 10,
+          autoplay: true,
+          autoplayTimeout: 2000,
+          autoplayHoverPause: true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 3,
+            },
+            1000: {
+              items: 5,
+            },
+          },
+        });
+      });
+    </script>
+
     <!-- Axios -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js"
@@ -408,6 +947,28 @@
     <!-- Back To Top JS -->
     <script src="src/assets/js/util.js"></script>
     <script src="src/assets/js/main.js"></script>
+
+    <!-- Wow JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+      integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      new WOW().init();
+    </script>
+
+    <!-- AddToAny BEGIN -->
+    <script>
+      var a2a_config = a2a_config || {};
+      a2a_config.onclick = 1;
+      a2a_config.locale = "vi";
+      a2a_config.num_services = 6;
+    </script>
+    <script async src="https://static.addtoany.com/menu/page.js"></script>
+    <!-- AddToAny END -->
+
 
     <!-- Detail JS -->
     <script src="src/controllers/detail.js"></script>

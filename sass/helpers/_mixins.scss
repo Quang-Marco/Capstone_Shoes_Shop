@@ -6,24 +6,31 @@
   line-height: 1;
 }
 
-@mixin styleButton($color, $bg, $bg-gradient: none) {
-  padding: 6px 50px;
-  margin: 15px 10px 15px 0;
-  border-radius: 30px;
-  background-color: $bg;
-  background-image: $bg-gradient;
-  background-size: 200%;
-  background-position: left center;
+@mixin styleBtnBanner($color, $bg, $bg-gradient: none) {
   color: $color;
-  //   border: none;
-  text-transform: uppercase;
-  font-weight: 600;
   font-size: $fs-lg;
-  transition: all 0.5s;
-  cursor: pointer;
+  background-color: $bg;
+
+  @if $bg-gradient and $bg-gradient!=none {
+    background-image: $bg-gradient;
+    background-size: 200%;
+    background-position: left center;
+  }
+  &:hover {
+    color: $bg;
+
+    @if $bg-gradient and $bg-gradient!=none {
+      background-color: $color;
+      background-position: right center;
+    }
+  }
+}
+
+@mixin styleButton($color, $bg) {
+  color: $color;
+  background-color: $bg;
   &:hover {
     color: $bg;
     background-color: $color;
-    background-position: right center;
   }
 }
