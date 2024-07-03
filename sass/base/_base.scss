@@ -5,9 +5,9 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Helvetica Now Text", Helvetica, Arial, sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  font-family: $ff-normal;
+  // font-style: normal;
+  // font-weight: 400;
 }
 
 body::-webkit-scrollbar {
@@ -60,12 +60,70 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Helvetica Now Text Medium", Helvetica, Arial, sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  font-family: $ff-medium;
+  // font-style: normal;
+  // font-weight: 400;
 }
 
 .nikeFuturaND {
   font-family: "Nike Futura ND";
   font-style: italic;
+}
+.ms-n4 {
+  margin-left: -2.5rem !important;
+}
+.ms-n5 {
+  margin-left: -3rem !important;
+}
+.ms-n6 {
+  margin-left: -4rem !important;
+}
+.ms-n7 {
+  margin-left: -6rem !important;
+}
+.mt-6 {
+  margin-top: 4rem !important;
+}
+.mt-7 {
+  margin-top: 5rem !important;
+}
+.text-right {
+  text-align: right !important;
+}
+.text-left {
+  text-align: left !important;
+}
+
+// render font size
+$arr-fs: (
+  "xs": $fs-xs,
+  "sm": $fs-sm,
+  "base": $fs-base,
+  "lg": $fs-lg,
+  "xl": $fs-xl,
+  "xxl": $fs-xxl,
+  "slide": $fs-slide,
+  "slide-lg": $fs-slide * 1.5,
+  "slide-sm": $fs-slide * 0.8,
+);
+
+@each $title, $fs in $arr-fs {
+  .fs-#{$title} {
+    font-size: $fs !important;
+  }
+}
+
+// Transition
+$transition: all 0.5s ease;
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
 }

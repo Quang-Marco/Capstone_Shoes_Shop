@@ -1,79 +1,9 @@
 @charset "UTF-8";
-.fs-xs {
-  font-size: 10px !important;
-}
-
-.fs-sm {
-  font-size: 12px !important;
-}
-
-.fs-base {
-  font-size: 16px !important;
-}
-
-.fs-lg {
-  font-size: 20px !important;
-}
-
-.fs-xl {
-  font-size: 24px !important;
-}
-
-.fs-xxl {
-  font-size: 28px !important;
-}
-
-.fs-slide {
-  font-size: 100px !important;
-}
-
-.fs-slide-lg {
-  font-size: 150px !important;
-}
-
-.fs-slide-sm {
-  font-size: 80px !important;
-}
-
-.ms-n4 {
-  margin-left: -2.5rem !important;
-}
-
-.ms-n5 {
-  margin-left: -3rem !important;
-}
-
-.ms-n6 {
-  margin-left: -4rem !important;
-}
-
-.ms-n7 {
-  margin-left: -6rem !important;
-}
-
-.mt-6 {
-  margin-top: 4rem !important;
-}
-
-.mt-7 {
-  margin-top: 5rem !important;
-}
-
-.text-right {
-  text-align: right !important;
-}
-
-.text-left {
-  text-align: left !important;
-}
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "Helvetica Now Text", Helvetica, Arial, sans-serif;
-  font-style: normal;
-  font-weight: 400;
 }
 
 body::-webkit-scrollbar {
@@ -133,13 +63,43 @@ h4,
 h5,
 h6 {
   font-family: "Helvetica Now Text Medium", Helvetica, Arial, sans-serif;
-  font-style: normal;
-  font-weight: 400;
 }
 
 .nikeFuturaND {
   font-family: "Nike Futura ND";
   font-style: italic;
+}
+
+.ms-n4 {
+  margin-left: -2.5rem !important;
+}
+
+.ms-n5 {
+  margin-left: -3rem !important;
+}
+
+.ms-n6 {
+  margin-left: -4rem !important;
+}
+
+.ms-n7 {
+  margin-left: -6rem !important;
+}
+
+.mt-6 {
+  margin-top: 4rem !important;
+}
+
+.mt-7 {
+  margin-top: 5rem !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.text-left {
+  text-align: left !important;
 }
 
 .fs-xs {
@@ -178,36 +138,16 @@ h6 {
   font-size: 80px !important;
 }
 
-.ms-n4 {
-  margin-left: -2.5rem !important;
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
-.ms-n5 {
-  margin-left: -3rem !important;
-}
-
-.ms-n6 {
-  margin-left: -4rem !important;
-}
-
-.ms-n7 {
-  margin-left: -6rem !important;
-}
-
-.mt-6 {
-  margin-top: 4rem !important;
-}
-
-.mt-7 {
-  margin-top: 5rem !important;
-}
-
-.text-right {
-  text-align: right !important;
-}
-
-.text-left {
-  text-align: left !important;
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 @keyframes picRotate {
@@ -231,20 +171,20 @@ h6 {
   0% {
     transform: translateX(0);
   }
-  20% {
+  10% {
     transform: translateX(10px);
   }
-  40% {
+  20% {
     transform: translateX(-8px);
   }
-  60% {
+  40% {
     transform: translateX(6px);
   }
-  80% {
+  50% {
     transform: translateX(-4px);
   }
-  90% {
-    transform: translateX(2px);
+  60% {
+    transform: translateX(4px);
   }
   100% {
     transform: translateX(0);
@@ -273,4 +213,263 @@ h6 {
 }
 .breadCrumbLinks .breadcrumb .breadcrumb-item.active {
   color: #888;
+}
+
+/**=== Product detail ===**/
+.product_detail img {
+  width: 100%;
+}
+.product_detail .product_info h2 {
+  font-size: 28px;
+  text-transform: capitalize;
+}
+.product_detail .product_info .product_metaInfo {
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 600;
+  display: flex;
+}
+.product_detail .product_info .product_metaInfo div {
+  padding: 0 15px;
+  border-right: 1px solid #555;
+}
+.product_detail .product_info .product_metaInfo div:first-child {
+  padding-left: 0;
+}
+.product_detail .product_info .product_metaInfo div:last-child {
+  border: 0;
+}
+.product_detail .product_info .product_metaInfo .sku span {
+  font-weight: 400;
+  color: #555;
+}
+.product_detail .product_info .product_metaInfo .instock {
+  color: #090;
+}
+.product_detail .product_info .product_metaInfo .outstock {
+  color: #900;
+}
+.product_detail .product_info .product_metaInfo .review_star {
+  color: #ff7e22;
+}
+.product_detail .product_info .product_metaInfo .review_star a {
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.product_detail .product_info .product_metaInfo .social i {
+  padding-right: 7px;
+}
+.product_detail .product_info .price {
+  font-size: 30px;
+  padding: 10px 0;
+}
+.product_detail .product_info label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.product_detail .product_info .size {
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.product_detail .product_info .size .size_item {
+  width: 40px;
+  height: 40px;
+  font-size: 13px;
+  line-height: 13px;
+  text-align: center;
+  padding: 7px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  background-color: #eee;
+  color: #555;
+  transition: all 0.3s ease;
+}
+.product_detail .product_info .size .size_item:hover {
+  border-color: #ff7e22;
+}
+.product_detail .product_info .size .size_item.selected {
+  background-color: #ff7e22;
+  color: #fff;
+}
+.product_detail .product_info form#actionCart {
+  gap: 20px;
+}
+.product_detail .product_info form#actionCart .inputGroup {
+  border: 1px solid #000;
+  display: flex !important;
+  align-items: center;
+}
+.product_detail .product_info form#actionCart .inputGroup span {
+  background-color: #fff;
+  color: #000;
+  width: 25px;
+  text-align: center;
+  line-height: 48.4px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.product_detail .product_info form#actionCart .inputGroup span:hover {
+  background-color: #000;
+  color: #fff;
+}
+.product_detail .product_info form#actionCart .inputGroup #quantity {
+  border: none;
+  outline: none;
+  text-align: center;
+  line-height: 48.4px;
+}
+.product_detail .product_info form#actionCart button {
+  height: 50px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border: 1px solid #000;
+  transition: all 0.5s ease;
+  color: #000;
+  background-color: #fff;
+}
+.product_detail .product_info form#actionCart button:hover {
+  color: #fff;
+  background-color: #000;
+}
+.product_detail .product_info form#actionCart .add_to_cart {
+  padding: 10px 80px;
+  color: #fff;
+  background-color: #000;
+}
+.product_detail .product_info form#actionCart .add_to_cart:hover {
+  color: #000;
+  background-color: #fff;
+}
+.product_detail .product_info p.meta_title {
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.product_detail .product_info p.meta_title span a {
+  color: #555;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.product_detail .product_info p.meta_title span a:hover {
+  color: #ff7e22;
+}
+.product_detail .product_info p.meta_title.tags span a {
+  text-transform: lowercase !important;
+}
+.product_detail .product_info .payment_info {
+  margin-top: 10px;
+}
+.product_detail .product_info .payment_info h6 {
+  text-transform: uppercase;
+}
+.product_detail .product_info .payment_info img {
+  padding: 10px 0;
+  width: 70%;
+}
+.product_detail .product_info .payment_info ul {
+  margin-top: 8px;
+  padding: 0;
+}
+.product_detail .product_info .payment_info ul li {
+  color: #999;
+  font-size: 12px;
+}
+.product_detail .product_info .payment_info ul li i {
+  width: 20px;
+}
+.product_detail #pills-tab.nav-pills li button {
+  font-family: "Helvetica Now Text Medium", Helvetica, Arial, sans-serif;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  position: relative;
+}
+.product_detail #pills-tab.nav-pills li button:hover, .product_detail #pills-tab.nav-pills li button.active {
+  color: #777;
+  background-color: transparent;
+}
+.product_detail #pills-tab.nav-pills li button::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+  width: 0;
+  border-bottom: 5px solid #777;
+  transition: all 0.5s ease;
+}
+.product_detail #pills-tab.nav-pills li button:hover::before, .product_detail #pills-tab.nav-pills li button.active::before {
+  width: 40%;
+}
+.product_detail .tab-content #pills-description img {
+  width: unset;
+}
+.product_detail .tab-content #pills-review .comments .comment_item {
+  display: flex;
+  gap: 20px;
+  padding: 20px 0;
+}
+.product_detail .tab-content #pills-review .comments .comment_item img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 2px solid #fefefe;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 15px;
+}
+.product_detail .tab-content #pills-review .comments .comment_item .comment_text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.product_detail .tab-content #pills-review .comments .comment_item .comment_text .star-rating i {
+  color: #999;
+}
+.product_detail .tab-content #pills-review .comments .comment_item .comment_text .star-rating i.selected {
+  color: #ff7e22;
+}
+.product_detail .tab-content #pills-review form {
+  padding: 30px 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.product_detail .tab-content #pills-review form .required {
+  color: red !important;
+}
+.product_detail .tab-content #pills-review form .form-control {
+  border-radius: 0;
+}
+.product_detail .tab-content #pills-review form .form-control:focus {
+  border-color: #000;
+}
+.product_detail .tab-content #pills-review form #select-rating:hover i {
+  color: #555;
+}
+.product_detail .tab-content #pills-review form #select-rating i {
+  color: #999;
+  transition: all 0.3s ease;
+}
+.product_detail .tab-content #pills-review form #select-rating i.hover, .product_detail .tab-content #pills-review form #select-rating i.selected {
+  color: #ff7e22;
+}
+.product_detail .tab-content #pills-review form button {
+  padding: 10px 50px;
+  border-width: 1px;
+  margin-top: 20px;
+  transition: all 0.5s ease;
+  color: #fff;
+  background-color: #000;
+}
+.product_detail .tab-content #pills-review form button:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+/**=== RELATED PRODUCT ===**/
+.related_products h2 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 32px;
 }/*# sourceMappingURL=detail.css.map */
