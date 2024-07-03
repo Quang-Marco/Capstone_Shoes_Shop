@@ -23,8 +23,10 @@ ul {
   list-style: none;
 }
 
-i {
+i,
+img {
   cursor: pointer;
+  transition: all 0.5s ease;
 }
 
 .form-control:focus {

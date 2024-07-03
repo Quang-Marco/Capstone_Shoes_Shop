@@ -1,4 +1,5 @@
 @import "./../helpers/variables";
+
 // Reset CSS
 * {
   padding: 0;
@@ -26,8 +27,10 @@ ul {
   list-style: none;
 }
 
-i {
+i,
+img {
   cursor: pointer;
+  transition: $transition;
 }
 
 .form-control:focus {

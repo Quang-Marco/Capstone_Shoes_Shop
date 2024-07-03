@@ -62,23 +62,127 @@
           }
         }
       }
-    }
-    .remember_login {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      .form-check {
-        input {
-          cursor: pointer;
+      .remember_login {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .form-check {
+          input {
+            cursor: pointer;
+          }
+        }
+        .login {
+          a {
+            color: rgb(6, 246, 74);
+            font-size: 18px;
+            &:hover {
+              color: rgb(220, 53, 69);
+            }
+          }
         }
       }
-      .login {
-        a {
-          color: rgb(6, 246, 74);
-          font-size: 18px;
+    }
+  }
+}
+
+.sign_in {
+  display: none;
+  color: white;
+  opacity: 0.8;
+  .container {
+    h2 {
+      font-size: 60px;
+      @media screen and (max-width: 768px) {
+        font-size: 48px;
+      }
+    }
+    form {
+      .mb-3 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 15px;
+        border-bottom: 1px solid white;
+        i {
+          font-size: 20px;
+          cursor: none;
+        }
+        .form-control {
+          color: white;
+          background: transparent;
+          border: none;
+          fill: white;
+          &::placeholder {
+            color: white;
+          }
+        }
+      }
+      .remember_forgot {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .form-check {
+          input {
+            cursor: pointer;
+          }
+        }
+        .forgot {
+          a {
+            color: white;
+            &:hover {
+              color: rgb(220, 53, 69);
+            }
+          }
+        }
+      }
+      .or {
+        span {
+          display: inline-block;
+          width: 50px;
+          width: 50px;
+          line-height: 50px;
+          text-align: center;
+          border-radius: 50%;
+        }
+      }
+      .social {
+        .col-6 {
+          display: flex;
+          justify-content: flex-start;
+          cursor: pointer;
           transition: $transition;
           &:hover {
-            color: rgb(254, 85, 85);
+            opacity: 0.8;
+          }
+        }
+        i {
+          font-size: 20px;
+          height: 40px;
+          width: 40px;
+          line-height: 40px;
+          text-align: center;
+          border-right: 0.5px solid white;
+        }
+        span {
+          display: inline-block;
+          width: 40px;
+          width: 100%;
+          line-height: 40px;
+        }
+        .facebook {
+          i {
+            background-color: #3b5998;
+          }
+          span {
+            background-color: #3b5998;
+          }
+        }
+        .twitter {
+          i {
+            background-color: #1da1f2;
+          }
+          span {
+            background-color: #1da1f2;
           }
         }
       }
