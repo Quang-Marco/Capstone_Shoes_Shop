@@ -50,18 +50,27 @@ header {
               @media screen and (max-width: 1200px) {
                 margin: 0 12px;
               }
+              @media screen and (max-width: 992px) {
+                margin: 0;
+              }
               &::before {
                 content: "";
                 position: absolute;
                 bottom: 0;
                 left: 0;
                 width: 0;
-                height: 3px;
+                height: 2px;
                 background: $main-color;
                 transition: $transition;
+                @media screen and (min-width: 992px) {
+                  left: 15%;
+                }
               }
               &:hover::before {
                 width: 100%;
+                @media screen and (min-width: 992px) {
+                  width: 70%;
+                }
               }
             }
             .dropdown-menu {
@@ -115,13 +124,12 @@ header {
 }
 
 /**=== Banner (devCong) ===**/
+
 .banner {
   background-color: $main-color;
-  // height: 80vh;
   #homeSlider {
     .carousel-inner {
       .carousel-item {
-        // height: 80vh;
         background-repeat: no-repeat;
         background-size: contain;
         .carousel-pic {
@@ -287,7 +295,6 @@ header {
           }
         }
         // =============== responsive carousel item ================
-        // responsive carousel item
 
         @media screen and (min-width: 1200px) {
           height: 558px;
@@ -414,6 +421,7 @@ header {
     }
     // end carousel item
     .carousel_arrow {
+      width: 10%;
       display: none;
     }
     &:hover .carousel_arrow {
@@ -424,14 +432,6 @@ header {
 
 /**=== our services ===**/
 .services {
-  h3 {
-    font-size: 24px;
-    text-transform: uppercase;
-    font-weight: 600;
-    margin: 0 auto 50px;
-    text-align: center;
-    letter-spacing: 3px;
-  }
   .service_item {
     display: flex;
     flex-direction: column;

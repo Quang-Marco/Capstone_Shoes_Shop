@@ -242,18 +242,33 @@ header nav .navbar-collapse .navbar-nav .nav-item .dropdown button {
     margin: 0 12px;
   }
 }
+@media screen and (max-width: 992px) {
+  header nav .navbar-collapse .navbar-nav .nav-item .dropdown button {
+    margin: 0;
+  }
+}
 header nav .navbar-collapse .navbar-nav .nav-item .dropdown button::before {
   content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   width: 0;
-  height: 3px;
+  height: 2px;
   background: #000;
   transition: all 0.5s ease;
 }
+@media screen and (min-width: 992px) {
+  header nav .navbar-collapse .navbar-nav .nav-item .dropdown button::before {
+    left: 15%;
+  }
+}
 header nav .navbar-collapse .navbar-nav .nav-item .dropdown button:hover::before {
   width: 100%;
+}
+@media screen and (min-width: 992px) {
+  header nav .navbar-collapse .navbar-nav .nav-item .dropdown button:hover::before {
+    width: 70%;
+  }
 }
 header nav .navbar-collapse .navbar-nav .nav-item .dropdown .dropdown-menu {
   transition: all 0.5s ease;
@@ -374,6 +389,7 @@ header nav .navbar-icon .fa-user {
 }
 .banner #homeSlider .carousel-inner .carousel-item .carousel-caption.iOrange button:hover {
   color: #de411d;
+  background-color: #fff;
 }
 .banner #homeSlider .carousel-inner .carousel-item .carousel-caption.iOrange button:hover {
   box-shadow: #fca356 -10px 0px 30px, #fca356 10px 0px 30px;
@@ -389,6 +405,7 @@ header nav .navbar-icon .fa-user {
 }
 .banner #homeSlider .carousel-inner .carousel-item .carousel-caption.iBlue button:hover {
   color: #205d92;
+  background-color: #fff;
 }
 .banner #homeSlider .carousel-inner .carousel-item .carousel-caption.iBlue button:hover {
   box-shadow: #15bff1 -10px 0px 30px, #15bff1 10px 0px 30px;
@@ -404,6 +421,7 @@ header nav .navbar-icon .fa-user {
 }
 .banner #homeSlider .carousel-inner .carousel-item .carousel-caption.iRed button:hover {
   color: #790f1a;
+  background-color: #fff;
 }
 .banner #homeSlider .carousel-inner .carousel-item .carousel-caption.iRed button:hover {
   box-shadow: #e54757 -10px 0px 30px, #e54757 10px 0px 30px;
@@ -419,6 +437,7 @@ header nav .navbar-icon .fa-user {
 }
 .banner #homeSlider .carousel-inner .carousel-item .carousel-caption.iVioletBlue button:hover {
   color: #3f3f90;
+  background-color: #fff;
 }
 .banner #homeSlider .carousel-inner .carousel-item .carousel-caption.iVioletBlue button:hover {
   box-shadow: #7e65d8 -10px 0px 30px, #7e65d8 10px 0px 30px;
@@ -548,6 +567,7 @@ header nav .navbar-icon .fa-user {
   }
 }
 .banner #homeSlider .carousel_arrow {
+  width: 10%;
   display: none;
 }
 .banner #homeSlider:hover .carousel_arrow {
@@ -555,14 +575,6 @@ header nav .navbar-icon .fa-user {
 }
 
 /**=== our services ===**/
-.services h3 {
-  font-size: 24px;
-  text-transform: uppercase;
-  font-weight: 600;
-  margin: 0 auto 50px;
-  text-align: center;
-  letter-spacing: 3px;
-}
 .services .service_item {
   display: flex;
   flex-direction: column;
@@ -601,7 +613,6 @@ header nav .navbar-icon .fa-user {
 }
 
 /**=== end devCong ===**/
-
 .new_release .owl-carousel .carousel_item,
 .related_products .owl-carousel .carousel_item {
   position: relative;
@@ -617,19 +628,6 @@ header nav .navbar-icon .fa-user {
 }
 .new_release .owl-carousel .carousel_item img,
 .related_products .owl-carousel .carousel_item img {
-  cursor: default;
-}
-.new_release .owl-carousel .carousel_item {
-  position: relative;
-  overflow: hidden;
-}
-.new_release .owl-carousel .carousel_item:hover .item_icon i {
-  transform: translateX(0);
-}
-.new_release .owl-carousel .carousel_item:hover .item_add {
-  transform: translateY(0);
-}
-.new_release .owl-carousel .carousel_item img {
   cursor: default;
 }
 .new_release .owl-carousel .carousel_item .item_icon,
@@ -670,17 +668,6 @@ header nav .navbar-icon .fa-user {
   color: white;
   background-color: #ff7e22;
 }
-.new_release .owl-carousel .carousel_item .item_icon .fa-heart {
-  margin-bottom: 10px;
-}
-.new_release .owl-carousel .carousel_item .item_icon .fa-heart:hover {
-  color: white;
-  background-color: rgb(248, 52, 52);
-}
-.new_release .owl-carousel .carousel_item .item_icon .fa-image:hover {
-  color: white;
-  background-color: #ff7e22;
-}
 .new_release .owl-carousel .carousel_item .item_add,
 .related_products .owl-carousel .carousel_item .item_add {
   background-color: #e7e8eb;
@@ -702,12 +689,6 @@ header nav .navbar-icon .fa-user {
 }
 .new_release .owl-carousel .carousel_item .item_add h6,
 .related_products .owl-carousel .carousel_item .item_add h6 {
-
-.new_release .owl-carousel .carousel_item .item_add:hover {
-  color: white;
-  background-color: #ff7e22;
-}
-.new_release .owl-carousel .carousel_item .item_add h6 {
   font-size: 12px;
   line-height: 40px;
   margin-bottom: 0;
