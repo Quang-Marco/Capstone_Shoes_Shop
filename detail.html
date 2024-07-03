@@ -33,6 +33,12 @@
       referrerpolicy="no-referrer"
     />
 
+    <!-- Owl Carousel CSS -->
+    <link
+      rel="stylesheet"
+      href="src/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css"
+    />
+
     <!-- Animate CSS -->
     <link
       rel="stylesheet"
@@ -291,7 +297,7 @@
     </section>
 
     <!-- Product Detail -->
-    <section class="product_detail py-5 mt-3">
+    <section class="product_detail pt-5 mt-3">
       <div class="container">
         <div class="row">
           <!-- product image -->
@@ -790,6 +796,89 @@
       </div>
     </section>
 
+    <!-- FOOTER  -->
+    <footer class="bg-black mt-5">
+      <div class="container">
+        <div class="footer_top row">
+          <div
+            class="col-lg-3 col-md-6 text-lg-start text-center order-lg-1 order-2 mb-5 mb-md-0"
+          >
+            <h5>COMPANY</h5>
+            <ul class="p-0">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Store Location</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-6 text-center pb-5 py-lg-0 order-lg-2 order-1">
+            <h5>SIGN UP NOW AND GET 10% OFF</h5>
+            <p>
+              Be the first to know about our new arrivals and exclusive offers
+            </p>
+            <div class="mb-3 position-relative">
+              <input
+                type="text"
+                class="form-control form-control-lg py-3 ps-4"
+                aria-describedby="helpId"
+                placeholder="Your Email Address"
+              />
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div class="footer_icon">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-pinterest-p"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-6 text-lg-end text-center order-3 order-lg-3"
+          >
+            <h5>HELP</h5>
+            <ul class="p-0">
+              <li><a href="#">Order Tracking</a></li>
+              <li><a href="#">FAQ's</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer_bottom row align-items-center py-5">
+          <div
+            class="col-lg-3 col-md-6 text-md-center text-lg-start order-2 order-md-2 order-lg-1 mb-md-0 mb-4"
+          >
+            <a class="me-4" href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+          </div>
+          <div
+            class="col-lg-6 text-md-center order-1 order-md-1 order-lg-2 mb-lg-0 mb-5"
+          >
+            <img src="public/image/amex.png" alt="" />
+            <img src="public/image/ApplePay.png" alt="" />
+            <img src="public/image/discover.png" alt="" />
+            <img src="public/image/JCB.png" alt="" />
+            <img src="public/image/Master.png" alt="" />
+            <img src="public/image/Paypal.png" alt="" />
+            <img src="public/image/Visa.png" alt="" />
+          </div>
+          <div
+            class="col-lg-3 col-md-6 text-lg-end text-md-center order-2 order-md-3 order-lg-3"
+          >
+            <p class="mb-0">
+              Copyright © 2024 <a class="kicks_haven" href="#">Kicks Haven</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- BACK TO TOP -->
+    <a href="#" class="backToTop cd-top text-replace js-cd-top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
     <!-- Bootstrap JavaScript Libraries -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -802,6 +891,64 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
+
+    <!-- jQuery 3.7.1 -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="src/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 10,
+          autoplay: true,
+          autoplayTimeout: 2000,
+          autoplayHoverPause: true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 3,
+            },
+            1000: {
+              items: 5,
+            },
+          },
+        });
+      });
+    </script>
+
+    <!-- Axios -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js"
+      integrity="sha512-JSCFHhKDilTRRXe9ak/FJ28dcpOJxzQaCd3Xg8MyF6XFjODhy/YMCM8HW0TFDckNHWUewW+kfvhin43hKtJxAw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Back To Top JS -->
+    <script src="src/assets/js/util.js"></script>
+    <script src="src/assets/js/main.js"></script>
+
+    <!-- Wow JS -->
+    <!-- <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+      integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script> -->
 
     <!-- AddToAny BEGIN -->
     <script>

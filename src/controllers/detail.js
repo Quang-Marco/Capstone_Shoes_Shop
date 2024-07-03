@@ -1,3 +1,4 @@
+// =========[UI/UX Detail page]=========
 function changeValue(id, buocNhay = 1) {
   let input = document.querySelector(id + " input");
   // console.log("input", input);
@@ -66,3 +67,13 @@ function selectRating() {
 changeValue("#actionCart");
 selectSize();
 selectRating();
+// EOF =====[UI/UX Detail page]=====
+
+// =========[call api]=========
+window.onload = function () {
+  const urlParams = new URLSearchParams(window.location.search);
+  const myParam = urlParams.get("id");
+  console.log(myParam);
+};
+
+// EOF =====[call api]=====
