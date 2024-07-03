@@ -18,6 +18,7 @@
   }
   &:hover {
     color: $bg;
+    background-color: $color;
 
     @if $bg-gradient and $bg-gradient!=none {
       background-color: $color;
