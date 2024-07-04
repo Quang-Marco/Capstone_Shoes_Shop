@@ -163,8 +163,14 @@
         @include styleButton($white, $main-color);
       }
       .add_compare {
+        i {
+          transition: none;
+        }
       }
       .add_wish_list {
+        i {
+          transition: none;
+        }
       }
     }
 

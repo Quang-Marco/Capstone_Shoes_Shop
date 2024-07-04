@@ -174,27 +174,27 @@ input[type=number] {
   0% {
     transform: translateX(0);
   }
-  20% {
+  10% {
     transform: translateX(10px);
   }
-  40% {
+  20% {
     transform: translateX(-8px);
   }
-  60% {
+  40% {
     transform: translateX(6px);
   }
-  80% {
+  50% {
     transform: translateX(-4px);
   }
-  90% {
-    transform: translateX(2px);
+  60% {
+    transform: translateX(4px);
   }
   100% {
     transform: translateX(0);
   }
 }
 body.dark-theme {
-  background-color: rgb(35, 35, 35);
+  background-color: #333;
 }
 body.dark-theme .title {
   color: white;
@@ -230,25 +230,17 @@ body.dark-theme header .navbar-icon .dropdown .fa-user:hover {
 body.dark-theme header .navbar-icon .fa-cart-shopping {
   color: white;
 }
-body.dark-theme header .navbar-icon .fa-cart-shopping:hover {
-  color: #ff7e22;
-}
-body.dark-theme header .navbar-icon #btn-dark .fa-moon {
+body.dark-theme header .navbar-icon #btn-dark .fa-lightbulb-on {
   display: none;
-  color: white;
 }
-body.dark-theme header .navbar-icon #btn-dark .fa-moon:hover {
-  color: #ff7e22;
-}
-body.dark-theme header .navbar-icon #btn-dark .fa-sun {
+body.dark-theme header .navbar-icon #btn-dark .fa-lightbulb {
   display: inline-block;
   color: white;
 }
-body.dark-theme header .navbar-icon #btn-dark .fa-sun:hover {
-  color: #ff7e22;
-}
 body.dark-theme header .navbar-toggler {
   box-shadow: none;
+  border: none;
+  padding: 0;
 }
 body.dark-theme header .navbar-toggler .navbar-toggler-icon {
   background-color: white;
@@ -258,7 +250,7 @@ body.dark-theme header .navbar-toggler .navbar-toggler-icon:hover {
   background-color: #ff7e22;
 }
 body.dark-theme .banner {
-  background-color: rgb(35, 35, 35);
+  background-color: #333;
 }
 body.dark-theme .new_arrivals .row .new_arrivals_box .box_content h3 {
   color: white;
@@ -295,7 +287,7 @@ body.dark-theme .services .row .service_item .service_content p {
   color: white;
 }
 body.dark-theme footer {
-  background-color: rgb(35, 35, 35) !important;
+  background-color: #333 !important;
 }
 body.dark-theme .product_detail .row .product_info {
   color: white;
@@ -444,7 +436,7 @@ header nav .navbar-icon .dropdown .fa-user {
 }
 @media screen and (max-width: 400px) {
   header nav .navbar-icon .dropdown .fa-user {
-    margin-right: 3px;
+    margin-right: 4px;
   }
 }
 header nav .navbar-icon .dropdown .dropdown-menu {
@@ -481,7 +473,15 @@ header nav .navbar-icon .modal form .remember_forgot .form-check input {
   cursor: pointer;
 }
 header nav .navbar-icon .modal form .remember_forgot .forgot a:hover {
-  color: rgb(220, 53, 69);
+  color: #ff7e22;
+}
+header nav .navbar-icon .modal form .btn {
+  color: white;
+  background-color: #ff7e22;
+  transition: all 0.5s ease;
+}
+header nav .navbar-icon .modal form .btn:hover {
+  opacity: 0.8;
 }
 header nav .navbar-icon .modal form .or span {
   display: inline-block;
@@ -491,6 +491,7 @@ header nav .navbar-icon .modal form .or span {
   text-align: center;
   border-radius: 50%;
   color: white;
+  background-color: #ff7e22;
 }
 header nav .navbar-icon .modal form .social {
   color: white;
@@ -531,29 +532,46 @@ header nav .navbar-icon .modal form .social .twitter span {
   background-color: #1da1f2;
 }
 header nav .navbar-icon .modal .modal-footer a {
-  color: rgb(6, 246, 74);
+  color: #2ed573;
   font-size: 18px;
 }
 header nav .navbar-icon .modal .modal-footer a:hover {
-  color: rgb(220, 53, 69);
+  color: #ff7e22;
 }
 header nav .navbar-icon .fa-cart-shopping {
   margin-right: 10px;
 }
+header nav .navbar-icon .fa-cart-shopping:hover {
+  color: #ff7e22;
+}
 @media screen and (max-width: 400px) {
   header nav .navbar-icon .fa-cart-shopping {
-    margin-right: 3px;
+    margin-right: 4px;
   }
 }
 header nav .navbar-icon #btn-dark {
   background-color: unset;
   border: none;
 }
-header nav .navbar-icon #btn-dark:hover {
+header nav .navbar-icon #btn-dark .fa-lightbulb-on {
   color: #ff7e22;
 }
-header nav .navbar-icon #btn-dark .fa-sun {
+header nav .navbar-icon #btn-dark .fa-lightbulb-on:hover {
+  color: black;
+}
+header nav .navbar-icon #btn-dark .fa-lightbulb {
   display: none;
+}
+@media screen and (min-width: 1200px) {
+  header nav .navbar-icon #btn-dark .fa-lightbulb {
+    margin: 0 5.5px;
+  }
+}
+header nav .navbar-icon #btn-dark .fa-lightbulb:hover {
+  color: #ff7e22;
+}
+header nav .navbar-toggler {
+  padding: 4px;
 }
 
 /**=== Banner (devCong) ===**/
@@ -814,8 +832,8 @@ header nav .navbar-icon #btn-dark .fa-sun {
   align-items: center;
   margin-bottom: 30px;
 }
-.services .service_item:hover .service_icon {
-  animation: leftRight 1s;
+.services .service_item:hover .service_icon i {
+  animation: leftRight 2s infinite;
 }
 .services .service_item .service_icon i {
   font-size: 40px;
@@ -1214,7 +1232,7 @@ footer .footer_bottom .col-lg-6 img {
   transition: none;
 }
 .backToTop:hover {
-  color: #000;
+  color: #2ed573;
 }
 
 .cd-top--is-visible {

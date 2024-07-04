@@ -24,13 +24,37 @@
       crossorigin="anonymous"
     />
 
-    <!-- FontAwesome 6.2.0 CSS -->
+    <!-- FontAwesome Pro 6.5.2 CSS -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      data-purpose="Layout StyleSheet"
+      title="Web Awesome"
+      href="/css/app-wa-d53d10572a0e0d37cb8d614a3f177a0c.css?vsn=d"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css"
     />
 
     <!-- Animate CSS -->
@@ -42,11 +66,11 @@
     <!-- Nike Font CSS -->
     <link rel="stylesheet" href="public/nike-fonts/nike_fonts.css" />
 
-    <!-- Style CSS -->
-    <link rel="stylesheet" href="css/style.css" />
-
     <!-- Register CSS -->
     <link rel="stylesheet" href="sass/css/register.css" />
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body class="position-relative">
@@ -225,7 +249,9 @@
                 placeholder="Search"
                 aria-label="Search"
               />
-              <i class="fa-solid fa-magnifying-glass position-absolute"></i>
+              <i
+                class="fa-sharp fa-regular fa-magnifying-glass position-absolute"
+              ></i>
             </form>
             <div class="navbar-icon ms-lg-3 ms-md-2 ms-sm-1 ms-0">
               <div class="dropdown d-inline-block">
@@ -284,7 +310,7 @@
                           />
                         </div>
                         <div class="mb-3">
-                          <i class="fa-solid fa-lock me-2"></i>
+                          <i class="fa-regular fa-lock-keyhole me-2"></i>
                           <input
                             type="password"
                             class="form-control"
@@ -304,11 +330,11 @@
                             <a href="#">Forgot password?</a>
                           </div>
                         </div>
-                        <button type="button" class="btn btn-danger w-100 py-3">
+                        <button type="button" class="btn w-100 py-3">
                           Sign In
                         </button>
                         <div class="or text-center my-4">
-                          <span class="bg-danger">OR</span>
+                          <span>OR</span>
                         </div>
                         <div class="row social">
                           <div class="col-6 facebook">
@@ -328,10 +354,10 @@
                   </div>
                 </div>
               </div>
-              <i class="fa-solid fa-cart-shopping"></i>
+              <i class="fa-sharp fa-regular fa-cart-shopping"></i>
               <button id="btn-dark">
-                <i class="fa-regular fa-moon"></i>
-                <i class="fa-regular fa-sun"></i>
+                <i class="fa-regular fa-lightbulb-on"></i>
+                <i class="fa-regular fa-lightbulb"></i>
               </button>
             </div>
             <button
@@ -362,7 +388,7 @@
         <div class="row justify-content-around">
           <form class="col-lg-6 col-sm-8 col-11" action="#">
             <div class="mb-3">
-              <i class="fa-solid fa-user me-2"></i>
+              <i class="fa-regular fa-user me-2"></i>
               <input
                 type="text"
                 class="form-control"
@@ -372,7 +398,7 @@
               />
             </div>
             <div class="mb-3">
-              <i class="fa-solid fa-lock me-2"></i>
+              <i class="fa-regular fa-lock-keyhole me-2"></i>
               <input
                 type="password"
                 class="form-control"
@@ -392,7 +418,7 @@
               />
             </div>
             <div class="mb-3">
-              <i class="fa-solid fa-phone me-2"></i>
+              <i class="fa-regular fa-phone me-2"></i>
               <input
                 type="tel"
                 class="form-control"
@@ -402,7 +428,7 @@
               />
             </div>
             <div class="mb-3">
-              <i class="fa-solid fa-venus-mars"
+              <i class="fa-regular fa-venus-mars"
                 ><h6 class="d-inline-block ps-3">Gender</h6></i
               >
               <div class="form-check">
@@ -439,9 +465,7 @@
                 Have an account?<a onclick="toggleLogin()" href="#"> Login</a>
               </div>
             </div>
-            <button type="submit" class="btn btn-danger w-100 py-3">
-              Sign Up
-            </button>
+            <button type="submit" class="btn w-100 py-3">Sign Up</button>
           </form>
         </div>
       </div>
@@ -464,7 +488,7 @@
               />
             </div>
             <div class="mb-3">
-              <i class="fa-solid fa-lock me-2"></i>
+              <i class="fa-regular fa-lock-keyhole me-2"></i>
               <input
                 type="password"
                 class="form-control"
@@ -482,11 +506,9 @@
                 <a href="#">Forgot password?</a>
               </div>
             </div>
-            <button type="button" class="btn btn-danger w-100 py-3">
-              Sign In
-            </button>
+            <button type="button" class="btn w-100 py-3">Sign In</button>
             <div class="or text-center my-4">
-              <span class="bg-danger">OR</span>
+              <span>OR</span>
             </div>
             <div class="row social">
               <div class="col-6 facebook">

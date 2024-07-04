@@ -175,27 +175,27 @@ input[type=number] {
   0% {
     transform: translateX(0);
   }
-  20% {
+  10% {
     transform: translateX(10px);
   }
-  40% {
+  20% {
     transform: translateX(-8px);
   }
-  60% {
+  40% {
     transform: translateX(6px);
   }
-  80% {
+  50% {
     transform: translateX(-4px);
   }
-  90% {
-    transform: translateX(2px);
+  60% {
+    transform: translateX(4px);
   }
   100% {
     transform: translateX(0);
   }
 }
 body.dark-theme {
-  background-color: rgb(35, 35, 35);
+  background-color: #333;
 }
 body.dark-theme .title {
   color: white;
@@ -231,25 +231,17 @@ body.dark-theme header .navbar-icon .dropdown .fa-user:hover {
 body.dark-theme header .navbar-icon .fa-cart-shopping {
   color: white;
 }
-body.dark-theme header .navbar-icon .fa-cart-shopping:hover {
-  color: #ff7e22;
-}
-body.dark-theme header .navbar-icon #btn-dark .fa-moon {
+body.dark-theme header .navbar-icon #btn-dark .fa-lightbulb-on {
   display: none;
-  color: white;
 }
-body.dark-theme header .navbar-icon #btn-dark .fa-moon:hover {
-  color: #ff7e22;
-}
-body.dark-theme header .navbar-icon #btn-dark .fa-sun {
+body.dark-theme header .navbar-icon #btn-dark .fa-lightbulb {
   display: inline-block;
   color: white;
 }
-body.dark-theme header .navbar-icon #btn-dark .fa-sun:hover {
-  color: #ff7e22;
-}
 body.dark-theme header .navbar-toggler {
   box-shadow: none;
+  border: none;
+  padding: 0;
 }
 body.dark-theme header .navbar-toggler .navbar-toggler-icon {
   background-color: white;
@@ -259,7 +251,7 @@ body.dark-theme header .navbar-toggler .navbar-toggler-icon:hover {
   background-color: #ff7e22;
 }
 body.dark-theme .banner {
-  background-color: rgb(35, 35, 35);
+  background-color: #333;
 }
 body.dark-theme .new_arrivals .row .new_arrivals_box .box_content h3 {
   color: white;
@@ -296,7 +288,7 @@ body.dark-theme .services .row .service_item .service_content p {
   color: white;
 }
 body.dark-theme footer {
-  background-color: rgb(35, 35, 35) !important;
+  background-color: #333 !important;
 }
 body.dark-theme .product_detail .row .product_info {
   color: white;
@@ -467,6 +459,12 @@ body.dark-theme .product_detail .row .tab-content {
 .product_detail .product_info form#actionCart .add_to_cart:hover {
   color: #000;
   background-color: #fff;
+}
+.product_detail .product_info form#actionCart .add_compare i {
+  transition: none;
+}
+.product_detail .product_info form#actionCart .add_wish_list i {
+  transition: none;
 }
 .product_detail .product_info p.meta_title {
   font-size: 13px;
