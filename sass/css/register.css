@@ -215,20 +215,47 @@ body.dark-theme header .navbar-collapse .navbar-nav .nav-item .dropdown button::
 body.dark-theme header .navbar-collapse .navbar-nav .nav-item .dropdown button:hover {
   color: #ff7e22;
 }
-body.dark-theme header .navbar-icon i {
-  color: white;
-}
-body.dark-theme header .navbar-icon i:hover {
-  color: #ff7e22;
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  body.dark-theme header form .fa-magnifying-glass {
+    color: white;
+  }
 }
 body.dark-theme header .navbar-icon .dropdown .fa-user {
   transition: all 0.5s ease;
+  color: white;
+}
+body.dark-theme header .navbar-icon .dropdown .fa-user:hover {
+  color: #ff7e22;
+}
+body.dark-theme header .navbar-icon .fa-cart-shopping {
+  color: white;
+}
+body.dark-theme header .navbar-icon .fa-cart-shopping:hover {
+  color: #ff7e22;
 }
 body.dark-theme header .navbar-icon #btn-dark .fa-moon {
   display: none;
+  color: white;
+}
+body.dark-theme header .navbar-icon #btn-dark .fa-moon:hover {
+  color: #ff7e22;
 }
 body.dark-theme header .navbar-icon #btn-dark .fa-sun {
   display: inline-block;
+  color: white;
+}
+body.dark-theme header .navbar-icon #btn-dark .fa-sun:hover {
+  color: #ff7e22;
+}
+body.dark-theme header .navbar-toggler {
+  box-shadow: none;
+}
+body.dark-theme header .navbar-toggler .navbar-toggler-icon {
+  background-color: white;
+  transition: all 0.5s ease;
+}
+body.dark-theme header .navbar-toggler .navbar-toggler-icon:hover {
+  background-color: #ff7e22;
 }
 body.dark-theme .banner {
   background-color: rgb(35, 35, 35);

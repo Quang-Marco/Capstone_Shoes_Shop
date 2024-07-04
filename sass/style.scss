@@ -139,7 +139,11 @@ header {
               font-size: 20px;
               cursor: none;
             }
-            .form-control {
+            input.form-control {
+              max-width: none;
+              @media screen and (min-width: 992px) and (max-width: 1400px) {
+                display: block;
+              }
             }
           }
           .remember_forgot {
