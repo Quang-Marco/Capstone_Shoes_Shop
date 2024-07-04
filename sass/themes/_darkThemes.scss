@@ -36,25 +36,52 @@ body.dark-theme {
       }
     }
     form {
+      .fa-magnifying-glass {
+        @media screen and (min-width: 992px) and (max-width: 1200px) {
+          color: white;
+        }
+      }
     }
     .navbar-icon {
-      i {
+      .dropdown {
+        .fa-user {
+          transition: $transition;
+          color: white;
+          &:hover {
+            color: $highlight-color;
+          }
+        }
+      }
+      .fa-cart-shopping {
         color: white;
         &:hover {
           color: $highlight-color;
         }
       }
-      .dropdown {
-        .fa-user {
-          transition: $transition;
-        }
-      }
       #btn-dark {
         .fa-moon {
           display: none;
+          color: white;
+          &:hover {
+            color: $highlight-color;
+          }
         }
         .fa-sun {
           display: inline-block;
+          color: white;
+          &:hover {
+            color: $highlight-color;
+          }
+        }
+      }
+    }
+    .navbar-toggler {
+      box-shadow: none;
+      .navbar-toggler-icon {
+        background-color: white;
+        transition: $transition;
+        &:hover {
+          background-color: $highlight-color;
         }
       }
     }
