@@ -174,27 +174,27 @@ input[type=number] {
   0% {
     transform: translateX(0);
   }
-  20% {
+  10% {
     transform: translateX(10px);
   }
-  40% {
+  20% {
     transform: translateX(-8px);
   }
-  60% {
+  40% {
     transform: translateX(6px);
   }
-  80% {
+  50% {
     transform: translateX(-4px);
   }
-  90% {
-    transform: translateX(2px);
+  60% {
+    transform: translateX(4px);
   }
   100% {
     transform: translateX(0);
   }
 }
 body.dark-theme {
-  background-color: rgb(35, 35, 35);
+  background-color: #333;
 }
 body.dark-theme .title {
   color: white;
@@ -230,25 +230,17 @@ body.dark-theme header .navbar-icon .dropdown .fa-user:hover {
 body.dark-theme header .navbar-icon .fa-cart-shopping {
   color: white;
 }
-body.dark-theme header .navbar-icon .fa-cart-shopping:hover {
-  color: #ff7e22;
-}
-body.dark-theme header .navbar-icon #btn-dark .fa-moon {
+body.dark-theme header .navbar-icon #btn-dark .fa-lightbulb-on {
   display: none;
-  color: white;
 }
-body.dark-theme header .navbar-icon #btn-dark .fa-moon:hover {
-  color: #ff7e22;
-}
-body.dark-theme header .navbar-icon #btn-dark .fa-sun {
+body.dark-theme header .navbar-icon #btn-dark .fa-lightbulb {
   display: inline-block;
   color: white;
 }
-body.dark-theme header .navbar-icon #btn-dark .fa-sun:hover {
-  color: #ff7e22;
-}
 body.dark-theme header .navbar-toggler {
   box-shadow: none;
+  border: none;
+  padding: 0;
 }
 body.dark-theme header .navbar-toggler .navbar-toggler-icon {
   background-color: white;
@@ -258,7 +250,7 @@ body.dark-theme header .navbar-toggler .navbar-toggler-icon:hover {
   background-color: #ff7e22;
 }
 body.dark-theme .banner {
-  background-color: rgb(35, 35, 35);
+  background-color: #333;
 }
 body.dark-theme .new_arrivals .row .new_arrivals_box .box_content h3 {
   color: white;
@@ -295,7 +287,7 @@ body.dark-theme .services .row .service_item .service_content p {
   color: white;
 }
 body.dark-theme footer {
-  background-color: rgb(35, 35, 35) !important;
+  background-color: #333 !important;
 }
 body.dark-theme .product_detail .row .product_info {
   color: white;
@@ -342,11 +334,12 @@ body.dark-theme .product_detail .row .tab-content {
 }
 
 .register {
-  color: white;
-  opacity: 0.8;
+  color: rgb(218, 218, 218);
+  transition: all 0.5s ease;
 }
 .register .container h2 {
   font-size: 60px;
+  color: rgb(218, 218, 218);
 }
 @media screen and (max-width: 768px) {
   .register .container h2 {
@@ -371,10 +364,10 @@ body.dark-theme .product_detail .row .tab-content {
   fill: white;
 }
 .register .container form .mb-3 .form-control::-moz-placeholder {
-  color: white;
+  color: rgb(218, 218, 218);
 }
 .register .container form .mb-3 .form-control::placeholder {
-  color: white;
+  color: rgb(218, 218, 218);
 }
 .register .container form .remember_login {
   display: flex;
@@ -385,20 +378,29 @@ body.dark-theme .product_detail .row .tab-content {
   cursor: pointer;
 }
 .register .container form .remember_login .login a {
-  color: rgb(6, 246, 74);
+  color: #2ed573;
   font-size: 18px;
 }
 .register .container form .remember_login .login a:hover {
-  color: rgb(220, 53, 69);
+  color: #ff7e22;
+}
+.register .container form .btn {
+  color: white;
+  background-color: #ff7e22;
+  transition: all 0.5s ease;
+}
+.register .container form .btn:hover {
+  opacity: 0.8;
 }
 
 .sign_in {
   display: none;
-  color: white;
-  opacity: 0.8;
+  color: rgb(218, 218, 218);
+  transition: all 0.5s ease;
 }
 .sign_in .container h2 {
   font-size: 60px;
+  color: rgb(218, 218, 218);
 }
 @media screen and (max-width: 768px) {
   .sign_in .container h2 {
@@ -423,10 +425,10 @@ body.dark-theme .product_detail .row .tab-content {
   fill: white;
 }
 .sign_in .container form .mb-3 .form-control::-moz-placeholder {
-  color: white;
+  color: rgb(218, 218, 218);
 }
 .sign_in .container form .mb-3 .form-control::placeholder {
-  color: white;
+  color: rgb(218, 218, 218);
 }
 .sign_in .container form .remember_forgot {
   display: flex;
@@ -437,10 +439,18 @@ body.dark-theme .product_detail .row .tab-content {
   cursor: pointer;
 }
 .sign_in .container form .remember_forgot .forgot a {
-  color: white;
+  color: rgb(218, 218, 218);
 }
 .sign_in .container form .remember_forgot .forgot a:hover {
-  color: rgb(220, 53, 69);
+  color: #ff7e22;
+}
+.sign_in .container form .btn {
+  color: white;
+  background-color: #ff7e22;
+  transition: all 0.5s ease;
+}
+.sign_in .container form .btn:hover {
+  opacity: 0.8;
 }
 .sign_in .container form .or span {
   display: inline-block;
@@ -449,6 +459,7 @@ body.dark-theme .product_detail .row .tab-content {
   line-height: 50px;
   text-align: center;
   border-radius: 50%;
+  background-color: #ff7e22;
 }
 .sign_in .container form .social .col-6 {
   display: flex;
@@ -486,9 +497,9 @@ body.dark-theme .product_detail .row .tab-content {
   background-color: #1da1f2;
 }
 .sign_in .container form .text-right a {
-  color: rgb(6, 246, 74);
+  color: #2ed573;
   font-size: 18px;
 }
 .sign_in .container form .text-right a:hover {
-  color: rgb(220, 53, 69);
+  color: #ff7e22;
 }/*# sourceMappingURL=register.css.map */

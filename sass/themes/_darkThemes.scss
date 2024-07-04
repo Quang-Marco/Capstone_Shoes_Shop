@@ -1,6 +1,6 @@
 // Dark theme
 body.dark-theme {
-  background-color: rgb(35, 35, 35);
+  background-color: $dark-theme-color;
   .title {
     color: white;
   }
@@ -54,29 +54,21 @@ body.dark-theme {
       }
       .fa-cart-shopping {
         color: white;
-        &:hover {
-          color: $highlight-color;
-        }
       }
       #btn-dark {
-        .fa-moon {
+        .fa-lightbulb-on {
           display: none;
-          color: white;
-          &:hover {
-            color: $highlight-color;
-          }
         }
-        .fa-sun {
+        .fa-lightbulb {
           display: inline-block;
           color: white;
-          &:hover {
-            color: $highlight-color;
-          }
         }
       }
     }
     .navbar-toggler {
       box-shadow: none;
+      border: none;
+      padding: 0;
       .navbar-toggler-icon {
         background-color: white;
         transition: $transition;
@@ -87,7 +79,7 @@ body.dark-theme {
     }
   }
   .banner {
-    background-color: rgb(35, 35, 35);
+    background-color: $dark-theme-color;
   }
   .new_arrivals {
     .row {
@@ -164,7 +156,7 @@ body.dark-theme {
     }
   }
   footer {
-    background-color: rgb(35, 35, 35) !important;
+    background-color: $dark-theme-color !important;
   }
   .product_detail {
     .row {

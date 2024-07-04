@@ -117,7 +117,7 @@ header {
           margin-right: 10px;
           transition: none;
           @media screen and (max-width: 400px) {
-            margin-right: 3px;
+            margin-right: 4px;
           }
         }
         .dropdown-menu {
@@ -158,9 +158,17 @@ header {
             .forgot {
               a {
                 &:hover {
-                  color: rgb(220, 53, 69);
+                  color: $highlight-color;
                 }
               }
+            }
+          }
+          .btn {
+            color: white;
+            background-color: $highlight-color;
+            transition: $transition;
+            &:hover {
+              opacity: 0.8;
             }
           }
           .or {
@@ -172,6 +180,7 @@ header {
               text-align: center;
               border-radius: 50%;
               color: white;
+              background-color: $highlight-color;
             }
           }
           .social {
@@ -219,32 +228,45 @@ header {
         }
         .modal-footer {
           a {
-            color: rgb(6, 246, 74);
+            color: $span-color;
             font-size: 18px;
             &:hover {
-              color: rgb(220, 53, 69);
+              color: $highlight-color;
             }
           }
         }
       }
       .fa-cart-shopping {
         margin-right: 10px;
+        &:hover {
+          color: $highlight-color;
+        }
         @media screen and (max-width: 400px) {
-          margin-right: 3px;
+          margin-right: 4px;
         }
       }
       #btn-dark {
         background-color: unset;
         border: none;
-        &:hover {
+        .fa-lightbulb-on {
           color: $highlight-color;
+          &:hover {
+            color: black;
+          }
         }
-        .fa-moon {
-        }
-        .fa-sun {
+        .fa-lightbulb {
           display: none;
+          @media screen and (min-width: 1200px) {
+            margin: 0 5.5px;
+          }
+          &:hover {
+            color: $highlight-color;
+          }
         }
       }
+    }
+    .navbar-toggler {
+      padding: 4px;
     }
   }
 }
@@ -566,7 +588,9 @@ header {
     margin-bottom: 30px;
     &:hover {
       .service_icon {
-        animation: leftRight 1s;
+        i {
+          animation: leftRight 2s infinite;
+        }
       }
     }
     .service_icon {
@@ -950,7 +974,7 @@ footer {
       .kicks_haven {
         color: $highlight-color;
         &:hover {
-          color: #2ed573;
+          color: $span-color;
         }
       }
     }
@@ -985,7 +1009,7 @@ footer {
   opacity: 0;
   transition: none;
   &:hover {
-    color: $main-color;
+    color: $span-color;
   }
 }
 

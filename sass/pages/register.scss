@@ -1,8 +1,8 @@
-@import "../base/base";
-@import "../helpers/variables";
-@import "../helpers/animations";
-@import "../helpers/mixins";
-@import "../themes/darkThemes";
+@import "./../base/base";
+@import "./../helpers/variables";
+@import "./../helpers/animations";
+@import "./../helpers/mixins";
+@import "./../themes/darkThemes";
 
 .video_bg {
   position: absolute;
@@ -32,11 +32,12 @@
 }
 
 .register {
-  color: white;
-  opacity: 0.8;
+  color: $form-color;
+  transition: $transition;
   .container {
     h2 {
       font-size: 60px;
+      color: $form-color;
       @media screen and (max-width: 768px) {
         font-size: 48px;
       }
@@ -58,7 +59,7 @@
           border: none;
           fill: white;
           &::placeholder {
-            color: white;
+            color: $form-color;
           }
         }
       }
@@ -73,12 +74,20 @@
         }
         .login {
           a {
-            color: rgb(6, 246, 74);
+            color: $span-color;
             font-size: 18px;
             &:hover {
-              color: rgb(220, 53, 69);
+              color: $highlight-color;
             }
           }
+        }
+      }
+      .btn {
+        color: white;
+        background-color: $highlight-color;
+        transition: $transition;
+        &:hover {
+          opacity: 0.8;
         }
       }
     }
@@ -87,11 +96,12 @@
 
 .sign_in {
   display: none;
-  color: white;
-  opacity: 0.8;
+  color: $form-color;
+  transition: $transition;
   .container {
     h2 {
       font-size: 60px;
+      color: $form-color;
       @media screen and (max-width: 768px) {
         font-size: 48px;
       }
@@ -113,7 +123,7 @@
           border: none;
           fill: white;
           &::placeholder {
-            color: white;
+            color: $form-color;
           }
         }
       }
@@ -128,11 +138,19 @@
         }
         .forgot {
           a {
-            color: white;
+            color: $form-color;
             &:hover {
-              color: rgb(220, 53, 69);
+              color: $highlight-color;
             }
           }
+        }
+      }
+      .btn {
+        color: white;
+        background-color: $highlight-color;
+        transition: $transition;
+        &:hover {
+          opacity: 0.8;
         }
       }
       .or {
@@ -143,6 +161,7 @@
           line-height: 50px;
           text-align: center;
           border-radius: 50%;
+          background-color: $highlight-color;
         }
       }
       .social {
@@ -188,10 +207,10 @@
       }
       .text-right {
         a {
-          color: rgb(6, 246, 74);
+          color: $span-color;
           font-size: 18px;
           &:hover {
-            color: rgb(220, 53, 69);
+            color: $highlight-color;
           }
         }
       }
