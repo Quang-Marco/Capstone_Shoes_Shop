@@ -24,13 +24,37 @@
       crossorigin="anonymous"
     />
 
-    <!-- FontAwesome 6.2.0 CSS -->
+    <!-- FontAwesome Pro 6.5.2 CSS -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      data-purpose="Layout StyleSheet"
+      title="Web Awesome"
+      href="/css/app-wa-d53d10572a0e0d37cb8d614a3f177a0c.css?vsn=d"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css"
     />
 
     <!-- Animate CSS -->
@@ -42,238 +66,314 @@
     <!-- Nike Font CSS -->
     <link rel="stylesheet" href="public/nike-fonts/nike_fonts.css" />
 
-    <!-- Style CSS -->
-    <link rel="stylesheet" href="css/style.css" />
-
     <!-- Register CSS -->
     <link rel="stylesheet" href="sass/css/register.css" />
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body class="position-relative">
     <!-- HEADER -->
-    <header class="container">
-      <nav class="navbar navbar-expand-lg py-4">
-        <div class="container-fluid">
-          <a class="navbar-brand title me-0" href="index.html">
-            <img src="public/image/icon_logo.png" alt="Logo" />
-            <span class="title">KICKS HAVEN</span>
-          </a>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <!-- <a class="nav-link" href="#">New & Featured</a> -->
-                <div class="dropdown">
-                  <button
-                    class="btn btn-close-white w-100"
-                    type="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Featured
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a class="dropdown-item" href="#">New Arrivals</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">New Releases</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Latest Shoes</a>
-                    </li>
-                  </ul>
+    <header>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg py-4">
+          <div class="container-fluid">
+            <a class="navbar-brand title me-0" href="index.html">
+              <img src="public/image/icon_logo.png" alt="Logo" />
+              <span class="title">KICKS HAVEN</span>
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <!-- <a class="nav-link" href="#">New & Featured</a> -->
+                  <div class="dropdown">
+                    <button class="btn w-100" type="button">Featured</button>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="#new_release"
+                          >New Releases</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#new_arrivals"
+                          >New Arrivals</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Latest Shoes</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#current_product"
+                          >Current Product</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <!-- <a class="nav-link" href="#">Men</a> -->
+                  <div class="dropdown">
+                    <button class="btn w-100" type="button">Men</button>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="#pills-all">All Shoes</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Lifestyle</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Running</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Gym and Training</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Football</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Basketball</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <!-- <a class="nav-link" href="#">Women</a> -->
+                  <div class="dropdown">
+                    <button class="btn w-100" type="button">Women</button>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="#pills-all">All Shoes</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Lifestyle</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Running</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Gym and Training</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Football</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Basketball</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <!-- <a class="nav-link" href="#">Kids</a> -->
+                  <div class="dropdown">
+                    <button class="btn w-100" type="button">Kids</button>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="#pills-all">All Shoes</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Boys</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Girls</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Lifestyle</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Running</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Football</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Basketball</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <!-- <a class="nav-link" href="#">Brands</a> -->
+                  <div class="dropdown">
+                    <button class="btn w-100" type="button">Brands</button>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="#pills-nike">Nike</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#pills-adidas">Adidas</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#pills-converse"
+                          >Converse</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#pills-vans">Vans</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <!-- <a class="nav-link" href="#">Sale Off</a> -->
+                  <div class="dropdown">
+                    <button class="btn w-100" type="button">Sale Off</button>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="#">All Sale</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">10%</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">20%</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">30%</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">40%</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">50%</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <form class="d-flex position-relative" role="search">
+              <input
+                class="form-control"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <i
+                class="fa-sharp fa-regular fa-magnifying-glass position-absolute"
+              ></i>
+            </form>
+            <div class="navbar-icon ms-lg-3 ms-md-2 ms-sm-1 ms-0">
+              <div class="dropdown d-inline-block">
+                <a
+                  href=""
+                  role="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <i class="fa-regular fa-user"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href=""
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                      >Sign In</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="register.html">Sign Up</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header border-bottom-0">
+                      <h4 class="modal-title" id="exampleModalLabel">LOGIN</h4>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <form class="col" action="#">
+                        <div class="mb-3">
+                          <i class="fa-regular fa-envelope me-2"></i>
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="email"
+                            aria-describedby="helpId"
+                            placeholder="Email"
+                          />
+                        </div>
+                        <div class="mb-3">
+                          <i class="fa-regular fa-lock-keyhole me-2"></i>
+                          <input
+                            type="password"
+                            class="form-control"
+                            id="password"
+                            aria-describedby="helpId"
+                            placeholder="Password"
+                          />
+                        </div>
+                        <div class="remember_forgot py-4">
+                          <div class="form-check mb-0">
+                            <input class="form-check-input" type="checkbox" />
+                            <label class="form-check-label" for="">
+                              Remember me
+                            </label>
+                          </div>
+                          <div class="forgot">
+                            <a href="#">Forgot password?</a>
+                          </div>
+                        </div>
+                        <button type="button" class="btn w-100 py-3">
+                          Sign In
+                        </button>
+                        <div class="or text-center my-4">
+                          <span>OR</span>
+                        </div>
+                        <div class="row social">
+                          <div class="col-6 facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <span class="d-inline-block ps-2">Facebook</span>
+                          </div>
+                          <div class="col-6 twitter">
+                            <i class="fa-brands fa-twitter"></i>
+                            <span class="d-inline-block ps-2">Twitter</span>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer border-top-0">
+                      No account yet?<a href="register.html">Register</a>
+                    </div>
+                  </div>
                 </div>
-              </li>
-              <li class="nav-item">
-                <!-- <a class="nav-link" href="#">Men</a> -->
-                <div class="dropdown">
-                  <button
-                    class="btn btn-close-white w-100"
-                    type="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Men
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a class="dropdown-item" href="#">All Shoes</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Lifestyle</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Running</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Gym and Training</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Football</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Basketball</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="nav-item">
-                <!-- <a class="nav-link" href="#">Women</a> -->
-                <div class="dropdown">
-                  <button
-                    class="btn btn-close-white w-100"
-                    type="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Women
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a class="dropdown-item" href="#">All Shoes</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Lifestyle</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Running</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Gym and Training</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Football</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Basketball</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="nav-item">
-                <!-- <a class="nav-link" href="#">Kids</a> -->
-                <div class="dropdown">
-                  <button
-                    class="btn btn-close-white w-100"
-                    type="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Kids
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a class="dropdown-item" href="#">All Shoes</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Boys</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Girls</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Lifestyle</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Running</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Football</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Basketball</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="nav-item">
-                <!-- <a class="nav-link" href="#">Brands</a> -->
-                <div class="dropdown">
-                  <button
-                    class="btn btn-close-white w-100"
-                    type="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Brands
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a class="dropdown-item" href="#">Nike</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Adidas</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Converse</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Vans</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="nav-item">
-                <!-- <a class="nav-link" href="#">Sale Off</a> -->
-                <div class="dropdown">
-                  <button
-                    class="btn btn-close-white w-100"
-                    type="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Sale Off
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a class="dropdown-item" href="#">All Sale</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">10%</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">20%</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">30%</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">40%</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">50%</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-            </ul>
+              </div>
+              <i class="fa-sharp fa-regular fa-cart-shopping"></i>
+              <button id="btn-dark">
+                <i class="fa-regular fa-lightbulb-on"></i>
+                <i class="fa-regular fa-lightbulb"></i>
+              </button>
+            </div>
+            <button
+              class="navbar-toggler ms-1"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
           </div>
-          <form class="d-flex position-relative" role="search">
-            <input
-              class="form-control"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <i class="fa-solid fa-magnifying-glass position-absolute"></i>
-          </form>
-          <div class="navbar-icon ms-lg-3 ms-md-2 ms-sm-1 ms-0">
-            <a href="register.html"><i class="fa-regular fa-user"></i></a>
-            <i class="fa-solid fa-cart-shopping"></i>
-          </div>
-          <button
-            class="navbar-toggler ms-1"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
 
     <!-- VIDEO BACKGROUND -->
@@ -282,33 +382,13 @@
     </div>
 
     <!-- REGISTER -->
-    <section class="register pb-5">
+    <section id="register" class="register pb-5">
       <div class="container">
         <h2 class="title text-center pb-3">Register</h2>
         <div class="row justify-content-around">
-          <form class="col-md-6 col-11 text" action="#">
+          <form class="col-lg-6 col-sm-8 col-11" action="#">
             <div class="mb-3">
-              <i class="fa-regular fa-envelope"></i>
-              <input
-                type="email"
-                class="form-control"
-                id="email"
-                aria-describedby="helpId"
-                placeholder="Email"
-              />
-            </div>
-            <div class="mb-3">
-              <i class="fa-solid fa-lock"></i>
-              <input
-                type="password"
-                class="form-control"
-                id="password"
-                aria-describedby="helpId"
-                placeholder="Password"
-              />
-            </div>
-            <div class="mb-3">
-              <i class="fa-solid fa-user"></i>
+              <i class="fa-regular fa-user me-2"></i>
               <input
                 type="text"
                 class="form-control"
@@ -318,7 +398,27 @@
               />
             </div>
             <div class="mb-3">
-              <i class="fa-solid fa-phone"></i>
+              <i class="fa-regular fa-lock-keyhole me-2"></i>
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                aria-describedby="helpId"
+                placeholder="Password"
+              />
+            </div>
+            <div class="mb-3">
+              <i class="fa-regular fa-envelope me-2"></i>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                aria-describedby="helpId"
+                placeholder="Email"
+              />
+            </div>
+            <div class="mb-3">
+              <i class="fa-regular fa-phone me-2"></i>
               <input
                 type="tel"
                 class="form-control"
@@ -328,8 +428,8 @@
               />
             </div>
             <div class="mb-3">
-              <i class="fa-solid fa-venus-mars"
-                ><h6 class="d-inline-block ms-2">Gender</h6></i
+              <i class="fa-regular fa-venus-mars"
+                ><h6 class="d-inline-block ps-3">Gender</h6></i
               >
               <div class="form-check">
                 <input
@@ -340,7 +440,7 @@
                   value="true"
                 />
                 <label class="form-check-label" for="flexRadioDefault1">
-                  Nam
+                  Male
                 </label>
               </div>
               <div class="form-check">
@@ -352,20 +452,79 @@
                   value="false"
                 />
                 <label class="form-check-label" for="flexRadioDefault2">
-                  Nữ
+                  Female
                 </label>
               </div>
             </div>
             <div class="remember_login py-4">
-              <div class="form-check">
+              <div class="form-check mb-0">
                 <input class="form-check-input" type="checkbox" />
-                <label class="form-check-label" for=""> Remember Me </label>
+                <label class="form-check-label" for="">Remember me</label>
               </div>
-              <div class="login">Have an account?<a href="#"> Log in</a></div>
+              <div class="login">
+                Have an account?<a onclick="toggleLogin()" href="#"> Login</a>
+              </div>
             </div>
-            <button type="submit" class="btn btn-danger w-100 py-2">
-              Sign Up
-            </button>
+            <button type="submit" class="btn w-100 py-3">Sign Up</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- SIGN IN -->
+    <section id="sign_in" class="sign_in pb-5">
+      <div class="container">
+        <h2 class="title text-center pb-3">Login</h2>
+        <div class="row justify-content-around">
+          <form class="col-lg-6 col-sm-8 col-11" action="#">
+            <div class="mb-3">
+              <i class="fa-regular fa-envelope me-2"></i>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                aria-describedby="helpId"
+                placeholder="Email"
+              />
+            </div>
+            <div class="mb-3">
+              <i class="fa-regular fa-lock-keyhole me-2"></i>
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                aria-describedby="helpId"
+                placeholder="Password"
+              />
+            </div>
+            <div class="remember_forgot py-4">
+              <div class="form-check mb-0">
+                <input class="form-check-input" type="checkbox" />
+                <label class="form-check-label" for="">Remember me </label>
+              </div>
+              <div class="forgot">
+                <a href="#">Forgot password?</a>
+              </div>
+            </div>
+            <button type="button" class="btn w-100 py-3">Sign In</button>
+            <div class="or text-center my-4">
+              <span>OR</span>
+            </div>
+            <div class="row social">
+              <div class="col-6 facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+                <span class="d-inline-block ps-2">Facebook</span>
+              </div>
+              <div class="col-6 twitter">
+                <i class="fa-brands fa-twitter"></i>
+                <span class="d-inline-block ps-2">Twitter</span>
+              </div>
+            </div>
+            <div class="text-right mt-4">
+              No account yet?<a onclick="toggleRegister()" href="#">
+                Register</a
+              >
+            </div>
           </form>
         </div>
       </div>
@@ -384,18 +543,16 @@
       crossorigin="anonymous"
     ></script>
 
-    <!-- Wow JS -->
+    <!-- Axios -->
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
-      integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js"
+      integrity="sha512-JSCFHhKDilTRRXe9ak/FJ28dcpOJxzQaCd3Xg8MyF6XFjODhy/YMCM8HW0TFDckNHWUewW+kfvhin43hKtJxAw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
 
-    <script src="js/wow.min.js"></script>
-    <script>
-      new WOW().init();
-    </script>
+    <!-- Style JS -->
+    <script src="src/style.js"></script>
 
     <!-- Register JS -->
     <script src="src/controllers/register.js"></script>

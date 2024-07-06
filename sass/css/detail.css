@@ -10,6 +10,10 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+body {
+  transition: all 0.5s ease;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -23,8 +27,10 @@ ul {
   list-style: none;
 }
 
-i {
+i,
+img {
   cursor: pointer;
+  transition: all 0.5s ease;
 }
 
 .form-control:focus {
@@ -188,6 +194,118 @@ input[type=number] {
     transform: translateX(0);
   }
 }
+body.dark-theme {
+  background-color: #333;
+}
+body.dark-theme .title {
+  color: white;
+}
+body.dark-theme header .dropdown-menu .dropdown-item:hover {
+  color: white;
+  background-color: #ff7e22;
+}
+body.dark-theme header .navbar-brand span {
+  color: #ff7e22;
+}
+body.dark-theme header .navbar-collapse .navbar-nav .nav-item .dropdown button {
+  color: white;
+}
+body.dark-theme header .navbar-collapse .navbar-nav .nav-item .dropdown button::before {
+  background-color: #ff7e22;
+}
+body.dark-theme header .navbar-collapse .navbar-nav .nav-item .dropdown button:hover {
+  color: #ff7e22;
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  body.dark-theme header form .fa-magnifying-glass {
+    color: white;
+  }
+}
+body.dark-theme header .navbar-icon .dropdown .fa-user {
+  transition: all 0.5s ease;
+  color: white;
+}
+body.dark-theme header .navbar-icon .dropdown .fa-user:hover {
+  color: #ff7e22;
+}
+body.dark-theme header .navbar-icon .fa-cart-shopping {
+  color: white;
+}
+body.dark-theme header .navbar-icon #btn-dark .fa-lightbulb-on {
+  display: none;
+}
+body.dark-theme header .navbar-icon #btn-dark .fa-lightbulb {
+  display: inline-block;
+  color: white;
+}
+body.dark-theme header .navbar-toggler {
+  box-shadow: none;
+  border: none;
+  padding: 0;
+}
+body.dark-theme header .navbar-toggler .navbar-toggler-icon {
+  background-color: white;
+  transition: all 0.5s ease;
+}
+body.dark-theme header .navbar-toggler .navbar-toggler-icon:hover {
+  background-color: #ff7e22;
+}
+body.dark-theme .banner {
+  background-color: #333;
+}
+body.dark-theme .new_arrivals .row .new_arrivals_box .box_content h3 {
+  color: white;
+}
+body.dark-theme .new_arrivals .row .new_arrivals_box .box_content h3::after {
+  background-color: white;
+}
+body.dark-theme .new_arrivals .row .new_arrivals_box .box_view_more a h2 {
+  transition: all 0.5s ease;
+}
+body.dark-theme .new_arrivals .row .new_arrivals_box .box_view_more a:hover h2 {
+  color: #ff7e22;
+}
+body.dark-theme .current_product .product_content .nav .nav-item .nav-link:hover {
+  color: white;
+}
+body.dark-theme .current_product .product_content .nav .nav-item .active {
+  color: black;
+}
+body.dark-theme .current_product .product_content .tab-content .tab-pane .row .product_item .item_info h4 {
+  color: white;
+  transition: all 0.5s ease;
+}
+body.dark-theme .current_product .product_content .tab-content .tab-pane .row .product_item .item_info h4:hover {
+  color: #ff7e22;
+}
+body.dark-theme .services .row .service_item .service_icon i {
+  color: white;
+}
+body.dark-theme .services .row .service_item .service_content {
+  color: white;
+}
+body.dark-theme .services .row .service_item .service_content p {
+  color: white;
+}
+body.dark-theme footer {
+  background-color: #333 !important;
+}
+body.dark-theme .product_detail .row .product_info {
+  color: white;
+}
+body.dark-theme .product_detail .row .product_info a {
+  color: white;
+}
+body.dark-theme .product_detail .row .product_info a i {
+  transition: none;
+}
+body.dark-theme .product_detail .row .product_info a:hover {
+  color: #ff7e22;
+}
+body.dark-theme .product_detail .row .tab-content {
+  color: white;
+}
+
 .breadCrumbLinks {
   background-color: #efefef;
   padding: 15px 0;
@@ -342,6 +460,12 @@ input[type=number] {
   color: #000;
   background-color: #fff;
 }
+.product_detail .product_info form#actionCart .add_compare i {
+  transition: none;
+}
+.product_detail .product_info form#actionCart .add_wish_list i {
+  transition: none;
+}
 .product_detail .product_info p.meta_title {
   font-size: 13px;
   text-transform: uppercase;
@@ -469,5 +593,5 @@ input[type=number] {
 .related_products h2 {
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-size: 24px;
+  font-size: 32px;
 }/*# sourceMappingURL=detail.css.map */

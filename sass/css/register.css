@@ -9,6 +9,10 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+body {
+  transition: all 0.5s ease;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -22,8 +26,10 @@ ul {
   list-style: none;
 }
 
-i {
+i,
+img {
   cursor: pointer;
+  transition: all 0.5s ease;
 }
 
 .form-control:focus {
@@ -187,6 +193,118 @@ input[type=number] {
     transform: translateX(0);
   }
 }
+body.dark-theme {
+  background-color: #333;
+}
+body.dark-theme .title {
+  color: white;
+}
+body.dark-theme header .dropdown-menu .dropdown-item:hover {
+  color: white;
+  background-color: #ff7e22;
+}
+body.dark-theme header .navbar-brand span {
+  color: #ff7e22;
+}
+body.dark-theme header .navbar-collapse .navbar-nav .nav-item .dropdown button {
+  color: white;
+}
+body.dark-theme header .navbar-collapse .navbar-nav .nav-item .dropdown button::before {
+  background-color: #ff7e22;
+}
+body.dark-theme header .navbar-collapse .navbar-nav .nav-item .dropdown button:hover {
+  color: #ff7e22;
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  body.dark-theme header form .fa-magnifying-glass {
+    color: white;
+  }
+}
+body.dark-theme header .navbar-icon .dropdown .fa-user {
+  transition: all 0.5s ease;
+  color: white;
+}
+body.dark-theme header .navbar-icon .dropdown .fa-user:hover {
+  color: #ff7e22;
+}
+body.dark-theme header .navbar-icon .fa-cart-shopping {
+  color: white;
+}
+body.dark-theme header .navbar-icon #btn-dark .fa-lightbulb-on {
+  display: none;
+}
+body.dark-theme header .navbar-icon #btn-dark .fa-lightbulb {
+  display: inline-block;
+  color: white;
+}
+body.dark-theme header .navbar-toggler {
+  box-shadow: none;
+  border: none;
+  padding: 0;
+}
+body.dark-theme header .navbar-toggler .navbar-toggler-icon {
+  background-color: white;
+  transition: all 0.5s ease;
+}
+body.dark-theme header .navbar-toggler .navbar-toggler-icon:hover {
+  background-color: #ff7e22;
+}
+body.dark-theme .banner {
+  background-color: #333;
+}
+body.dark-theme .new_arrivals .row .new_arrivals_box .box_content h3 {
+  color: white;
+}
+body.dark-theme .new_arrivals .row .new_arrivals_box .box_content h3::after {
+  background-color: white;
+}
+body.dark-theme .new_arrivals .row .new_arrivals_box .box_view_more a h2 {
+  transition: all 0.5s ease;
+}
+body.dark-theme .new_arrivals .row .new_arrivals_box .box_view_more a:hover h2 {
+  color: #ff7e22;
+}
+body.dark-theme .current_product .product_content .nav .nav-item .nav-link:hover {
+  color: white;
+}
+body.dark-theme .current_product .product_content .nav .nav-item .active {
+  color: black;
+}
+body.dark-theme .current_product .product_content .tab-content .tab-pane .row .product_item .item_info h4 {
+  color: white;
+  transition: all 0.5s ease;
+}
+body.dark-theme .current_product .product_content .tab-content .tab-pane .row .product_item .item_info h4:hover {
+  color: #ff7e22;
+}
+body.dark-theme .services .row .service_item .service_icon i {
+  color: white;
+}
+body.dark-theme .services .row .service_item .service_content {
+  color: white;
+}
+body.dark-theme .services .row .service_item .service_content p {
+  color: white;
+}
+body.dark-theme footer {
+  background-color: #333 !important;
+}
+body.dark-theme .product_detail .row .product_info {
+  color: white;
+}
+body.dark-theme .product_detail .row .product_info a {
+  color: white;
+}
+body.dark-theme .product_detail .row .product_info a i {
+  transition: none;
+}
+body.dark-theme .product_detail .row .product_info a:hover {
+  color: #ff7e22;
+}
+body.dark-theme .product_detail .row .tab-content {
+  color: white;
+}
+
 .video_bg {
   position: absolute;
   top: 0;
@@ -216,11 +334,12 @@ input[type=number] {
 }
 
 .register {
-  color: white;
-  opacity: 0.8;
+  color: rgb(218, 218, 218);
+  transition: all 0.5s ease;
 }
 .register .container h2 {
   font-size: 60px;
+  color: rgb(218, 218, 218);
 }
 @media screen and (max-width: 768px) {
   .register .container h2 {
@@ -245,24 +364,142 @@ input[type=number] {
   fill: white;
 }
 .register .container form .mb-3 .form-control::-moz-placeholder {
-  color: white;
+  color: rgb(218, 218, 218);
 }
 .register .container form .mb-3 .form-control::placeholder {
-  color: white;
+  color: rgb(218, 218, 218);
 }
-.register .container .remember_login {
+.register .container form .remember_login {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.register .container .remember_login .form-check input {
+.register .container form .remember_login .form-check input {
   cursor: pointer;
 }
-.register .container .remember_login .login a {
-  color: rgb(6, 246, 74);
+.register .container form .remember_login .login a {
+  color: #2ed573;
   font-size: 18px;
+}
+.register .container form .remember_login .login a:hover {
+  color: #ff7e22;
+}
+.register .container form .btn {
+  color: white;
+  background-color: #ff7e22;
   transition: all 0.5s ease;
 }
-.register .container .remember_login .login a:hover {
-  color: rgb(254, 85, 85);
+.register .container form .btn:hover {
+  opacity: 0.8;
+}
+
+.sign_in {
+  display: none;
+  color: rgb(218, 218, 218);
+  transition: all 0.5s ease;
+}
+.sign_in .container h2 {
+  font-size: 60px;
+  color: rgb(218, 218, 218);
+}
+@media screen and (max-width: 768px) {
+  .sign_in .container h2 {
+    font-size: 48px;
+  }
+}
+.sign_in .container form .mb-3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px;
+  border-bottom: 1px solid white;
+}
+.sign_in .container form .mb-3 i {
+  font-size: 20px;
+  cursor: none;
+}
+.sign_in .container form .mb-3 .form-control {
+  color: white;
+  background: transparent;
+  border: none;
+  fill: white;
+}
+.sign_in .container form .mb-3 .form-control::-moz-placeholder {
+  color: rgb(218, 218, 218);
+}
+.sign_in .container form .mb-3 .form-control::placeholder {
+  color: rgb(218, 218, 218);
+}
+.sign_in .container form .remember_forgot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sign_in .container form .remember_forgot .form-check input {
+  cursor: pointer;
+}
+.sign_in .container form .remember_forgot .forgot a {
+  color: rgb(218, 218, 218);
+}
+.sign_in .container form .remember_forgot .forgot a:hover {
+  color: #ff7e22;
+}
+.sign_in .container form .btn {
+  color: white;
+  background-color: #ff7e22;
+  transition: all 0.5s ease;
+}
+.sign_in .container form .btn:hover {
+  opacity: 0.8;
+}
+.sign_in .container form .or span {
+  display: inline-block;
+  width: 50px;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #ff7e22;
+}
+.sign_in .container form .social .col-6 {
+  display: flex;
+  justify-content: flex-start;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.sign_in .container form .social .col-6:hover {
+  opacity: 0.8;
+}
+.sign_in .container form .social i {
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-right: 0.5px solid white;
+}
+.sign_in .container form .social span {
+  display: inline-block;
+  width: 40px;
+  width: 100%;
+  line-height: 40px;
+}
+.sign_in .container form .social .facebook i {
+  background-color: #3b5998;
+}
+.sign_in .container form .social .facebook span {
+  background-color: #3b5998;
+}
+.sign_in .container form .social .twitter i {
+  background-color: #1da1f2;
+}
+.sign_in .container form .social .twitter span {
+  background-color: #1da1f2;
+}
+.sign_in .container form .text-right a {
+  color: #2ed573;
+  font-size: 18px;
+}
+.sign_in .container form .text-right a:hover {
+  color: #ff7e22;
 }/*# sourceMappingURL=register.css.map */

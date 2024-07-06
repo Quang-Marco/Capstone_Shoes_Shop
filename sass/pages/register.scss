@@ -1,8 +1,8 @@
-@import "../base/base";
-@import "../helpers/variables";
-@import "../helpers/animations";
-@import "../helpers/mixins";
-@import "../themes/darkThemes";
+@import "./../base/base";
+@import "./../helpers/variables";
+@import "./../helpers/animations";
+@import "./../helpers/mixins";
+@import "./../themes/darkThemes";
 
 .video_bg {
   position: absolute;
@@ -32,11 +32,12 @@
 }
 
 .register {
-  color: white;
-  opacity: 0.8;
+  color: $form-color;
+  transition: $transition;
   .container {
     h2 {
       font-size: 60px;
+      color: $form-color;
       @media screen and (max-width: 768px) {
         font-size: 48px;
       }
@@ -58,27 +59,158 @@
           border: none;
           fill: white;
           &::placeholder {
-            color: white;
+            color: $form-color;
           }
         }
       }
-    }
-    .remember_login {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      .form-check {
-        input {
-          cursor: pointer;
+      .remember_login {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .form-check {
+          input {
+            cursor: pointer;
+          }
+        }
+        .login {
+          a {
+            color: $span-color;
+            font-size: 18px;
+            &:hover {
+              color: $highlight-color;
+            }
+          }
         }
       }
-      .login {
-        a {
-          color: rgb(6, 246, 74);
-          font-size: 18px;
+      .btn {
+        color: white;
+        background-color: $highlight-color;
+        transition: $transition;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}
+
+.sign_in {
+  display: none;
+  color: $form-color;
+  transition: $transition;
+  .container {
+    h2 {
+      font-size: 60px;
+      color: $form-color;
+      @media screen and (max-width: 768px) {
+        font-size: 48px;
+      }
+    }
+    form {
+      .mb-3 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 15px;
+        border-bottom: 1px solid white;
+        i {
+          font-size: 20px;
+          cursor: none;
+        }
+        .form-control {
+          color: white;
+          background: transparent;
+          border: none;
+          fill: white;
+          &::placeholder {
+            color: $form-color;
+          }
+        }
+      }
+      .remember_forgot {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .form-check {
+          input {
+            cursor: pointer;
+          }
+        }
+        .forgot {
+          a {
+            color: $form-color;
+            &:hover {
+              color: $highlight-color;
+            }
+          }
+        }
+      }
+      .btn {
+        color: white;
+        background-color: $highlight-color;
+        transition: $transition;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+      .or {
+        span {
+          display: inline-block;
+          width: 50px;
+          width: 50px;
+          line-height: 50px;
+          text-align: center;
+          border-radius: 50%;
+          background-color: $highlight-color;
+        }
+      }
+      .social {
+        .col-6 {
+          display: flex;
+          justify-content: flex-start;
+          cursor: pointer;
           transition: $transition;
           &:hover {
-            color: rgb(254, 85, 85);
+            opacity: 0.8;
+          }
+        }
+        i {
+          font-size: 20px;
+          height: 40px;
+          width: 40px;
+          line-height: 40px;
+          text-align: center;
+          border-right: 0.5px solid white;
+        }
+        span {
+          display: inline-block;
+          width: 40px;
+          width: 100%;
+          line-height: 40px;
+        }
+        .facebook {
+          i {
+            background-color: #3b5998;
+          }
+          span {
+            background-color: #3b5998;
+          }
+        }
+        .twitter {
+          i {
+            background-color: #1da1f2;
+          }
+          span {
+            background-color: #1da1f2;
+          }
+        }
+      }
+      .text-right {
+        a {
+          color: $span-color;
+          font-size: 18px;
+          &:hover {
+            color: $highlight-color;
           }
         }
       }

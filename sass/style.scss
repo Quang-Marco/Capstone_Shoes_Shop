@@ -23,12 +23,9 @@ header {
           height: 50px;
           width: 50px;
         }
-        @media screen and (max-width: 576px) {
-          height: 40px;
-          width: 40px;
-        }
       }
       span {
+        color: $highlight-color;
         @media screen and (max-width: 576px) {
           display: none;
         }
@@ -49,18 +46,27 @@ header {
               @media screen and (max-width: 1200px) {
                 margin: 0 12px;
               }
+              @media screen and (max-width: 992px) {
+                margin: 0;
+              }
               &::before {
                 content: "";
                 position: absolute;
                 bottom: 0;
                 left: 0;
                 width: 0;
-                height: 3px;
+                height: 2px;
                 background: $main-color;
                 transition: $transition;
+                @media screen and (min-width: 992px) {
+                  left: 15%;
+                }
               }
               &:hover::before {
                 width: 100%;
+                @media screen and (min-width: 992px) {
+                  width: 70%;
+                }
               }
             }
             .dropdown-menu {
@@ -88,6 +94,9 @@ header {
           max-width: 240px;
         }
         @media screen and (max-width: 452px) {
+          max-width: 140px;
+        }
+        @media screen and (max-width: 400px) {
           max-width: 120px;
         }
       }
@@ -103,139 +112,174 @@ header {
       }
     }
     .navbar-icon {
-      .fa-user {
-        margin-right: 10px;
+      .dropdown {
+        .fa-user {
+          margin-right: 10px;
+          transition: none;
+          @media screen and (max-width: 400px) {
+            margin-right: 4px;
+          }
+        }
+        .dropdown-menu {
+          min-width: unset;
+        }
+        &:hover .dropdown-menu {
+          display: block;
+        }
       }
-    }
-  }
-}
-
-.new_arrivals {
-  .row {
-    .new_arrivals_box {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      // transition: $transition;
-      .box_content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        h3 {
-          position: relative;
-          &::after {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 0;
-            height: 1px;
-            width: 100%;
-            background-color: $main-color;
+      .modal {
+        form {
+          .mb-3 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 15px;
+            border-bottom: 1px solid white;
+            i {
+              font-size: 20px;
+              cursor: none;
+            }
+            input.form-control {
+              max-width: none;
+              @media screen and (min-width: 992px) and (max-width: 1400px) {
+                display: block;
+              }
+            }
+          }
+          .remember_forgot {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .form-check {
+              input {
+                cursor: pointer;
+              }
+            }
+            .forgot {
+              a {
+                &:hover {
+                  color: $highlight-color;
+                }
+              }
+            }
+          }
+          .btn {
+            color: white;
+            background-color: $highlight-color;
+            transition: $transition;
+            &:hover {
+              opacity: 0.8;
+            }
+          }
+          .or {
+            span {
+              display: inline-block;
+              width: 50px;
+              width: 50px;
+              line-height: 50px;
+              text-align: center;
+              border-radius: 50%;
+              color: white;
+              background-color: $highlight-color;
+            }
+          }
+          .social {
+            color: white;
+            .col-6 {
+              display: flex;
+              justify-content: flex-start;
+              cursor: pointer;
+              transition: $transition;
+              &:hover {
+                opacity: 0.8;
+              }
+            }
+            i {
+              font-size: 20px;
+              height: 40px;
+              width: 40px;
+              line-height: 40px;
+              text-align: center;
+              border-right: 0.5px solid white;
+            }
+            span {
+              display: inline-block;
+              width: 40px;
+              width: 100%;
+              line-height: 40px;
+            }
+            .facebook {
+              i {
+                background-color: #3b5998;
+              }
+              span {
+                background-color: #3b5998;
+              }
+            }
+            .twitter {
+              i {
+                background-color: #1da1f2;
+              }
+              span {
+                background-color: #1da1f2;
+              }
+            }
+          }
+        }
+        .modal-footer {
+          a {
+            color: $span-color;
+            font-size: 18px;
+            &:hover {
+              color: $highlight-color;
+            }
           }
         }
       }
-      .box_view_more {
-        text-align: center;
-        height: 0;
-        overflow: hidden;
-        transition: $transition;
+      .fa-cart-shopping {
+        margin-right: 10px;
         &:hover {
-          opacity: 0.8;
+          color: $highlight-color;
+        }
+        @media screen and (max-width: 400px) {
+          margin-right: 4px;
         }
       }
-      &:hover .box_content {
-        height: 0;
-        opacity: 0;
-        overflow: hidden;
-      }
-      &:hover .box_view_more {
-        height: 180px;
-      }
-    }
-    .new_arrivals_img {
-      position: relative;
-      height: 620px;
-      overflow: hidden;
-      @media screen and (max-width: 1200px) {
-        height: 540px;
-      }
-      @media screen and (max-width: 992px) {
-        height: 460px;
-      }
-      @media screen and (max-width: 768px) {
-        height: 360px;
-      }
-      @media screen and (max-width: 576px) {
-        height: 500px;
-      }
-      @media screen and (max-width: 392px) {
-        height: 380px;
-      }
-      img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        transition: $transition;
-      }
-      &::after {
-        content: "";
-        position: absolute;
-        width: 50%;
-        height: 100%;
-        top: 0;
-        left: -100%;
-        background-color: rgba(255, 255, 255, 0.15);
-        transform: skewX(-20deg);
-        transition: $transition;
-      }
-      &:hover img {
-        transform: scale(1.1, 1.1);
-      }
-      &:hover::after {
-        left: 150%;
+      #btn-dark {
+        background-color: unset;
+        border: none;
+        .fa-lightbulb-on {
+          color: $highlight-color;
+          &:hover {
+            color: black;
+          }
+        }
+        .fa-lightbulb {
+          display: none;
+          @media screen and (min-width: 1200px) {
+            margin: 0 5.5px;
+          }
+          &:hover {
+            color: $highlight-color;
+          }
+        }
       }
     }
-  }
-}
-
-.index_video {
-  iframe {
-    @media screen and (max-width: 992px) {
-      max-height: 500px;
-    }
-    @media screen and (max-width: 768px) {
-      max-height: 400px;
-    }
-    @media screen and (max-width: 576px) {
-      max-height: 300px;
+    .navbar-toggler {
+      padding: 4px;
     }
   }
 }
 
 /**=== Banner (devCong) ===**/
+
 .banner {
   background-color: $main-color;
-  // height: 80vh;
   #homeSlider {
     .carousel-inner {
       .carousel-item {
-        // height: 80vh;
         background-repeat: no-repeat;
         background-size: contain;
-        // @media screen and (min-width: 320px) {
-        //   height: 710px;
-        // }
-        // @media screen and (min-width: 576px) {
-        //   height: 770px;
-        // }
-        // @media screen and (min-width: 768px) {
-        //   height: 500px;
-        // }
-        // @media screen and (min-width: 992px) {
-        //   height: 450px;
-        // }
         .carousel-pic {
           .watermark {
             position: absolute;
@@ -399,11 +443,13 @@ header {
           }
         }
         // =============== responsive carousel item ================
-        // responsive carousel item
-        @media screen and (min-width: 992px) {
+
+        @media screen and (min-width: 1200px) {
           height: 558px;
         }
+
         @media screen and (max-width: 991.98px) {
+          height: 460px;
           background-size: cover;
 
           .carousel-caption {
@@ -452,6 +498,7 @@ header {
         }
 
         @media screen and (max-width: 767.98px) {
+          height: 770px;
           .carousel-caption {
             text-align: center !important;
             margin: -30px 0 20px !important;
@@ -473,6 +520,7 @@ header {
         }
 
         @media screen and (max-width: 575.98px) {
+          height: 700px;
         }
 
         @media screen and (max-width: 600px) {
@@ -521,6 +569,7 @@ header {
     }
     // end carousel item
     .carousel_arrow {
+      width: 10%;
       display: none;
     }
     &:hover .carousel_arrow {
@@ -531,14 +580,6 @@ header {
 
 /**=== our services ===**/
 .services {
-  h3 {
-    font-size: 24px;
-    text-transform: uppercase;
-    font-weight: 600;
-    margin: 0 auto 50px;
-    text-align: center;
-    letter-spacing: 3px;
-  }
   .service_item {
     display: flex;
     flex-direction: column;
@@ -547,14 +588,14 @@ header {
     margin-bottom: 30px;
     &:hover {
       .service_icon {
-        img {
+        i {
           animation: leftRight 2s infinite;
         }
       }
     }
     .service_icon {
-      img {
-        width: 85%;
+      i {
+        font-size: 40px;
         margin-bottom: 20px;
       }
     }
@@ -567,12 +608,12 @@ header {
         letter-spacing: 1px;
       }
       p {
-        color: #999;
         font-size: 14px;
+        color: #999;
         margin: 0;
       }
       a {
-        font-size: 11px;
+        font-size: 12px;
         font-weight: 600;
         color: #999;
         &:hover {
@@ -844,6 +885,12 @@ header {
                 left: 15px;
                 transition: $transition;
               }
+              &:hover .item_icon i {
+                transform: translateX(0);
+              }
+              &:hover .item_price {
+                transform: translateY(-20px);
+              }
             }
             .item_info {
               h4 {
@@ -851,15 +898,9 @@ header {
               }
               .info_star {
                 i {
-                  color: rgb(253, 253, 37);
+                  color: $highlight-color;
                 }
               }
-            }
-            &:hover .item_icon i {
-              transform: translateX(0);
-            }
-            &:hover .item_price {
-              transform: translateY(-20px);
             }
           }
         }
@@ -933,7 +974,7 @@ footer {
       .kicks_haven {
         color: $highlight-color;
         &:hover {
-          color: #2ed573;
+          color: $span-color;
         }
       }
     }
@@ -952,21 +993,24 @@ footer {
 
 // Back To Top
 .backToTop {
-  width: 50px;
-  height: 50px;
-  background: #f55f8d;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
   border-radius: 8px;
-  line-height: 50px;
   text-align: center;
+  color: white;
+  background: $highlight-color;
   display: block;
   position: fixed;
-  right: 15px;
-  bottom: 15px;
-  color: white;
-  transition: all 0.2s;
+  right: 10px;
+  bottom: 10px;
   box-shadow: -4px 4px 24px -10px #f55f8d;
   visibility: hidden;
   opacity: 0;
+  transition: none;
+  &:hover {
+    color: $span-color;
+  }
 }
 
 .cd-top--is-visible {
@@ -975,7 +1019,7 @@ footer {
   opacity: 1;
 }
 
-.cd-top--fade-out {
-  // reduce button opacity if user keeps scrolling
-  opacity: 0.5;
-}
+// .cd-top--fade-out {
+//   // reduce button opacity if user keeps scrolling
+//   opacity: 0.7;
+// }
