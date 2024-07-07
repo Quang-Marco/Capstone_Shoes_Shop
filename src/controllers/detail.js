@@ -135,14 +135,19 @@ function renderDetailApi(obj) {
   let relatedItems = "";
   relatedProducts.forEach((item, index) => {
     relatedItems += `
-          <div class="carousel_item">
+        <div class="carousel_item">
           <img src="${item.image}" alt="" />
+          <a href="detail.html?id=${item.id}">
+              <h4>${item.name}</h4>
+          </a>
           <div class="item_icon">
             <i class="fa-regular fa-heart"></i>
             <i class="fa-regular fa-image"></i>
           </div>
           <div class="item_add">
-            <h6>QUICK ADD</h6>
+            <a href="detail.html?id=${item.id}">
+              <h6>Buy it</h6>
+            </a>
           </div>
         </div>
   `;

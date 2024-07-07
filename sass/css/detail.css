@@ -604,4 +604,15 @@ body.dark-theme .product_detail .row .tab-content {
 }
 .related_products .carousel_item {
   background-color: #ddd;
+}
+.related_products .carousel_item a h4 {
+  text-transform: capitalize;
+  font-size: 20px;
+  text-align: center;
+}
+.related_products .carousel_item .item_add a h6 {
+  text-transform: uppercase;
+}
+.related_products .carousel_item .item_add a:hover h6 {
+  color: white;
 }/*# sourceMappingURL=detail.css.map */

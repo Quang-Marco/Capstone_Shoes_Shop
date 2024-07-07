@@ -336,5 +336,24 @@
   }
   .carousel_item {
     background-color: #ddd;
+    a {
+      h4 {
+        text-transform: capitalize;
+        font-size: $fs-lg;
+        text-align: center;
+      }
+    }
+    .item_add {
+      a {
+        h6 {
+          text-transform: uppercase;
+        }
+        &:hover {
+          h6 {
+            color: white;
+          }
+        }
+      }
+    }
   }
 }
