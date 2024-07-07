@@ -153,6 +153,13 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+.toast-close {
+  position: absolute;
+  top: 2px;
+  right: 3px;
+  padding: 0 5px 0 15px;
+}
+
 @keyframes picRotate {
   0% {
     transform: rotate(0);

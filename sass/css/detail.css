@@ -154,6 +154,13 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+.toast-close {
+  position: absolute;
+  top: 2px;
+  right: 3px;
+  padding: 0 5px 0 15px;
+}
+
 @keyframes picRotate {
   0% {
     transform: rotate(0);
@@ -594,4 +601,7 @@ body.dark-theme .product_detail .row .tab-content {
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 32px;
+}
+.related_products .carousel_item {
+  background-color: #ddd;
 }/*# sourceMappingURL=detail.css.map */
