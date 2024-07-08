@@ -342,6 +342,9 @@ body.dark-theme .product_detail .row .tab-content {
 .product_detail img {
   width: 100%;
 }
+.product_detail .product_image img {
+  background-color: #f8f8f8;
+}
 .product_detail .product_info h2 {
   font-size: 28px;
   text-transform: capitalize;
