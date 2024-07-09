@@ -998,7 +998,7 @@ footer {
   line-height: 42px;
   border-radius: 8px;
   text-align: center;
-  color: white;
+  color: black;
   background: $highlight-color;
   display: block;
   position: fixed;
@@ -1007,9 +1007,12 @@ footer {
   box-shadow: -4px 4px 24px -10px #f55f8d;
   visibility: hidden;
   opacity: 0;
-  transition: none;
+  i {
+    transition: none;
+  }
   &:hover {
-    color: $span-color;
+    color: white;
+    border: 1px solid white;
   }
 }
 

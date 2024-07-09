@@ -1,5 +1,4 @@
 // Light theme - Dark Theme
-
 function toggleDarkTheme() {
   document.body.classList.toggle("dark-theme");
   const isDarkTheme = document.body.classList.contains("dark-theme");

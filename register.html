@@ -66,6 +66,15 @@
     <!-- Nike Font CSS -->
     <link rel="stylesheet" href="public/nike-fonts/nike_fonts.css" />
 
+    <!-- Toastify CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.6.1/toastify.min.css"
+      integrity="sha512-UiKdzM5DL+I+2YFxK+7TDedVyVm7HMp/bN85NeWMJNYortoll+Nd6PU9ZDrZiaOsdarOyk9egQm6LOJZi36L2g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- Register CSS -->
     <link rel="stylesheet" href="sass/css/register.css" />
 
@@ -304,7 +313,6 @@
                           <input
                             type="email"
                             class="form-control"
-                            id="email"
                             aria-describedby="helpId"
                             placeholder="Email"
                           />
@@ -314,7 +322,6 @@
                           <input
                             type="password"
                             class="form-control"
-                            id="password"
                             aria-describedby="helpId"
                             placeholder="Password"
                           />
@@ -392,11 +399,12 @@
               <input
                 type="text"
                 class="form-control"
-                id="firstName"
+                id="name"
                 aria-describedby="helpId"
                 placeholder="Full name"
               />
             </div>
+            <p id="name-alert" class="text-danger"></p>
             <div class="mb-3">
               <i class="fa-regular fa-lock-keyhole me-2"></i>
               <input
@@ -407,6 +415,7 @@
                 placeholder="Password"
               />
             </div>
+            <p id="pass-alert" class="text-danger"></p>
             <div class="mb-3">
               <i class="fa-regular fa-envelope me-2"></i>
               <input
@@ -417,16 +426,18 @@
                 placeholder="Email"
               />
             </div>
+            <p id="email-alert" class="text-danger"></p>
             <div class="mb-3">
               <i class="fa-regular fa-phone me-2"></i>
               <input
                 type="tel"
                 class="form-control"
-                id="phoneNumber"
+                id="phone"
                 aria-describedby="helpId"
                 placeholder="Phone number"
               />
             </div>
+            <p id="phone-alert" class="text-danger"></p>
             <div class="mb-3">
               <i class="fa-regular fa-venus-mars"
                 ><h6 class="d-inline-block ps-3">Gender</h6></i
@@ -435,9 +446,10 @@
                 <input
                   class="form-check-input"
                   type="radio"
-                  name="flexRadioDefault"
-                  id="flexRadioDefault1"
+                  name="gender"
+                  id="male"
                   value="true"
+                  checked
                 />
                 <label class="form-check-label" for="flexRadioDefault1">
                   Male
@@ -447,8 +459,8 @@
                 <input
                   class="form-check-input"
                   type="radio"
-                  name="flexRadioDefault"
-                  id="flexRadioDefault2"
+                  name="gender"
+                  id="female"
                   value="false"
                 />
                 <label class="form-check-label" for="flexRadioDefault2">
@@ -465,14 +477,22 @@
                 Have an account?<a onclick="toggleLogin()" href="#"> Login</a>
               </div>
             </div>
-            <button type="submit" class="btn w-100 py-3">Sign Up</button>
+            <button
+              id="sign_up"
+              type="submit"
+              class="btn w-100 py-3"
+              data-bs-toggle="modal"
+              data-bs-target="#registerModal"
+            >
+              Sign Up
+            </button>
           </form>
         </div>
       </div>
     </section>
 
-    <!-- SIGN IN -->
-    <section id="sign_in" class="sign_in pb-5">
+    <!-- LOGIN -->
+    <section id="login" class="sign_in pb-5">
       <div class="container">
         <h2 class="title text-center pb-3">Login</h2>
         <div class="row justify-content-around">
@@ -482,7 +502,6 @@
               <input
                 type="email"
                 class="form-control"
-                id="email"
                 aria-describedby="helpId"
                 placeholder="Email"
               />
@@ -492,7 +511,6 @@
               <input
                 type="password"
                 class="form-control"
-                id="password"
                 aria-describedby="helpId"
                 placeholder="Password"
               />
@@ -506,7 +524,9 @@
                 <a href="#">Forgot password?</a>
               </div>
             </div>
-            <button type="button" class="btn w-100 py-3">Sign In</button>
+            <button id="sign_in" type="button" class="btn w-100 py-3">
+              Sign In
+            </button>
             <div class="or text-center my-4">
               <span>OR</span>
             </div>
@@ -551,8 +571,22 @@
       referrerpolicy="no-referrer"
     ></script>
 
+    <!-- Toastify JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.6.1/toastify.min.js"
+      integrity="sha512-79j1YQOJuI8mLseq9icSQKT6bLlLtWknKwj1OpJZMdPt2pFBry3vQTt+NZuJw7NSd1pHhZlu0s12Ngqfa371EA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
     <!-- Style JS -->
     <script src="src/style.js"></script>
+
+    <!-- User JS -->
+    <script src="src/models/User.js"></script>
+
+    <!-- Validation JS -->
+    <script src="src/validation/validation.js"></script>
 
     <!-- Register JS -->
     <script src="src/controllers/register.js"></script>

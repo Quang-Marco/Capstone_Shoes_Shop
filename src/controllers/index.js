@@ -16,23 +16,23 @@ promise
     let vans = "";
 
     // update content for all shoe section
-    all = renderTheShoeList(arr_shoes, stt, all);
+    all = renderContentShoes(arr_shoes, stt, all);
 
     // update content for adidas shoe section
     let adidas_arr_shoes = filterCategory(arr_shoes, "adidas");
-    adidas = renderTheShoeList(adidas_arr_shoes, stt, adidas);
+    adidas = renderContentShoes(adidas_arr_shoes, stt, adidas);
 
     // update content for nike shoe section
     let nike_arr_shoes = filterCategory(arr_shoes, "nike");
-    nike = renderTheShoeList(nike_arr_shoes, stt, nike);
+    nike = renderContentShoes(nike_arr_shoes, stt, nike);
 
     // update content for converse shoe section
     let converse_arr_shoes = filterCategory(arr_shoes, "vans_converse");
-    converse = renderTheShoeList(converse_arr_shoes, stt, converse);
+    converse = renderContentShoes(converse_arr_shoes, stt, converse);
 
     // update content for vans shoe section
     let vans_arr_shoes = filterCategory(arr_shoes, "vans_converse");
-    vans = renderTheShoeList(vans_arr_shoes, stt, vans);
+    vans = renderContentShoes(vans_arr_shoes, stt, vans);
 
     renderShoes([all, nike, adidas, converse, vans]);
   })
@@ -40,7 +40,7 @@ promise
     console.log(err);
   });
 
-function renderTheShoeList(arr, stt, content) {
+function renderContentShoes(arr, stt, content) {
   for (let item of arr) {
     content += `
     <div class="product_item col-12 col-md-6 col-lg-4 col-xl-3 animate__animated animate__zoomIn">

@@ -1220,7 +1220,7 @@ footer .footer_bottom .col-lg-6 img {
   line-height: 42px;
   border-radius: 8px;
   text-align: center;
-  color: white;
+  color: black;
   background: #ff7e22;
   display: block;
   position: fixed;
@@ -1229,10 +1229,13 @@ footer .footer_bottom .col-lg-6 img {
   box-shadow: -4px 4px 24px -10px #f55f8d;
   visibility: hidden;
   opacity: 0;
+}
+.backToTop i {
   transition: none;
 }
 .backToTop:hover {
-  color: #2ed573;
+  color: white;
+  border: 1px solid white;
 }
 
 .cd-top--is-visible {
