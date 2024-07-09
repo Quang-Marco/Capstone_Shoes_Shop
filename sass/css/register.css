@@ -310,7 +310,7 @@ body.dark-theme .product_detail .row .tab-content {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   z-index: -1;
   overflow: hidden;
 }
@@ -339,7 +339,7 @@ body.dark-theme .product_detail .row .tab-content {
 }
 .register .container h2 {
   font-size: 60px;
-  color: rgb(218, 218, 218);
+  color: rgb(218, 218, 218) !important;
 }
 @media screen and (max-width: 768px) {
   .register .container h2 {
@@ -400,7 +400,7 @@ body.dark-theme .product_detail .row .tab-content {
 }
 .sign_in .container h2 {
   font-size: 60px;
-  color: rgb(218, 218, 218);
+  color: rgb(218, 218, 218) !important;
 }
 @media screen and (max-width: 768px) {
   .sign_in .container h2 {
