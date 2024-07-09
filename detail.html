@@ -72,6 +72,15 @@
     <!-- Nike Font CSS -->
     <link rel="stylesheet" href="public/nike-fonts/nike_fonts.css" />
 
+    <!-- Toastify CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.12.0/toastify.min.css"
+      integrity="sha512-k+xZuzf4IaGQK9sSDjaNyrfwgxBfoF++7u6Q0ZVUs2rDczx9doNZkYXyyQbnJQcMR4o+IjvAcIj69hHxiOZEig=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- Detail CSS -->
     <link rel="stylesheet" href="sass/css/detail.css" />
 
@@ -384,12 +393,12 @@
     <section class="breadCrumbLinks">
       <div class="container">
         <ul class="breadcrumb">
-          <li class="breadcrumb-item"><a href="./">Home</a></li>
+          <!-- <li class="breadcrumb-item"><a href="./">Home</a></li>
           <li class="breadcrumb-item"><a href="#">Products</a></li>
           <li class="breadcrumb-item"><a href="#">adidas</a></li>
           <li class="breadcrumb-item active" aria-current="page">
             adidas prophere black white
-          </li>
+          </li> -->
         </ul>
       </div>
     </section>
@@ -400,103 +409,11 @@
         <div class="row">
           <!-- product image -->
           <div class="col-lg-5 col-xl-6 product_image pe-xl-4">
-            <img src="./public/image/adidas-prophere-black-white.png" alt="" />
+            <!-- <img src="./public/image/adidas-prophere-black-white.png" alt="" /> -->
           </div>
 
           <!-- product info -->
-          <div class="col-lg-7 col-xl-6 product_info">
-            <h2>adidas prophere black white</h2>
-            <div class="product_metaInfo d-flex">
-              <div class="sku">SKU: <span>ADI-13</span></div>
-              <div class="instock">100 in stock</div>
-              <div class="review_star">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star-half-stroke"></i>
-                <i class="fa-regular fa-star"></i>
-                <a href="#pills-review-tab" title="View all reviews"
-                  >(3 reviews)</a
-                >
-              </div>
-              <div class="social">
-                <a class="a2a_dd" href="./"
-                  ><i class="fa-solid fa-share-nodes"></i> Share</a
-                >
-              </div>
-            </div>
-
-            <div class="price">$350.00</div>
-            <p class="short_description">
-              about this shoe:Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-              aliqua.
-            </p>
-            <label for="">Size: <span id="selectedSize">33</span></label>
-            <div class="size d-flex">
-              <button type="button" class="size_item">31</button>
-              <button type="button" class="size_item">32</button>
-              <button type="button" class="size_item selected">33</button>
-              <button type="button" class="size_item">34</button>
-              <button type="button" class="size_item">35</button>
-            </div>
-
-            <label for="quantity">Quantity:</label>
-            <form action="" id="actionCart" class="d-flex flex-wrap py-1 mb-3">
-              <div class="inputGroup">
-                <span class="decrease">-</span>
-                <input
-                  type="number"
-                  id="quantity"
-                  class=""
-                  step="1"
-                  min="1"
-                  max="91"
-                  name="quantity"
-                  value="1"
-                  title="Qty"
-                  size="4"
-                  placeholder=""
-                  inputmode="numeric"
-                  autocomplete="off"
-                />
-                <span class="increase">+</span>
-              </div>
-
-              <button type="button" class="add_to_cart">add to cart</button>
-              <button type="button" class="add_compare" title="Add to compare">
-                <i class="fa-solid fa-code-compare"></i>
-              </button>
-              <button
-                type="button"
-                class="add_wish_list"
-                title="Add to wishlist"
-              >
-                <i class="fa-solid fa-heart"></i>
-              </button>
-            </form>
-            <p class="meta_title categories">
-              Categories: <span><a href="#url">Adidas</a></span>
-            </p>
-            <p class="meta_title tags">
-              Tags:
-              <span><a href="#url">adidas-prophere-black-white</a></span>
-            </p>
-            <div class="payment_info">
-              <h6 class="fs-sm">guaranteed Safe checkout:</h6>
-              <img src="./public/image/payment_info.png" alt="" />
-              <ul>
-                <li>
-                  <i class="fa-regular fa-clock"></i> Orders ship within 5 to 10
-                  business days.
-                </li>
-                <li>
-                  <i class="fa-solid fa-truck-fast"></i> Hoorey ! This item
-                  ships free to the US
-                </li>
-              </ul>
-            </div>
-          </div>
+          <div class="col-lg-7 col-xl-6 product_info mt-3 mt-lg-0"></div>
         </div>
 
         <!-- tabs product description  -->
@@ -540,16 +457,7 @@
               aria-labelledby="pills-description-tab"
               tabindex="0"
             >
-              <p>
-                About this shoe: Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.
-              </p>
+              <div class="description mb-4"></div>
               <div>
                 <img
                   alt=""
@@ -772,124 +680,13 @@
     </section>
 
     <!-- RELATED PRODUCT -->
-    <section class="related_products">
+    <section class="related_products pb-5">
       <!-- copy NEW RELEASE trang chủ -->
       <h2 class="title text-center pt-3 pb-5">
         Related products you may like...
       </h2>
-      <div class="owl-carousel owl-theme">
-        <div class="carousel_item">
-          <img src="public/image/air-force-1-07-shoes-WrLlWX.jpg" alt="" />
-          <div class="item_icon">
-            <i class="fa-regular fa-heart"></i>
-            <i class="fa-regular fa-image"></i>
-          </div>
-          <div class="item_add">
-            <h6>QUICK ADD</h6>
-          </div>
-        </div>
-
-        <div class="carousel_item">
-          <img src="public/image/court-royale-2-low-shoe-fjdwrF.jpg" alt="" />
-          <div class="item_icon">
-            <i class="fa-regular fa-heart"></i>
-            <i class="fa-regular fa-image"></i>
-          </div>
-          <div class="item_add">
-            <h6>QUICK ADD</h6>
-          </div>
-        </div>
-
-        <div class="carousel_item">
-          <img src="public/image/killshot-2-leather-shoes-DqWZ4j.jpg" alt="" />
-          <div class="item_icon">
-            <i class="fa-regular fa-heart"></i>
-            <i class="fa-regular fa-image"></i>
-          </div>
-          <div class="item_add">
-            <h6>QUICK ADD</h6>
-          </div>
-        </div>
-
-        <div class="carousel_item">
-          <img src="public/image/air-max-dn-shoes-FtLNfm.jpg" alt="" />
-          <div class="item_icon">
-            <i class="fa-regular fa-heart"></i>
-            <i class="fa-regular fa-image"></i>
-          </div>
-          <div class="item_add">
-            <h6>QUICK ADD</h6>
-          </div>
-        </div>
-
-        <div class="carousel_item">
-          <img src="public/image/motiva-walking-shoes-dCcsVX.jpg" alt="" />
-          <div class="item_icon">
-            <i class="fa-regular fa-heart"></i>
-            <i class="fa-regular fa-image"></i>
-          </div>
-          <div class="item_add">
-            <h6>QUICK ADD</h6>
-          </div>
-        </div>
-
-        <div class="carousel_item">
-          <img src="public/image/initiator-running-shoe-NRLxhm.jpg" alt="" />
-          <div class="item_icon">
-            <i class="fa-regular fa-heart"></i>
-            <i class="fa-regular fa-image"></i>
-          </div>
-          <div class="item_add">
-            <h6>QUICK ADD</h6>
-          </div>
-        </div>
-
-        <div class="carousel_item">
-          <img
-            src="public/image/free-metcon-6-workout-shoes-5L4dkH.jpg"
-            alt=""
-          />
-          <div class="item_icon">
-            <i class="fa-regular fa-heart"></i>
-            <i class="fa-regular fa-image"></i>
-          </div>
-          <div class="item_add">
-            <h6>QUICK ADD</h6>
-          </div>
-        </div>
-
-        <div class="carousel_item">
-          <img src="public/image/v2k-run-shoes-zJV8TV.jpg" alt="" />
-          <div class="item_icon">
-            <i class="fa-regular fa-heart"></i>
-            <i class="fa-regular fa-image"></i>
-          </div>
-          <div class="item_add">
-            <h6>QUICK ADD</h6>
-          </div>
-        </div>
-
-        <div class="carousel_item">
-          <img src="public/image/p-6000-shoes-QcQbpx.jpg" alt="" />
-          <div class="item_icon">
-            <i class="fa-regular fa-heart"></i>
-            <i class="fa-regular fa-image"></i>
-          </div>
-          <div class="item_add">
-            <h6>QUICK ADD</h6>
-          </div>
-        </div>
-
-        <div class="carousel_item">
-          <img src="public/image/p-6000-shoes-sbwFpl.jpg" alt="" />
-          <div class="item_icon">
-            <i class="fa-regular fa-heart"></i>
-            <i class="fa-regular fa-image"></i>
-          </div>
-          <div class="item_add">
-            <h6>QUICK ADD</h6>
-          </div>
-        </div>
+      <div class="owl-carousel owl-theme" id="carouselItems">
+        <!-- item -->
       </div>
     </section>
 
@@ -999,29 +796,6 @@
 
     <!-- Owl Carousel JS -->
     <script src="src/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        $(".owl-carousel").owlCarousel({
-          loop: true,
-          margin: 10,
-          autoplay: true,
-          autoplayTimeout: 2000,
-          autoplayHoverPause: true,
-          responsive: {
-            0: {
-              items: 1,
-            },
-            600: {
-              items: 3,
-            },
-            1000: {
-              items: 5,
-            },
-          },
-        });
-      });
-    </script>
-
     <!-- Axios -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js"
@@ -1054,6 +828,14 @@
     </script>
     <script async src="https://static.addtoany.com/menu/page.js"></script>
     <!-- AddToAny END -->
+
+    <!-- Toastify js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.12.0/toastify.min.js"
+      integrity="sha512-0Yc4Jv5wX4+mjDuLxmHFGqgDtMFAEBLpPq/0nPVmAOwHPMkYXiS1YVYWTcrVQztftk/32089DDTyrCJO8hBCZw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
     <!-- Style JS -->
     <script src="src/style.js"></script>

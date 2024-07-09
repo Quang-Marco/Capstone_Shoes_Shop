@@ -154,6 +154,13 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+.toast-close {
+  position: absolute;
+  top: 2px;
+  right: 3px;
+  padding: 0 5px 0 15px;
+}
+
 @keyframes picRotate {
   0% {
     transform: rotate(0);
@@ -334,6 +341,9 @@ body.dark-theme .product_detail .row .tab-content {
 /**=== Product detail ===**/
 .product_detail img {
   width: 100%;
+}
+.product_detail .product_image img {
+  background-color: #f8f8f8;
 }
 .product_detail .product_info h2 {
   font-size: 28px;
@@ -594,4 +604,18 @@ body.dark-theme .product_detail .row .tab-content {
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 32px;
+}
+.related_products .carousel_item {
+  background-color: #ddd;
+}
+.related_products .carousel_item a h4 {
+  text-transform: capitalize;
+  font-size: 20px;
+  text-align: center;
+}
+.related_products .carousel_item .item_add a h6 {
+  text-transform: uppercase;
+}
+.related_products .carousel_item .item_add a:hover h6 {
+  color: white;
 }/*# sourceMappingURL=detail.css.map */
