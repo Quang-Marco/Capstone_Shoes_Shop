@@ -45,7 +45,9 @@ function renderContentShoes(arr, stt, content) {
     content += `
     <div class="product_item col-12 col-md-6 col-lg-4 col-xl-3 animate__animated animate__zoomIn">
         <div class="item_img">
-            <img src="${item.image}" alt=""Shoes Pic ${stt}"" />
+            <a href="detail.html?id=${item.id}">
+              <img src="${item.image}" alt=""Shoes Pic ${stt}"" />
+            </a>
             <div class="item_icon">
                 <i class="fa-regular fa-heart"></i>
                 <i class="fa-regular fa-image"></i>
@@ -62,8 +64,8 @@ function renderContentShoes(arr, stt, content) {
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i>
             </div>
         </div>
     </div>

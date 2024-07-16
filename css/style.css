@@ -206,21 +206,11 @@ body.dark-theme {
 body.dark-theme .title {
   color: white;
 }
-body.dark-theme header .dropdown-menu .dropdown-item:hover {
-  color: white;
-  background-color: #ff7e22;
-}
 body.dark-theme header .navbar-brand span {
   color: #ff7e22;
 }
 body.dark-theme header .navbar-collapse .navbar-nav .nav-item .dropdown button {
   color: white;
-}
-body.dark-theme header .navbar-collapse .navbar-nav .nav-item .dropdown button::before {
-  background-color: #ff7e22;
-}
-body.dark-theme header .navbar-collapse .navbar-nav .nav-item .dropdown button:hover {
-  color: #ff7e22;
 }
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   body.dark-theme header form .fa-magnifying-glass {
@@ -364,6 +354,9 @@ header nav .navbar-collapse .navbar-nav .nav-item .dropdown button {
     margin: 0;
   }
 }
+header nav .navbar-collapse .navbar-nav .nav-item .dropdown button:hover {
+  color: #ff7e22;
+}
 header nav .navbar-collapse .navbar-nav .nav-item .dropdown button::before {
   content: "";
   position: absolute;
@@ -371,7 +364,7 @@ header nav .navbar-collapse .navbar-nav .nav-item .dropdown button::before {
   left: 0;
   width: 0;
   height: 2px;
-  background: #000;
+  background-color: #ff7e22;
   transition: all 0.5s ease;
 }
 @media screen and (min-width: 992px) {
@@ -387,8 +380,9 @@ header nav .navbar-collapse .navbar-nav .nav-item .dropdown button:hover::before
     width: 70%;
   }
 }
-header nav .navbar-collapse .navbar-nav .nav-item .dropdown .dropdown-menu {
-  transition: all 0.5s ease;
+header nav .navbar-collapse .navbar-nav .nav-item .dropdown .dropdown-menu .dropdown-item:hover {
+  color: white;
+  background-color: #ff7e22;
 }
 header nav .navbar-collapse .navbar-nav .nav-item .dropdown:hover .dropdown-menu {
   display: block;
@@ -1093,6 +1087,7 @@ header nav .navbar-toggler {
   padding: 20px;
   background-color: #ebeeef;
   overflow: hidden;
+  transition: all 0.5s ease;
 }
 .current_product .product_content .tab-content .tab-pane .row .product_item .item_img img {
   width: 100%;
@@ -1135,6 +1130,9 @@ header nav .navbar-toggler {
   bottom: 0;
   left: 15px;
   transition: all 0.5s ease;
+}
+.current_product .product_content .tab-content .tab-pane .row .product_item .item_img:hover img {
+  transform: scale(1.1, 1.1) rotate(-20deg);
 }
 .current_product .product_content .tab-content .tab-pane .row .product_item .item_img:hover .item_icon i {
   transform: translateX(0);
