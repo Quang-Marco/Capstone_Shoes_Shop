@@ -206,21 +206,11 @@ body.dark-theme {
 body.dark-theme .title {
   color: white;
 }
-body.dark-theme header .dropdown-menu .dropdown-item:hover {
-  color: white;
-  background-color: #ff7e22;
-}
 body.dark-theme header .navbar-brand span {
   color: #ff7e22;
 }
 body.dark-theme header .navbar-collapse .navbar-nav .nav-item .dropdown button {
   color: white;
-}
-body.dark-theme header .navbar-collapse .navbar-nav .nav-item .dropdown button::before {
-  background-color: #ff7e22;
-}
-body.dark-theme header .navbar-collapse .navbar-nav .nav-item .dropdown button:hover {
-  color: #ff7e22;
 }
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   body.dark-theme header form .fa-magnifying-glass {

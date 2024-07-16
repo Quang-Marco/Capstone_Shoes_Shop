@@ -7,10 +7,6 @@ body.dark-theme {
   header {
     .dropdown-menu {
       .dropdown-item {
-        &:hover {
-          color: white;
-          background-color: $highlight-color;
-        }
       }
     }
     .navbar-brand {
@@ -24,12 +20,6 @@ body.dark-theme {
           .dropdown {
             button {
               color: white;
-              &::before {
-                background-color: $highlight-color;
-              }
-              &:hover {
-                color: $highlight-color;
-              }
             }
           }
         }

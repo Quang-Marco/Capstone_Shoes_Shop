@@ -49,6 +49,9 @@ header {
               @media screen and (max-width: 992px) {
                 margin: 0;
               }
+              &:hover {
+                color: $highlight-color;
+              }
               &::before {
                 content: "";
                 position: absolute;
@@ -56,7 +59,7 @@ header {
                 left: 0;
                 width: 0;
                 height: 2px;
-                background: $main-color;
+                background-color: $highlight-color;
                 transition: $transition;
                 @media screen and (min-width: 992px) {
                   left: 15%;
@@ -70,7 +73,13 @@ header {
               }
             }
             .dropdown-menu {
-              transition: $transition;
+              // transition: $transition;
+              .dropdown-item {
+                &:hover {
+                  color: white;
+                  background-color: $highlight-color;
+                }
+              }
             }
             &:hover .dropdown-menu {
               display: block;
@@ -841,6 +850,7 @@ header {
               padding: 20px;
               background-color: #ebeeef;
               overflow: hidden;
+              transition: $transition;
               img {
                 width: 100%;
               }
@@ -884,6 +894,9 @@ header {
                 bottom: 0;
                 left: 15px;
                 transition: $transition;
+              }
+              &:hover img {
+                transform: scale(1.1, 1.1) rotate(-20deg);
               }
               &:hover .item_icon i {
                 transform: translateX(0);
