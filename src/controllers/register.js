@@ -51,7 +51,7 @@ document.getElementById("sign_up").onclick = (e) => {
         backgroundColor: "linear-gradient(to right, #00b09b, #96c93d)",
       }).showToast();
       document.querySelector("#register form").reset();
-      // Chuyển hướng sau 5 giây
+      // Chuyển hướng sau 3 giây
       setTimeout(function () {
         window.location.href = "index.html";
       }, 3000);
@@ -67,7 +67,6 @@ document.getElementById("sign_up").onclick = (e) => {
         position: "center", // `left`, `center` or `right`
         backgroundColor: "linear-gradient(to right, #e57373, #f44336)",
       }).showToast();
-      document.querySelector("#register form").reset();
     });
 };
 

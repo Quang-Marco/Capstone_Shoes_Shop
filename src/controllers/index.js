@@ -53,7 +53,7 @@ function renderContentShoes(arr, stt, content) {
                 <i class="fa-regular fa-image"></i>
             </div>
             <div class="item_price">
-                <h4 class="mb-0">${item.price}💲</h4>
+                <h4 class="mb-0">💲${item.price}</h4>
             </div>
         </div>
         <div class="item_info mt-4 ps-3">
