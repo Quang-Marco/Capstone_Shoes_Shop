@@ -47,7 +47,8 @@ function isEmailValid(email) {
 
 // Check password -> not null
 function isPasswordValid(password) {
-  let passwordRegex = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/;
+  let passwordRegex =
+    /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
   if (!password) {
     document.getElementById("pass-alert").innerHTML =
       "You must fill this field!";
